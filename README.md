@@ -1,5 +1,11 @@
 # BioFerris
 
+<p align="center">
+  <a href="docs/assets/bioferris-logo.svg">
+    <img src="docs/assets/bioferris-logo.svg" width="720" alt="BioFerris: the Ferris crab formed from G, T, C and A letters">
+  </a>
+</p>
+
 Rust-native bioinformatics, from sequences to workflows.
 
 BioFerris is a Rust library for sequence analysis that follows the common
@@ -145,6 +151,7 @@ any of the other examples in `seq-bio/examples/`.
 | [Alignment guide](docs/api/rust-api-v1.md) | Pairwise, multiple and graph alignment, and which multiple-alignment profile to choose |
 | [Algorithm specifications](docs/README.md#algorithm-specifications) | What each method computes, its parameters and its limits |
 | [Testing](docs/testing/README.md) | How the library is tested, and what the tests do and do not establish |
+| [Project identity](docs/api/bioferris-identity.md#public-identity) | Name, logo, color and artwork attribution |
 
 The documented outputs are checked by the test suite against real runs. For the
 type and method reference, run `cargo doc -p bioferris --no-deps --open` from the

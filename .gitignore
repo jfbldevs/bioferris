@@ -3,3 +3,4 @@
 /tmp/
 **/*.profraw
 **/*.svg
+!docs/assets/bioferris-logo.svg

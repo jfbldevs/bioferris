@@ -16,6 +16,17 @@
 - Cargo package and Rust import: `bioferris`. The `bioferris` executable was
   removed on 2026-10-21 (decision 029).
 - Tagline: **Rust-native bioinformatics, from sequences to workflows.**
+- Project logo: [BioFerris SVG](../assets/bioferris-logo.svg).
+
+The logo forms the Ferris crab from G, T, C and A letterforms, including the
+center, claws and legs, without facial features. It uses one color, `#F74C00`,
+on a transparent background. The letters are vector paths, so displaying or
+resizing the SVG requires no installed fonts or external resources.
+
+The silhouette is adapted from [Ferris by Karen Rustad Tölva](https://rustacean.net/),
+whose original artwork is released under CC0. Letterforms are outlined DejaVu
+Sans Mono Bold capitals; their arrangement is decorative, not a biological
+sequence. The repository README links to the full-size SVG.
 
 BioFerris is the toolkit name, not a new biological algorithm or a claim of full
 Biopython compatibility. The package is local and unpublished (`publish = false`);
