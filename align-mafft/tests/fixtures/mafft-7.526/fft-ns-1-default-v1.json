@@ -1,0 +1,320 @@
+{
+  "cases": [
+    {
+      "alphabet": "dna",
+      "id": "dna_identical",
+      "reference_alignment": [
+        {
+          "aligned": "ACGTACGTACGT",
+          "id": "dna_a"
+        },
+        {
+          "aligned": "ACGTACGTACGT",
+          "id": "dna_b"
+        },
+        {
+          "aligned": "ACGTACGTACGT",
+          "id": "dna_c"
+        }
+      ],
+      "sequences": [
+        {
+          "id": "dna_a",
+          "sequence": "ACGTACGTACGT"
+        },
+        {
+          "id": "dna_b",
+          "sequence": "ACGTACGTACGT"
+        },
+        {
+          "id": "dna_c",
+          "sequence": "ACGTACGTACGT"
+        }
+      ]
+    },
+    {
+      "alphabet": "dna",
+      "id": "dna_internal_terminal",
+      "reference_alignment": [
+        {
+          "aligned": "-----TACGTACGTACGT",
+          "id": "dna_a"
+        },
+        {
+          "aligned": "---ACGTCGTACGT----",
+          "id": "dna_b"
+        },
+        {
+          "aligned": "------ACGTACGTACG-",
+          "id": "dna_c"
+        },
+        {
+          "aligned": "TACGTTACGTACGT----",
+          "id": "dna_d"
+        }
+      ],
+      "sequences": [
+        {
+          "id": "dna_a",
+          "sequence": "TACGTACGTACGT"
+        },
+        {
+          "id": "dna_b",
+          "sequence": "ACGTCGTACGT"
+        },
+        {
+          "id": "dna_c",
+          "sequence": "ACGTACGTACG"
+        },
+        {
+          "id": "dna_d",
+          "sequence": "TACGTTACGTACGT"
+        }
+      ]
+    },
+    {
+      "alphabet": "dna",
+      "id": "dna_repetitive",
+      "reference_alignment": [
+        {
+          "aligned": "ACACACACACACACACACACACACACACACACACACACAC-",
+          "id": "repeat_a"
+        },
+        {
+          "aligned": "--ACACACACACACACACACACACACACACACACACAC---",
+          "id": "repeat_b"
+        },
+        {
+          "aligned": "-CACACACACACACACACACACACACACACACACACACACA",
+          "id": "repeat_c"
+        },
+        {
+          "aligned": "ACACACACACACGCACACACACACACACACACACACACAC-",
+          "id": "repeat_d"
+        }
+      ],
+      "sequences": [
+        {
+          "id": "repeat_a",
+          "sequence": "ACACACACACACACACACACACACACACACACACACACAC"
+        },
+        {
+          "id": "repeat_b",
+          "sequence": "ACACACACACACACACACACACACACACACACACAC"
+        },
+        {
+          "id": "repeat_c",
+          "sequence": "CACACACACACACACACACACACACACACACACACACACA"
+        },
+        {
+          "id": "repeat_d",
+          "sequence": "ACACACACACACGCACACACACACACACACACACACACAC"
+        }
+      ]
+    },
+    {
+      "alphabet": "dna",
+      "id": "dna_iupac",
+      "reference_alignment": [
+        {
+          "aligned": "ACGTRYSWKMBDHVNACGT",
+          "id": "iupac_a"
+        },
+        {
+          "aligned": "ACGTRYSWKM-BHVNACGT",
+          "id": "iupac_b"
+        },
+        {
+          "aligned": "ACGTNYSWKMBDHVNACGA",
+          "id": "iupac_c"
+        }
+      ],
+      "sequences": [
+        {
+          "id": "iupac_a",
+          "sequence": "ACGTRYSWKMBDHVNACGT"
+        },
+        {
+          "id": "iupac_b",
+          "sequence": "ACGTRYSWKMBHVNACGT"
+        },
+        {
+          "id": "iupac_c",
+          "sequence": "ACGTNYSWKMBDHVNACGA"
+        }
+      ]
+    },
+    {
+      "alphabet": "rna",
+      "id": "rna_internal_terminal",
+      "reference_alignment": [
+        {
+          "aligned": "-----UACGUACGUACGU",
+          "id": "rna_a"
+        },
+        {
+          "aligned": "---ACGUCGUACGU----",
+          "id": "rna_b"
+        },
+        {
+          "aligned": "------ACGUACGUACG-",
+          "id": "rna_c"
+        },
+        {
+          "aligned": "UACGUUACGUACGU----",
+          "id": "rna_d"
+        }
+      ],
+      "sequences": [
+        {
+          "id": "rna_a",
+          "sequence": "UACGUACGUACGU"
+        },
+        {
+          "id": "rna_b",
+          "sequence": "ACGUCGUACGU"
+        },
+        {
+          "id": "rna_c",
+          "sequence": "ACGUACGUACG"
+        },
+        {
+          "id": "rna_d",
+          "sequence": "UACGUUACGUACGU"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "protein_identical",
+      "reference_alignment": [
+        {
+          "aligned": "MKTAYIAKQRQISFVKSHFSRQ",
+          "id": "protein_a"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSHFSRQ",
+          "id": "protein_b"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSHFSRQ",
+          "id": "protein_c"
+        }
+      ],
+      "sequences": [
+        {
+          "id": "protein_a",
+          "sequence": "MKTAYIAKQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "protein_b",
+          "sequence": "MKTAYIAKQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "protein_c",
+          "sequence": "MKTAYIAKQRQISFVKSHFSRQ"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "protein_globins",
+      "reference_alignment": [
+        {
+          "aligned": "MVHLTPEEKSAVTALWGKVNVD--EVGGEALGRLLVVYPWTQRFFESFGDLST",
+          "id": "human_beta"
+        },
+        {
+          "aligned": "MV-LSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLS--",
+          "id": "human_alpha"
+        },
+        {
+          "aligned": "MV-LSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHL--",
+          "id": "whale_myoglobin"
+        },
+        {
+          "aligned": "MVAFTEKQDALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSFLANG--",
+          "id": "soy_leghemoglobin"
+        }
+      ],
+      "sequences": [
+        {
+          "id": "human_beta",
+          "sequence": "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLST"
+        },
+        {
+          "id": "human_alpha",
+          "sequence": "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLS"
+        },
+        {
+          "id": "whale_myoglobin",
+          "sequence": "MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHL"
+        },
+        {
+          "id": "soy_leghemoglobin",
+          "sequence": "MVAFTEKQDALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSFLANG"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "protein_internal_terminal",
+      "reference_alignment": [
+        {
+          "aligned": "--MKTAYIAKQRQISFVKSHFSRQ--",
+          "id": "protein_a"
+        },
+        {
+          "aligned": "---KTAYIAKQRTISFVKSHFS----",
+          "id": "protein_b"
+        },
+        {
+          "aligned": "--MKTAYIA-QRQISFVKSYFSRQ--",
+          "id": "protein_c"
+        },
+        {
+          "aligned": "MKMKTAYIAKQRQISFVKSHFSRQGG",
+          "id": "protein_d"
+        }
+      ],
+      "sequences": [
+        {
+          "id": "protein_a",
+          "sequence": "MKTAYIAKQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "protein_b",
+          "sequence": "KTAYIAKQRTISFVKSHFS"
+        },
+        {
+          "id": "protein_c",
+          "sequence": "MKTAYIAQRQISFVKSYFSRQ"
+        },
+        {
+          "id": "protein_d",
+          "sequence": "MKMKTAYIAKQRQISFVKSHFSRQGG"
+        }
+      ]
+    }
+  ],
+  "command": "mafft --retree 1 --maxiterate 0 --thread 1 --quiet INPUT",
+  "known_profile_differences": [
+    "MAFFT 7.526 defaults to BLOSUM62 instead of the paper's JTT 200 PAM matrix",
+    "MAFFT 7.526 defaults to op=1.53 and ep=0.123 instead of op=2.4 and Sa=0.06",
+    "MAFFT 7.526 applies the post-2002 6-mer length correction",
+    "MAFFT 7.526 documents a modified UPGMA procedure"
+  ],
+  "profile": "MAFFT-7.526-FFT-NS-1-default-v1",
+  "provenance": {
+    "case_specification_sha256": "ba066d5b4a90b3d1abec3734502d38fa529e912b8e6250a8c496c5b2c47f3a44",
+    "generator_sha256": "aeeb544758105121eaf9128726e42376eb92d53178d86c94098eb25793d95756",
+    "name": "MAFFT",
+    "package_sha256": "b8298e379bcd244be0e12f325461d863b93571da78c4499c2a2e4c252679c9de",
+    "package_url": "https://mafft.cbrc.jp/alignment/software/mafft_7.526-1_amd64.deb",
+    "platform": "official Linux amd64 package invoked as an opaque process under WSL2",
+    "source_inspected": false,
+    "version": "v7.526 (2024/Apr/26)"
+  },
+  "schema_version": 1,
+  "suite": "MAFFT-7.526-FFT-NS-1-default-v1-black-box"
+}

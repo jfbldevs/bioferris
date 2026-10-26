@@ -1,0 +1,185 @@
+{
+  "cases": [
+    {
+      "blocks": [
+        [
+          0,
+          73,
+          0,
+          45
+        ],
+        [
+          73,
+          28,
+          45,
+          0
+        ]
+      ],
+      "fixture": "bgzf-native-index.fasta.bgz",
+      "format": "fasta",
+      "ids": [
+        "z",
+        "a",
+        "m"
+      ],
+      "input_construction": "literal",
+      "input_sha256": "0b409e8615608b4ebaf5a8fbfe466ee1c36d7f420c6930d7852ffe752b96ab54",
+      "input_utf8": ">z description\naCgT\nNN\n>a empty\n\n>m other\nTT\n",
+      "records": [
+        {
+          "header": "z description",
+          "id": "z",
+          "qualities": null,
+          "raw_length": 23,
+          "raw_sha256": "4d8dfa352d3d6977201cf62dfaba7af152ed616e6c46aa7542414333e8be3592",
+          "sequence": "aCgTNN",
+          "sequence_length": 6,
+          "sequence_sha256": "9488ce5b7b00bb22f733f91f8b4adc0433a15485e237c8e006558b92f8aae434"
+        },
+        {
+          "header": "a empty",
+          "id": "a",
+          "qualities": null,
+          "raw_length": 10,
+          "raw_sha256": "c63b646cb689f02ba195bd7439b536bc8d0202c676897192ec72ee52820a1994",
+          "sequence": "",
+          "sequence_length": 0,
+          "sequence_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "header": "m other",
+          "id": "m",
+          "qualities": null,
+          "raw_length": 12,
+          "raw_sha256": "722e28aa4878a5f769ccf5d3b68b364e188875d4bb50f4661a5c3db6b78716ad",
+          "sequence": "TT",
+          "sequence_length": 2,
+          "sequence_sha256": "9779469589f956f434b70b578302dcbaa084a5eabb0124ccd61b0ae58c596e70"
+        }
+      ],
+      "source_sha256": "9d56cef4c81cd4793b3c862ad965f4a328fdb506c6efc9f3a908d7495be81160"
+    },
+    {
+      "blocks": [
+        [
+          0,
+          71,
+          0,
+          55
+        ],
+        [
+          71,
+          28,
+          55,
+          0
+        ]
+      ],
+      "fixture": "bgzf-native-index.fastq.bgz",
+      "format": "fastq",
+      "ids": [
+        "r",
+        "q"
+      ],
+      "input_construction": "literal",
+      "input_sha256": "0a79e523249f1049bd2c6aca571311edbac7cec5f3eb6e026d41b7c88930ac29",
+      "input_utf8": "@r description\naCg\nTN\n+r description\n!I~\n@+\n@q\nAA\n+\n~~\n",
+      "records": [
+        {
+          "header": "r description",
+          "id": "r",
+          "qualities": [
+            0,
+            40,
+            93,
+            31,
+            10
+          ],
+          "raw_length": 44,
+          "raw_sha256": "84a29e178cb6190f8769ee143adfe9fb39bc9e11016bc3fb3cca052c7727b363",
+          "sequence": "aCgTN",
+          "sequence_length": 5,
+          "sequence_sha256": "caf0f10c5a39a43da5e5299dc29b9bdbfbd08987c9986820cfbb25c9e8fc05d4"
+        },
+        {
+          "header": "q",
+          "id": "q",
+          "qualities": [
+            93,
+            93
+          ],
+          "raw_length": 11,
+          "raw_sha256": "c77ba4852a9611eb3e80d008bf31ed9fcc2d8dba80cb119be3eff789f003eace",
+          "sequence": "AA",
+          "sequence_length": 2,
+          "sequence_sha256": "58bb119c35513a451d24dc20ef0e9031ec85b35bfc919d263e7e5d9868909cb5"
+        }
+      ],
+      "source_sha256": "fb75c2075025134dd42341248aded088e46b666b2297f239d643bae612ad0fe6"
+    },
+    {
+      "blocks": [
+        [
+          0,
+          112,
+          0,
+          65536
+        ],
+        [
+          112,
+          34,
+          65536,
+          6
+        ],
+        [
+          146,
+          28,
+          65542,
+          0
+        ]
+      ],
+      "fixture": "bgzf-native-boundary.fasta.bgz",
+      "format": "fasta",
+      "ids": [
+        "a",
+        "b"
+      ],
+      "input_construction": "b'>a\\n' + b'A' * 65532 + b'\\n>b\\nTT\\n'",
+      "input_sha256": "e60a6214d7de6ec9c69204a1fb10a46b6c60c5880c7ac2434168e9af34beeba7",
+      "input_utf8": null,
+      "records": [
+        {
+          "header": "a",
+          "id": "a",
+          "qualities": null,
+          "raw_length": 65536,
+          "raw_sha256": "f759676f28bd82cf5b9bf37d58597aaf83de445197d7f521a9fe63bafd1ee222",
+          "sequence": null,
+          "sequence_length": 65532,
+          "sequence_sha256": "303d94cf1f155d4bf3ffcf2e91c97d16cc99b2ac7a2ff57afbe93706c412e104"
+        },
+        {
+          "header": "b",
+          "id": "b",
+          "qualities": null,
+          "raw_length": 6,
+          "raw_sha256": "d68aba3045c3b2db71bc15dc365deafd9b08f138085d38dac80e59943044456e",
+          "sequence": "TT",
+          "sequence_length": 2,
+          "sequence_sha256": "9779469589f956f434b70b578302dcbaa084a5eabb0124ccd61b0ae58c596e70"
+        }
+      ],
+      "source_sha256": "3de3be62684f48d613f3ed559709f2b8aef09b839254ff4c1c62949cce137f0a"
+    }
+  ],
+  "reference": {
+    "apis": [
+      "Bio.bgzf.BgzfWriter",
+      "Bio.bgzf.BgzfBlocks",
+      "Bio.SeqIO.index",
+      "Bio.SeqIO.index().get_raw"
+    ],
+    "biopython": "1.88",
+    "numpy": "2.3.3",
+    "python": "3.12.3"
+  }
+}

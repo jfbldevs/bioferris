@@ -1,0 +1,18 @@
+ID   DEMO; SV 2; circular; genomic DNA; STD; SYN; 15 BP.
+AC   DEMO;
+DE   Original coding record.
+DR   TEST; original-record.
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..15
+FT                   /organism="Synthetic construct"
+FT   CDS             4..12
+FT                   /gene="demo"
+FT                   /codon_start=1
+FT                   /transl_table=1
+FT                   /translation="MA"
+FT   tRNA            4..6
+FT                   /anticodon=(pos:4..6,aa:Met)
+SQ   Sequence 15 BP; 6 A; 4 C; 2 G; 3 T; 0 other;
+     aaaATGGCTT AAccc 15
+//

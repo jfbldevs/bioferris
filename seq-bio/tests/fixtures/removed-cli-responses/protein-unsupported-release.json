@@ -1,0 +1,1 @@
+{"error":{"code":"unsupported_protein_residue","details":{"byte":88,"offset":1},"message":"protein property analysis requires canonical amino acids; found X at residue 1"},"ok":false,"schema_version":1}

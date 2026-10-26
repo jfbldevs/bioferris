@@ -1,0 +1,87 @@
+[workspace]
+exclude = ["vendor/mafft-core"]
+members = [
+    "seq-bio",
+    "align",
+    "align-core",
+    "align-pairwise",
+    "align-fast",
+    "align-fast-kernels",
+    "align-msa",
+    "align-clustal",
+    "align-muscle",
+    "align-mafft",
+    "align-mafft-compat",
+    "align-poa",
+    "align-formats",
+]
+resolver = "3"
+
+[patch.crates-io]
+mafft-core = { path = "vendor/mafft-core" }
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT OR Apache-2.0"
+
+[workspace.lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+
+[workspace.dependencies]
+align = { path = "align", version = "0.1.0" }
+align-core = { path = "align-core", version = "0.1.0" }
+align-clustal = { path = "align-clustal", version = "0.1.0" }
+align-fast = { path = "align-fast", version = "0.1.0" }
+align-fast-kernels = { path = "align-fast-kernels", version = "0.1.0" }
+align-formats = { path = "align-formats", version = "0.1.0" }
+align-mafft = { path = "align-mafft", version = "0.1.0" }
+align-mafft-compat = { path = "align-mafft-compat", version = "0.1.0" }
+align-msa = { path = "align-msa", version = "0.1.0" }
+align-muscle = { path = "align-muscle", version = "0.1.0" }
+align-pairwise = { path = "align-pairwise", version = "0.1.0" }
+align-poa = { path = "align-poa", version = "0.1.0" }
+criterion = "=0.5.1"
+proptest = "=1.6.0"
+pulp = { version = "=0.22.3", default-features = false, features = ["std", "x86-v3"] }
+mafft-7526-engine = { package = "mafft", version = "=0.1.2" }
+rayon = "=1.11.0"
+rustfft = "=6.4.1"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.151"
+# Later unicode-ident releases add a Unicode data license outside this project's
+# explicit commercial allowlist. Version 1.0.0 is MIT OR Apache-2.0.
+unicode-ident = "=1.0.0"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+panic = "abort"
+strip = "symbols"
+
+[profile.bench]
+inherits = "release"
+debug = true
+
+# Linux/HPC throughput-candidate profile. CPU-specific code generation is deliberately
+# supplied by scripts/hpc/run.py so ordinary release artifacts stay portable.
+[profile.hpc]
+inherits = "release"
+codegen-units = 1
+incremental = false
+lto = "fat"
+
+# Same optimizer contract with symbols and line tables retained for `perf`.
+[profile.hpc-profiling]
+inherits = "release"
+codegen-units = 1
+debug = "line-tables-only"
+incremental = false
+lto = "fat"
+strip = "none"

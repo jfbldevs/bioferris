@@ -1,0 +1,27 @@
+# Local runtime fork of crates.io mafft-core 0.1.2; see PROVENANCE.json.
+# Original native-binding integration test targets are deliberately not packaged.
+[package]
+name = "mafft-core"
+version = "0.1.2"
+edition = "2024"
+license = "MIT AND BSD-3-Clause"
+authors = ["Lucas Goiriz <lucas.goiriz@csic.es>"]
+repository = "https://github.com/luksgrin/rust-MAFFT"
+description = "Versioned MAFFT engine fork for native 7.526 fidelity research"
+readme = "README.md"
+autotests = false
+autoexamples = false
+autobenches = false
+
+[lib]
+name = "mafft_core"
+path = "src/lib.rs"
+
+[dependencies]
+mafft-align = "=0.1.2"
+mafft-fft = "=0.1.2"
+mafft-io = "=0.1.2"
+mafft-scoring = "=0.1.2"
+mafft-tree = "=0.1.2"
+mafft-types = "=0.1.2"
+rayon = "=1.11.0"

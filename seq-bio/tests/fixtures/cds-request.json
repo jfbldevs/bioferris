@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "operation": "translate-cds-features",
+  "input": "seq-bio/tests/fixtures/annotated-example.gb",
+  "format": "genbank",
+  "molecule": "dna",
+  "reference_policy": "require-match"
+}

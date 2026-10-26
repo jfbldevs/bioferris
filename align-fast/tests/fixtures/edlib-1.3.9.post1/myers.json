@@ -1,0 +1,2196 @@
+{
+  "schema_version": 1,
+  "suite": "MYERS-bit-vector-v1 black-box conformance",
+  "generated_at_utc": "2026-08-03T13:42:19+00:00",
+  "provenance": {
+    "generator_sha256": "de8b72921a14cb6d256a602f845db0d4e84ea3ceb6db3b5c24271dc698efd507",
+    "case_specification_sha256": "0770b14f9b2366b736583e658d92788da70fe851f41850b6ab0f98b0f5189e49",
+    "python_version": "3.13.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "package": "edlib",
+    "package_version": "1.3.9.post1",
+    "api": "edlib.align",
+    "global_mode": "NW",
+    "global_task": "path",
+    "search_mode": "reversed-prefix SHW",
+    "search_task": "distance",
+    "literal_equality": true,
+    "distance_limit": -1
+  },
+  "cases": [
+    {
+      "id": "dna-empty-empty",
+      "alphabet": "dna",
+      "pattern": "",
+      "text": "",
+      "search_threshold": 0,
+      "expected": {
+        "global": {
+          "edit_distance": 0,
+          "cigar": null,
+          "pattern_aligned": "",
+          "text_aligned": "",
+          "columns": 0,
+          "matches": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "edits": 0
+        },
+        "search_scores": [],
+        "search_hits": []
+      }
+    },
+    {
+      "id": "dna-empty-text",
+      "alphabet": "dna",
+      "pattern": "",
+      "text": "ACGT",
+      "search_threshold": 0,
+      "expected": {
+        "global": {
+          "edit_distance": 4,
+          "cigar": null,
+          "pattern_aligned": "----",
+          "text_aligned": "ACGT",
+          "columns": 4,
+          "matches": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 4,
+          "edits": 4
+        },
+        "search_scores": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "search_hits": [
+          {
+            "end": 1,
+            "distance": 0
+          },
+          {
+            "end": 2,
+            "distance": 0
+          },
+          {
+            "end": 3,
+            "distance": 0
+          },
+          {
+            "end": 4,
+            "distance": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-pattern-empty",
+      "alphabet": "dna",
+      "pattern": "ACGT",
+      "text": "",
+      "search_threshold": 4,
+      "expected": {
+        "global": {
+          "edit_distance": 4,
+          "cigar": null,
+          "pattern_aligned": "ACGT",
+          "text_aligned": "----",
+          "columns": 4,
+          "matches": 0,
+          "substitutions": 0,
+          "deletions": 4,
+          "insertions": 0,
+          "edits": 4
+        },
+        "search_scores": [],
+        "search_hits": []
+      }
+    },
+    {
+      "id": "dna-identical",
+      "alphabet": "dna",
+      "pattern": "GATTACA",
+      "text": "GATTACA",
+      "search_threshold": 1,
+      "expected": {
+        "global": {
+          "edit_distance": 0,
+          "cigar": "7=",
+          "pattern_aligned": "GATTACA",
+          "text_aligned": "GATTACA",
+          "columns": 7,
+          "matches": 7,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "edits": 0
+        },
+        "search_scores": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "search_hits": [
+          {
+            "end": 6,
+            "distance": 1
+          },
+          {
+            "end": 7,
+            "distance": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-substitution",
+      "alphabet": "dna",
+      "pattern": "ACGT",
+      "text": "AGGT",
+      "search_threshold": 1,
+      "expected": {
+        "global": {
+          "edit_distance": 1,
+          "cigar": "1=1X2=",
+          "pattern_aligned": "ACGT",
+          "text_aligned": "AGGT",
+          "columns": 4,
+          "matches": 3,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0,
+          "edits": 1
+        },
+        "search_scores": [
+          3,
+          2,
+          2,
+          1
+        ],
+        "search_hits": [
+          {
+            "end": 4,
+            "distance": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-internal-insertion",
+      "alphabet": "dna",
+      "pattern": "ACGT",
+      "text": "ACGGT",
+      "search_threshold": 1,
+      "expected": {
+        "global": {
+          "edit_distance": 1,
+          "cigar": "3=1D1=",
+          "pattern_aligned": "ACG-T",
+          "text_aligned": "ACGGT",
+          "columns": 5,
+          "matches": 4,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 1,
+          "edits": 1
+        },
+        "search_scores": [
+          3,
+          2,
+          1,
+          1,
+          1
+        ],
+        "search_hits": [
+          {
+            "end": 3,
+            "distance": 1
+          },
+          {
+            "end": 4,
+            "distance": 1
+          },
+          {
+            "end": 5,
+            "distance": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-internal-deletion",
+      "alphabet": "dna",
+      "pattern": "ACGGT",
+      "text": "ACGT",
+      "search_threshold": 1,
+      "expected": {
+        "global": {
+          "edit_distance": 1,
+          "cigar": "3=1I1=",
+          "pattern_aligned": "ACGGT",
+          "text_aligned": "ACG-T",
+          "columns": 5,
+          "matches": 4,
+          "substitutions": 0,
+          "deletions": 1,
+          "insertions": 0,
+          "edits": 1
+        },
+        "search_scores": [
+          4,
+          3,
+          2,
+          1
+        ],
+        "search_hits": [
+          {
+            "end": 4,
+            "distance": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-terminal-gaps",
+      "alphabet": "dna",
+      "pattern": "ACGT",
+      "text": "TTACGTA",
+      "search_threshold": 2,
+      "expected": {
+        "global": {
+          "edit_distance": 3,
+          "cigar": "2D4=1D",
+          "pattern_aligned": "--ACGT-",
+          "text_aligned": "TTACGTA",
+          "columns": 7,
+          "matches": 4,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 3,
+          "edits": 3
+        },
+        "search_scores": [
+          3,
+          3,
+          3,
+          2,
+          1,
+          0,
+          1
+        ],
+        "search_hits": [
+          {
+            "end": 4,
+            "distance": 2
+          },
+          {
+            "end": 5,
+            "distance": 1
+          },
+          {
+            "end": 6,
+            "distance": 0
+          },
+          {
+            "end": 7,
+            "distance": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-completely-different",
+      "alphabet": "dna",
+      "pattern": "AAAAAAAA",
+      "text": "TTTTTTTT",
+      "search_threshold": 8,
+      "expected": {
+        "global": {
+          "edit_distance": 8,
+          "cigar": "8X",
+          "pattern_aligned": "AAAAAAAA",
+          "text_aligned": "TTTTTTTT",
+          "columns": 8,
+          "matches": 0,
+          "substitutions": 8,
+          "deletions": 0,
+          "insertions": 0,
+          "edits": 8
+        },
+        "search_scores": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "search_hits": [
+          {
+            "end": 1,
+            "distance": 8
+          },
+          {
+            "end": 2,
+            "distance": 8
+          },
+          {
+            "end": 3,
+            "distance": 8
+          },
+          {
+            "end": 4,
+            "distance": 8
+          },
+          {
+            "end": 5,
+            "distance": 8
+          },
+          {
+            "end": 6,
+            "distance": 8
+          },
+          {
+            "end": 7,
+            "distance": 8
+          },
+          {
+            "end": 8,
+            "distance": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-repetitive-tie",
+      "alphabet": "dna",
+      "pattern": "ACACACAC",
+      "text": "CACACACA",
+      "search_threshold": 2,
+      "expected": {
+        "global": {
+          "edit_distance": 2,
+          "cigar": "1D7=1I",
+          "pattern_aligned": "-ACACACAC",
+          "text_aligned": "CACACACA-",
+          "columns": 9,
+          "matches": 7,
+          "substitutions": 0,
+          "deletions": 1,
+          "insertions": 1,
+          "edits": 2
+        },
+        "search_scores": [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ],
+        "search_hits": [
+          {
+            "end": 6,
+            "distance": 2
+          },
+          {
+            "end": 7,
+            "distance": 1
+          },
+          {
+            "end": 8,
+            "distance": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-ambiguity-literal",
+      "alphabet": "dna",
+      "pattern": "NNRYACGT",
+      "text": "NARYACGA",
+      "search_threshold": 2,
+      "expected": {
+        "global": {
+          "edit_distance": 2,
+          "cigar": "1=1X5=1X",
+          "pattern_aligned": "NNRYACGT",
+          "text_aligned": "NARYACGA",
+          "columns": 8,
+          "matches": 6,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0,
+          "edits": 2
+        },
+        "search_scores": [
+          7,
+          6,
+          6,
+          5,
+          4,
+          3,
+          2,
+          2
+        ],
+        "search_hits": [
+          {
+            "end": 7,
+            "distance": 2
+          },
+          {
+            "end": 8,
+            "distance": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "rna-unit-edits",
+      "alphabet": "rna",
+      "pattern": "ACGUUNRY",
+      "text": "ACGUAURY",
+      "search_threshold": 1,
+      "expected": {
+        "global": {
+          "edit_distance": 2,
+          "cigar": "4=1D1=1I2=",
+          "pattern_aligned": "ACGU-UNRY",
+          "text_aligned": "ACGUAU-RY",
+          "columns": 9,
+          "matches": 7,
+          "substitutions": 0,
+          "deletions": 1,
+          "insertions": 1,
+          "edits": 2
+        },
+        "search_scores": [
+          7,
+          6,
+          5,
+          4,
+          4,
+          4,
+          3,
+          2
+        ],
+        "search_hits": []
+      }
+    },
+    {
+      "id": "protein-extended-symbols",
+      "alphabet": "protein",
+      "pattern": "BZXJUOARND",
+      "text": "BZAJUOARNE",
+      "search_threshold": 2,
+      "expected": {
+        "global": {
+          "edit_distance": 2,
+          "cigar": "2=1X6=1X",
+          "pattern_aligned": "BZXJUOARND",
+          "text_aligned": "BZAJUOARNE",
+          "columns": 10,
+          "matches": 8,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0,
+          "edits": 2
+        },
+        "search_scores": [
+          9,
+          8,
+          7,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          2
+        ],
+        "search_hits": [
+          {
+            "end": 9,
+            "distance": 2
+          },
+          {
+            "end": 10,
+            "distance": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-block-63",
+      "alphabet": "dna",
+      "pattern": "ATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGC",
+      "text": "CATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATG",
+      "search_threshold": 20,
+      "expected": {
+        "global": {
+          "edit_distance": 7,
+          "cigar": "1D18=1X18=1X18=1X6=3D",
+          "pattern_aligned": "-ATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGC---",
+          "text_aligned": "CATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATG",
+          "columns": 67,
+          "matches": 60,
+          "substitutions": 3,
+          "deletions": 0,
+          "insertions": 4,
+          "edits": 7
+        },
+        "search_scores": [
+          62,
+          61,
+          60,
+          59,
+          58,
+          57,
+          56,
+          55,
+          54,
+          53,
+          52,
+          51,
+          50,
+          49,
+          48,
+          47,
+          46,
+          45,
+          44,
+          43,
+          42,
+          41,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          12,
+          11,
+          10,
+          9,
+          9,
+          8,
+          8,
+          7,
+          6,
+          6,
+          5,
+          4,
+          3,
+          4,
+          5,
+          6
+        ],
+        "search_hits": [
+          {
+            "end": 43,
+            "distance": 20
+          },
+          {
+            "end": 44,
+            "distance": 19
+          },
+          {
+            "end": 45,
+            "distance": 18
+          },
+          {
+            "end": 46,
+            "distance": 17
+          },
+          {
+            "end": 47,
+            "distance": 16
+          },
+          {
+            "end": 48,
+            "distance": 15
+          },
+          {
+            "end": 49,
+            "distance": 14
+          },
+          {
+            "end": 50,
+            "distance": 13
+          },
+          {
+            "end": 51,
+            "distance": 12
+          },
+          {
+            "end": 52,
+            "distance": 12
+          },
+          {
+            "end": 53,
+            "distance": 11
+          },
+          {
+            "end": 54,
+            "distance": 10
+          },
+          {
+            "end": 55,
+            "distance": 9
+          },
+          {
+            "end": 56,
+            "distance": 9
+          },
+          {
+            "end": 57,
+            "distance": 8
+          },
+          {
+            "end": 58,
+            "distance": 8
+          },
+          {
+            "end": 59,
+            "distance": 7
+          },
+          {
+            "end": 60,
+            "distance": 6
+          },
+          {
+            "end": 61,
+            "distance": 6
+          },
+          {
+            "end": 62,
+            "distance": 5
+          },
+          {
+            "end": 63,
+            "distance": 4
+          },
+          {
+            "end": 64,
+            "distance": 3
+          },
+          {
+            "end": 65,
+            "distance": 4
+          },
+          {
+            "end": 66,
+            "distance": 5
+          },
+          {
+            "end": 67,
+            "distance": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-block-64",
+      "alphabet": "dna",
+      "pattern": "GCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATG",
+      "text": "TGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCAT",
+      "search_threshold": 20,
+      "expected": {
+        "global": {
+          "edit_distance": 5,
+          "cigar": "1D18=1X18=1X18=1X6=1I",
+          "pattern_aligned": "-GCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATG",
+          "text_aligned": "TGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCAT-",
+          "columns": 65,
+          "matches": 60,
+          "substitutions": 3,
+          "deletions": 1,
+          "insertions": 1,
+          "edits": 5
+        },
+        "search_scores": [
+          63,
+          62,
+          61,
+          60,
+          59,
+          58,
+          57,
+          56,
+          55,
+          54,
+          53,
+          52,
+          51,
+          50,
+          49,
+          48,
+          47,
+          46,
+          45,
+          44,
+          43,
+          42,
+          41,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          12,
+          11,
+          10,
+          9,
+          9,
+          9,
+          8,
+          7,
+          6,
+          6,
+          5,
+          4
+        ],
+        "search_hits": [
+          {
+            "end": 44,
+            "distance": 20
+          },
+          {
+            "end": 45,
+            "distance": 19
+          },
+          {
+            "end": 46,
+            "distance": 18
+          },
+          {
+            "end": 47,
+            "distance": 17
+          },
+          {
+            "end": 48,
+            "distance": 16
+          },
+          {
+            "end": 49,
+            "distance": 15
+          },
+          {
+            "end": 50,
+            "distance": 14
+          },
+          {
+            "end": 51,
+            "distance": 13
+          },
+          {
+            "end": 52,
+            "distance": 12
+          },
+          {
+            "end": 53,
+            "distance": 12
+          },
+          {
+            "end": 54,
+            "distance": 11
+          },
+          {
+            "end": 55,
+            "distance": 10
+          },
+          {
+            "end": 56,
+            "distance": 9
+          },
+          {
+            "end": 57,
+            "distance": 9
+          },
+          {
+            "end": 58,
+            "distance": 9
+          },
+          {
+            "end": 59,
+            "distance": 8
+          },
+          {
+            "end": 60,
+            "distance": 7
+          },
+          {
+            "end": 61,
+            "distance": 6
+          },
+          {
+            "end": 62,
+            "distance": 6
+          },
+          {
+            "end": 63,
+            "distance": 5
+          },
+          {
+            "end": 64,
+            "distance": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-block-65",
+      "alphabet": "dna",
+      "pattern": "ATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCAT",
+      "text": "CATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCA",
+      "search_threshold": 20,
+      "expected": {
+        "global": {
+          "edit_distance": 7,
+          "cigar": "1D18=1X18=1X18=1X8=3D",
+          "pattern_aligned": "-ATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCAT---",
+          "text_aligned": "CATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCA",
+          "columns": 69,
+          "matches": 62,
+          "substitutions": 3,
+          "deletions": 0,
+          "insertions": 4,
+          "edits": 7
+        },
+        "search_scores": [
+          64,
+          63,
+          62,
+          61,
+          60,
+          59,
+          58,
+          57,
+          56,
+          55,
+          54,
+          53,
+          52,
+          51,
+          50,
+          49,
+          48,
+          47,
+          46,
+          45,
+          44,
+          43,
+          42,
+          41,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          12,
+          11,
+          10,
+          9,
+          9,
+          9,
+          8,
+          7,
+          6,
+          6,
+          5,
+          4,
+          3,
+          4,
+          5,
+          6
+        ],
+        "search_hits": [
+          {
+            "end": 45,
+            "distance": 20
+          },
+          {
+            "end": 46,
+            "distance": 19
+          },
+          {
+            "end": 47,
+            "distance": 18
+          },
+          {
+            "end": 48,
+            "distance": 17
+          },
+          {
+            "end": 49,
+            "distance": 16
+          },
+          {
+            "end": 50,
+            "distance": 15
+          },
+          {
+            "end": 51,
+            "distance": 14
+          },
+          {
+            "end": 52,
+            "distance": 13
+          },
+          {
+            "end": 53,
+            "distance": 12
+          },
+          {
+            "end": 54,
+            "distance": 12
+          },
+          {
+            "end": 55,
+            "distance": 11
+          },
+          {
+            "end": 56,
+            "distance": 10
+          },
+          {
+            "end": 57,
+            "distance": 9
+          },
+          {
+            "end": 58,
+            "distance": 9
+          },
+          {
+            "end": 59,
+            "distance": 9
+          },
+          {
+            "end": 60,
+            "distance": 8
+          },
+          {
+            "end": 61,
+            "distance": 7
+          },
+          {
+            "end": 62,
+            "distance": 6
+          },
+          {
+            "end": 63,
+            "distance": 6
+          },
+          {
+            "end": 64,
+            "distance": 5
+          },
+          {
+            "end": 65,
+            "distance": 4
+          },
+          {
+            "end": 66,
+            "distance": 3
+          },
+          {
+            "end": 67,
+            "distance": 4
+          },
+          {
+            "end": 68,
+            "distance": 5
+          },
+          {
+            "end": 69,
+            "distance": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-block-127",
+      "alphabet": "dna",
+      "pattern": "GCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATG",
+      "text": "TGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCAT",
+      "search_threshold": 35,
+      "expected": {
+        "global": {
+          "edit_distance": 10,
+          "cigar": "1D18=1X18=1X18=1X18=1X18=1X18=1X13=3D",
+          "pattern_aligned": "-GCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATG---",
+          "text_aligned": "TGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCAT",
+          "columns": 131,
+          "matches": 121,
+          "substitutions": 6,
+          "deletions": 0,
+          "insertions": 4,
+          "edits": 10
+        },
+        "search_scores": [
+          126,
+          125,
+          124,
+          123,
+          122,
+          121,
+          120,
+          119,
+          118,
+          117,
+          116,
+          115,
+          114,
+          113,
+          112,
+          111,
+          110,
+          109,
+          108,
+          107,
+          106,
+          105,
+          104,
+          103,
+          102,
+          101,
+          100,
+          99,
+          98,
+          97,
+          96,
+          95,
+          94,
+          93,
+          92,
+          91,
+          90,
+          89,
+          88,
+          87,
+          86,
+          85,
+          84,
+          83,
+          82,
+          81,
+          80,
+          79,
+          78,
+          77,
+          76,
+          75,
+          74,
+          73,
+          72,
+          71,
+          70,
+          69,
+          68,
+          67,
+          66,
+          65,
+          64,
+          63,
+          62,
+          61,
+          60,
+          59,
+          58,
+          57,
+          56,
+          55,
+          54,
+          53,
+          52,
+          51,
+          50,
+          49,
+          48,
+          47,
+          46,
+          45,
+          44,
+          43,
+          42,
+          41,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          24,
+          23,
+          22,
+          21,
+          21,
+          20,
+          19,
+          18,
+          18,
+          17,
+          16,
+          16,
+          15,
+          15,
+          14,
+          13,
+          12,
+          12,
+          11,
+          10,
+          9,
+          9,
+          8,
+          7,
+          6,
+          7,
+          8,
+          9
+        ],
+        "search_hits": [
+          {
+            "end": 92,
+            "distance": 35
+          },
+          {
+            "end": 93,
+            "distance": 34
+          },
+          {
+            "end": 94,
+            "distance": 33
+          },
+          {
+            "end": 95,
+            "distance": 32
+          },
+          {
+            "end": 96,
+            "distance": 31
+          },
+          {
+            "end": 97,
+            "distance": 30
+          },
+          {
+            "end": 98,
+            "distance": 29
+          },
+          {
+            "end": 99,
+            "distance": 28
+          },
+          {
+            "end": 100,
+            "distance": 27
+          },
+          {
+            "end": 101,
+            "distance": 26
+          },
+          {
+            "end": 102,
+            "distance": 25
+          },
+          {
+            "end": 103,
+            "distance": 24
+          },
+          {
+            "end": 104,
+            "distance": 24
+          },
+          {
+            "end": 105,
+            "distance": 23
+          },
+          {
+            "end": 106,
+            "distance": 22
+          },
+          {
+            "end": 107,
+            "distance": 21
+          },
+          {
+            "end": 108,
+            "distance": 21
+          },
+          {
+            "end": 109,
+            "distance": 20
+          },
+          {
+            "end": 110,
+            "distance": 19
+          },
+          {
+            "end": 111,
+            "distance": 18
+          },
+          {
+            "end": 112,
+            "distance": 18
+          },
+          {
+            "end": 113,
+            "distance": 17
+          },
+          {
+            "end": 114,
+            "distance": 16
+          },
+          {
+            "end": 115,
+            "distance": 16
+          },
+          {
+            "end": 116,
+            "distance": 15
+          },
+          {
+            "end": 117,
+            "distance": 15
+          },
+          {
+            "end": 118,
+            "distance": 14
+          },
+          {
+            "end": 119,
+            "distance": 13
+          },
+          {
+            "end": 120,
+            "distance": 12
+          },
+          {
+            "end": 121,
+            "distance": 12
+          },
+          {
+            "end": 122,
+            "distance": 11
+          },
+          {
+            "end": 123,
+            "distance": 10
+          },
+          {
+            "end": 124,
+            "distance": 9
+          },
+          {
+            "end": 125,
+            "distance": 9
+          },
+          {
+            "end": 126,
+            "distance": 8
+          },
+          {
+            "end": 127,
+            "distance": 7
+          },
+          {
+            "end": 128,
+            "distance": 6
+          },
+          {
+            "end": 129,
+            "distance": 7
+          },
+          {
+            "end": 130,
+            "distance": 8
+          },
+          {
+            "end": 131,
+            "distance": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-block-128",
+      "alphabet": "dna",
+      "pattern": "ATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCAT",
+      "text": "CATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCA",
+      "search_threshold": 35,
+      "expected": {
+        "global": {
+          "edit_distance": 8,
+          "cigar": "1D18=1X18=1X18=1X18=1X18=1X18=1X13=1I",
+          "pattern_aligned": "-ATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCAT",
+          "text_aligned": "CATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCA-",
+          "columns": 129,
+          "matches": 121,
+          "substitutions": 6,
+          "deletions": 1,
+          "insertions": 1,
+          "edits": 8
+        },
+        "search_scores": [
+          127,
+          126,
+          125,
+          124,
+          123,
+          122,
+          121,
+          120,
+          119,
+          118,
+          117,
+          116,
+          115,
+          114,
+          113,
+          112,
+          111,
+          110,
+          109,
+          108,
+          107,
+          106,
+          105,
+          104,
+          103,
+          102,
+          101,
+          100,
+          99,
+          98,
+          97,
+          96,
+          95,
+          94,
+          93,
+          92,
+          91,
+          90,
+          89,
+          88,
+          87,
+          86,
+          85,
+          84,
+          83,
+          82,
+          81,
+          80,
+          79,
+          78,
+          77,
+          76,
+          75,
+          74,
+          73,
+          72,
+          71,
+          70,
+          69,
+          68,
+          67,
+          66,
+          65,
+          64,
+          63,
+          62,
+          61,
+          60,
+          59,
+          58,
+          57,
+          56,
+          55,
+          54,
+          53,
+          52,
+          51,
+          50,
+          49,
+          48,
+          47,
+          46,
+          45,
+          44,
+          43,
+          42,
+          41,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          24,
+          23,
+          22,
+          21,
+          21,
+          20,
+          19,
+          18,
+          18,
+          17,
+          17,
+          16,
+          15,
+          15,
+          14,
+          13,
+          12,
+          12,
+          11,
+          10,
+          9,
+          9,
+          8,
+          7
+        ],
+        "search_hits": [
+          {
+            "end": 93,
+            "distance": 35
+          },
+          {
+            "end": 94,
+            "distance": 34
+          },
+          {
+            "end": 95,
+            "distance": 33
+          },
+          {
+            "end": 96,
+            "distance": 32
+          },
+          {
+            "end": 97,
+            "distance": 31
+          },
+          {
+            "end": 98,
+            "distance": 30
+          },
+          {
+            "end": 99,
+            "distance": 29
+          },
+          {
+            "end": 100,
+            "distance": 28
+          },
+          {
+            "end": 101,
+            "distance": 27
+          },
+          {
+            "end": 102,
+            "distance": 26
+          },
+          {
+            "end": 103,
+            "distance": 25
+          },
+          {
+            "end": 104,
+            "distance": 24
+          },
+          {
+            "end": 105,
+            "distance": 24
+          },
+          {
+            "end": 106,
+            "distance": 23
+          },
+          {
+            "end": 107,
+            "distance": 22
+          },
+          {
+            "end": 108,
+            "distance": 21
+          },
+          {
+            "end": 109,
+            "distance": 21
+          },
+          {
+            "end": 110,
+            "distance": 20
+          },
+          {
+            "end": 111,
+            "distance": 19
+          },
+          {
+            "end": 112,
+            "distance": 18
+          },
+          {
+            "end": 113,
+            "distance": 18
+          },
+          {
+            "end": 114,
+            "distance": 17
+          },
+          {
+            "end": 115,
+            "distance": 17
+          },
+          {
+            "end": 116,
+            "distance": 16
+          },
+          {
+            "end": 117,
+            "distance": 15
+          },
+          {
+            "end": 118,
+            "distance": 15
+          },
+          {
+            "end": 119,
+            "distance": 14
+          },
+          {
+            "end": 120,
+            "distance": 13
+          },
+          {
+            "end": 121,
+            "distance": 12
+          },
+          {
+            "end": 122,
+            "distance": 12
+          },
+          {
+            "end": 123,
+            "distance": 11
+          },
+          {
+            "end": 124,
+            "distance": 10
+          },
+          {
+            "end": 125,
+            "distance": 9
+          },
+          {
+            "end": 126,
+            "distance": 9
+          },
+          {
+            "end": 127,
+            "distance": 8
+          },
+          {
+            "end": 128,
+            "distance": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna-block-129",
+      "alphabet": "dna",
+      "pattern": "GCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCA",
+      "text": "TGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGC",
+      "search_threshold": 35,
+      "expected": {
+        "global": {
+          "edit_distance": 10,
+          "cigar": "1D18=1X18=1X18=1X18=1X18=1X18=1X15=3D",
+          "pattern_aligned": "-GCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCATGCAATGCATGCATGCATGCATGGCATGCATGCATGCA---",
+          "text_aligned": "TGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGCCATGCATGCATGCATGCATTGCATGCATGCATGCATGC",
+          "columns": 133,
+          "matches": 123,
+          "substitutions": 6,
+          "deletions": 0,
+          "insertions": 4,
+          "edits": 10
+        },
+        "search_scores": [
+          128,
+          127,
+          126,
+          125,
+          124,
+          123,
+          122,
+          121,
+          120,
+          119,
+          118,
+          117,
+          116,
+          115,
+          114,
+          113,
+          112,
+          111,
+          110,
+          109,
+          108,
+          107,
+          106,
+          105,
+          104,
+          103,
+          102,
+          101,
+          100,
+          99,
+          98,
+          97,
+          96,
+          95,
+          94,
+          93,
+          92,
+          91,
+          90,
+          89,
+          88,
+          87,
+          86,
+          85,
+          84,
+          83,
+          82,
+          81,
+          80,
+          79,
+          78,
+          77,
+          76,
+          75,
+          74,
+          73,
+          72,
+          71,
+          70,
+          69,
+          68,
+          67,
+          66,
+          65,
+          64,
+          63,
+          62,
+          61,
+          60,
+          59,
+          58,
+          57,
+          56,
+          55,
+          54,
+          53,
+          52,
+          51,
+          50,
+          49,
+          48,
+          47,
+          46,
+          45,
+          44,
+          43,
+          42,
+          41,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          24,
+          23,
+          22,
+          21,
+          21,
+          20,
+          19,
+          18,
+          18,
+          18,
+          17,
+          16,
+          15,
+          15,
+          14,
+          13,
+          12,
+          12,
+          11,
+          10,
+          9,
+          9,
+          8,
+          7,
+          6,
+          7,
+          8,
+          9
+        ],
+        "search_hits": [
+          {
+            "end": 94,
+            "distance": 35
+          },
+          {
+            "end": 95,
+            "distance": 34
+          },
+          {
+            "end": 96,
+            "distance": 33
+          },
+          {
+            "end": 97,
+            "distance": 32
+          },
+          {
+            "end": 98,
+            "distance": 31
+          },
+          {
+            "end": 99,
+            "distance": 30
+          },
+          {
+            "end": 100,
+            "distance": 29
+          },
+          {
+            "end": 101,
+            "distance": 28
+          },
+          {
+            "end": 102,
+            "distance": 27
+          },
+          {
+            "end": 103,
+            "distance": 26
+          },
+          {
+            "end": 104,
+            "distance": 25
+          },
+          {
+            "end": 105,
+            "distance": 24
+          },
+          {
+            "end": 106,
+            "distance": 24
+          },
+          {
+            "end": 107,
+            "distance": 23
+          },
+          {
+            "end": 108,
+            "distance": 22
+          },
+          {
+            "end": 109,
+            "distance": 21
+          },
+          {
+            "end": 110,
+            "distance": 21
+          },
+          {
+            "end": 111,
+            "distance": 20
+          },
+          {
+            "end": 112,
+            "distance": 19
+          },
+          {
+            "end": 113,
+            "distance": 18
+          },
+          {
+            "end": 114,
+            "distance": 18
+          },
+          {
+            "end": 115,
+            "distance": 18
+          },
+          {
+            "end": 116,
+            "distance": 17
+          },
+          {
+            "end": 117,
+            "distance": 16
+          },
+          {
+            "end": 118,
+            "distance": 15
+          },
+          {
+            "end": 119,
+            "distance": 15
+          },
+          {
+            "end": 120,
+            "distance": 14
+          },
+          {
+            "end": 121,
+            "distance": 13
+          },
+          {
+            "end": 122,
+            "distance": 12
+          },
+          {
+            "end": 123,
+            "distance": 12
+          },
+          {
+            "end": 124,
+            "distance": 11
+          },
+          {
+            "end": 125,
+            "distance": 10
+          },
+          {
+            "end": 126,
+            "distance": 9
+          },
+          {
+            "end": 127,
+            "distance": 9
+          },
+          {
+            "end": 128,
+            "distance": 8
+          },
+          {
+            "end": 129,
+            "distance": 7
+          },
+          {
+            "end": 130,
+            "distance": 6
+          },
+          {
+            "end": 131,
+            "distance": 7
+          },
+          {
+            "end": 132,
+            "distance": 8
+          },
+          {
+            "end": 133,
+            "distance": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "protein-uniprot-p02185-vs-p68871",
+      "alphabet": "protein",
+      "pattern": "MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGDFGADAQGAMNKALELFRKDIAAKYKELGYQG",
+      "text": "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH",
+      "search_threshold": 100,
+      "expected": {
+        "global": {
+          "edit_distance": 111,
+          "cigar": "2=1D1=1X1D1=1I1=3X1=3X1=1X2=2X1=1D1=1I1=1I1=2X1I1=1X2=4X1=1X1=3X1=2X1=2X1=1X1=1X1D1=1X1=5X1I1=1X2=2X2=1X1=1X2D1=1D1=1X1=2X1D2=2X1I1=1X1=2X1=3I1=2X1=1D1=2X1=3X1D1=7X2I2=1D1=2I1=1X1=1X1D1=4X1=1X1=2X1=9X1=1X2=1X6I",
+          "pattern_aligned": "MV-LS-EGEWQLVLHVWAKVEAD-VAGHGQDILIRLFKSHPETLEKFDRFKHLKTE-AEMKASEDLKKHGVTVLTAL--G-AILKK-KGHHEAELKPLAQSHATK-HKIPIKY-LEFISEAIIHVL-HSRHPGD-FGADAQGAMNKALELFRKDIAAKYKELGYQG",
+          "text_aligned": "MVHLTPE-EKSAVTALWGKVNVDEV-G-GEA-LGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKV-KAHGKKVLGAFSDGLAHLDNLKGTF-ATLSEL---HCDKLHVDPENFRLLGNVLVC--VLAH--HFGKEFTPPVQAAYQKVVAGVANALAHKYH------",
+          "columns": 166,
+          "matches": 55,
+          "substitutions": 80,
+          "deletions": 19,
+          "insertions": 12,
+          "edits": 111
+        },
+        "search_scores": [
+          153,
+          152,
+          151,
+          150,
+          149,
+          148,
+          147,
+          146,
+          145,
+          145,
+          144,
+          143,
+          143,
+          142,
+          141,
+          141,
+          140,
+          139,
+          138,
+          137,
+          137,
+          136,
+          135,
+          135,
+          134,
+          133,
+          134,
+          133,
+          132,
+          131,
+          131,
+          131,
+          131,
+          131,
+          131,
+          130,
+          130,
+          130,
+          130,
+          129,
+          129,
+          130,
+          130,
+          129,
+          129,
+          129,
+          128,
+          128,
+          127,
+          127,
+          127,
+          127,
+          126,
+          125,
+          125,
+          125,
+          124,
+          124,
+          124,
+          124,
+          124,
+          123,
+          123,
+          123,
+          122,
+          122,
+          122,
+          122,
+          121,
+          120,
+          120,
+          120,
+          120,
+          120,
+          119,
+          119,
+          118,
+          118,
+          117,
+          117,
+          117,
+          116,
+          116,
+          115,
+          115,
+          115,
+          115,
+          116,
+          115,
+          115,
+          115,
+          114,
+          114,
+          114,
+          114,
+          114,
+          113,
+          113,
+          113,
+          112,
+          112,
+          111,
+          111,
+          111,
+          111,
+          111,
+          111,
+          110,
+          110,
+          110,
+          110,
+          111,
+          111,
+          111,
+          110,
+          110,
+          110,
+          110,
+          110,
+          109,
+          109,
+          109,
+          109,
+          109,
+          109,
+          109,
+          109,
+          109,
+          109,
+          110,
+          111,
+          110,
+          110,
+          111,
+          111,
+          111,
+          110,
+          111,
+          111,
+          111,
+          112,
+          111,
+          111,
+          111,
+          111,
+          111,
+          111
+        ],
+        "search_hits": []
+      }
+    }
+  ]
+}

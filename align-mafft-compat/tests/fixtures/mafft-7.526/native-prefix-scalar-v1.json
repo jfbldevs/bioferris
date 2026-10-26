@@ -1,0 +1,167 @@
+{
+  "cases": [
+    {
+      "id": "stop-at-boundary",
+      "input_sha256": "83ee06798fc57d40af4da4a5afbb11ed785a9a0faf4c1b9cd55f52ba4f5fb5d0",
+      "native_counter": "2 x 100001 - 100000 d nfreq=0.000000\n",
+      "native_type": "d",
+      "records": [
+        {
+          "id": "row-0 full label",
+          "segments": [
+            {
+              "length": 100000,
+              "symbol": "A"
+            }
+          ]
+        },
+        {
+          "id": "row-1 full label",
+          "segments": [
+            {
+              "length": 100001,
+              "symbol": "R"
+            }
+          ]
+        }
+      ],
+      "source_defined_sampled_bases": 100000,
+      "source_defined_sampled_sites": 100000
+    },
+    {
+      "id": "whole-crossing-record",
+      "input_sha256": "3c415293d1287b2b8e17e26a0d54ea66210c259a6789383f23ea847a5d60212e",
+      "native_counter": "3 x 1000000 - 99999 p nfreq=0.000000\n",
+      "native_type": "p",
+      "records": [
+        {
+          "id": "row-0 full label",
+          "segments": [
+            {
+              "length": 99999,
+              "symbol": "A"
+            }
+          ]
+        },
+        {
+          "id": "row-1 full label",
+          "segments": [
+            {
+              "length": 100001,
+              "symbol": "R"
+            }
+          ]
+        },
+        {
+          "id": "row-2 full label",
+          "segments": [
+            {
+              "length": 1000000,
+              "symbol": "A"
+            }
+          ]
+        }
+      ],
+      "source_defined_sampled_bases": 99999,
+      "source_defined_sampled_sites": 200000
+    },
+    {
+      "id": "exact-three-quarter",
+      "input_sha256": "e843666772806ea19ca0db49fbb14ae33746f360dbde83cba2a0bbea9a29eed0",
+      "native_counter": "2 x 100001 - 100000 p nfreq=0.000000\n",
+      "native_type": "p",
+      "records": [
+        {
+          "id": "row-0 full label",
+          "segments": [
+            {
+              "length": 75000,
+              "symbol": "A"
+            },
+            {
+              "length": 25000,
+              "symbol": "R"
+            }
+          ]
+        },
+        {
+          "id": "row-1 full label",
+          "segments": [
+            {
+              "length": 100001,
+              "symbol": "A"
+            }
+          ]
+        }
+      ],
+      "source_defined_sampled_bases": 75000,
+      "source_defined_sampled_sites": 100000
+    },
+    {
+      "id": "above-three-quarter",
+      "input_sha256": "4f73007f7d6d2133974d1819c21195e0b4e37610fd96dd5aed4b8bd5e6697b05",
+      "native_counter": "2 x 100001 - 100000 d nfreq=0.000000\n",
+      "native_type": "d",
+      "records": [
+        {
+          "id": "row-0 full label",
+          "segments": [
+            {
+              "length": 75001,
+              "symbol": "A"
+            },
+            {
+              "length": 24999,
+              "symbol": "R"
+            }
+          ]
+        },
+        {
+          "id": "row-1 full label",
+          "segments": [
+            {
+              "length": 100001,
+              "symbol": "R"
+            }
+          ]
+        }
+      ],
+      "source_defined_sampled_bases": 75001,
+      "source_defined_sampled_sites": 100000
+    },
+    {
+      "id": "n-counts-as-canonical",
+      "input_sha256": "d79319db330785edeaec2d5aeee5a3220b6feeca7c049a2742a5f388d58deb33",
+      "native_counter": "2 x 100001 - 100000 d nfreq=2.000000\n",
+      "native_type": "d",
+      "records": [
+        {
+          "id": "row-0 full label",
+          "segments": [
+            {
+              "length": 100000,
+              "symbol": "N"
+            }
+          ]
+        },
+        {
+          "id": "row-1 full label",
+          "segments": [
+            {
+              "length": 100001,
+              "symbol": "R"
+            }
+          ]
+        }
+      ],
+      "source_defined_sampled_bases": 100000,
+      "source_defined_sampled_sites": 100000
+    }
+  ],
+  "large_alignment_fidelity_claimed": false,
+  "native_counter_sha256": "7c5bf406f42385ff89b24b5f9f285e096b57c404157e9824dff220238f9084b8",
+  "native_manifest_sha256": "495cc77db36eaf4588a4e83ae75b8bf9db063b4718e16f2fb8edd4d3678dabfc",
+  "native_result_sha256": "20eeb08b4b8343cc72f49f528b23c13174339932493b7259123062b4011c9b85",
+  "qualified": false,
+  "schema": "mafft-native-prefix-scalar-v1"
+}

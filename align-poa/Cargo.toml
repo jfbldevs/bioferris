@@ -1,0 +1,21 @@
+[package]
+name = "align-poa"
+description = "Partial-order and sequence-to-graph alignment reconstructed from scientific publications"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+align-core.workspace = true
+align-msa.workspace = true
+pulp.workspace = true
+
+[dev-dependencies]
+align-pairwise.workspace = true
+proptest.workspace = true
+serde.workspace = true
+serde_json.workspace = true

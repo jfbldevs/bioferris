@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "operation": "pairwise-value",
+  "molecule": "dna",
+  "target": "ACGT",
+  "query": "AGT",
+  "algorithm": "myers"
+}

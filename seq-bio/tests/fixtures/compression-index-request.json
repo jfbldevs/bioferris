@@ -1,0 +1,1 @@
+{"schema_version":1,"operation":"index-bgzf","molecule":"dna","format":"fasta","input":"example.bgz","output":"example.index.json","compression_parameters":{"max_records":1,"max_blocks":2}}

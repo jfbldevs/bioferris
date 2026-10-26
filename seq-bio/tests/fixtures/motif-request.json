@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operation": "motif-scan",
+  "molecule": "dna",
+  "sequence": "ACGTAC",
+  "motif_parameters": {
+    "instances": ["AC", "AC", "AC", "CA"],
+    "pseudocounts": [1, 1, 1, 1],
+    "threshold": 2
+  }
+}

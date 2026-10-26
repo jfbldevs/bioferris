@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "operation": "alignment-slice",
+  "molecule": "dna",
+  "format": "aligned-fasta",
+  "input": "seq-bio/tests/fixtures/alignment-analysis.fa",
+  "analysis_parameters": {
+    "row_end": 2,
+    "column_start": 1,
+    "column_end": 4,
+    "origins": [
+      {"row": 0, "source_length": 20, "start": 10, "end": 14, "strand": "reverse"}
+    ]
+  }
+}

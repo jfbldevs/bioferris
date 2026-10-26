@@ -1,0 +1,40 @@
+[graph]
+all-features = true
+
+[advisories]
+db-path = "target/qa-tools/advisory-db"
+version = 2
+yanked = "deny"
+# `paste` is an immutable build-time procedural macro pulled by the pinned Pulp
+# release. RUSTSEC-2024-0436 is informational (unmaintained), has no patched
+# version, and reports no vulnerability or unsoundness. Re-evaluate whenever Pulp
+# changes or a compatible maintained release removes this dependency.
+# Owner: BioFerris maintainers. Review on dependency changes and by 2027-01-18.
+ignore = ["RUSTSEC-2024-0436"]
+
+[licenses]
+version = 2
+include-dev = true
+unused-allowed-license = "allow"
+allow = [
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "MIT",
+]
+confidence-threshold = 0.93
+exceptions = []
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+highlight = "all"
+deny = []
+skip = []
+skip-tree = []
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]

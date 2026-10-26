@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "suite": "MAFFT-7.526-E-INS-i-genafpair-protein-v1-black-box",
+  "profile": "MAFFT-7.526-E-INS-i-genafpair-protein-v1",
+  "command": "mafft --genafpair --ep 0 --maxiterate 1000 --inputorder --quiet INPUT",
+  "provenance": {
+    "version": "v7.526 (2024/Apr/26)",
+    "package_sha256": "b8298e379bcd244be0e12f325461d863b93571da78c4499c2a2e4c252679c9de",
+    "synthetic_seed": 7526,
+    "source_inspected": false
+  },
+  "case": {
+    "id": "protein_generalized_affine_modern_route",
+    "sequences": [
+      {
+        "id": "s0",
+        "sequence": "VYLQMMRHYPTTTTTTTTETTTTTTTHTKRTKTTTTLTKTCTTTTTHTTTFTTTTTTDRTTTHQTYTTCYFDKPGDVCTSLFYKL"
+      },
+      {
+        "id": "s1",
+        "sequence": "TMAKEVYLQMMRSIPKKKKKKTWKKKKKYHDKAWDVCTSQPS"
+      },
+      {
+        "id": "s2",
+        "sequence": "VVYLQDMDSHPFSFSSDSSSSSNPSSSSSSASSSMFSSSKSSSSSSSSKSSSSFSSHSSSSLFDKKSDVCLNLDGQT"
+      },
+      {
+        "id": "s3",
+        "sequence": "ADELNIGQVYCQMDRSCPACCCCCYFDKANRVCASLVWT"
+      }
+    ],
+    "reference_alignment": [
+      {
+        "id": "s0",
+        "aligned": "--------VYLQMMRHYPTTTTTTTTETTTTTTTHTKRTKTTTTLTKTCTTTTTHTTTFTTTTTTDRTTTHQTYTTCYFDKPGDVCTSLFYKL"
+      },
+      {
+        "id": "s1",
+        "aligned": "T---MAKEVYLQMMRSIPK----------------KKKKKTWKK------------------------------KKKYHDKAWDVCTSQP--S"
+      },
+      {
+        "id": "s2",
+        "aligned": "V-------VYLQDMDSHPFSFSSDSSSSSNPSSSSSSASSSMFSSSKSSSSSSSSKSSSSFSSHS---------SSSLFDKKSDVCLNLDGQT"
+      },
+      {
+        "id": "s3",
+        "aligned": "ADELNIGQVYCQMDRSCPACC-----------------------------------------------------CCCYFDKANRVCASLVW-T"
+      }
+    ]
+  }
+}

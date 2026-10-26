@@ -1,0 +1,75 @@
+ID   DQ067560; SV 1; linear; genomic DNA; STD; VRT; 534 BP.
+XX
+AC   DQ067560;
+XX
+DT   18-JUN-2005 (Rel. 84, Created)
+DT   14-NOV-2006 (Rel. 89, Last updated, Version 2)
+XX
+DE   Salmo trutta p53 tumor suppressor (p53) gene, exons 5, 6 and partial cds.
+XX
+KW   .
+XX
+OS   Salmo trutta (river trout)
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Actinopterygii; Neopterygii; Teleostei; Protacanthopterygii; Salmoniformes;
+OC   Salmonidae; Salmoninae; Salmo.
+XX
+RN   [1]
+RP   1-534
+RA   Dabrowska A., Brzuzan P., Jurczyk L.;
+RT   "Characteristics of the p53 tumor suppressor gene from brown trout (Salmo
+RT   trutta m. fario)";
+RL   Unpublished.
+XX
+RN   [2]
+RP   1-534
+RA   Dabrowska A., Brzuzan P., Jurczyk L.;
+RT   ;
+RL   Submitted (19-MAY-2005) to the INSDC.
+RL   Department of Environmental Biotechnology, University of Warmia and Mazury,
+RL   Sloneczna 45G, Olsztyn 10-723, Poland
+XX
+DR   MD5; 4cefa6c4fa04a08a7f929593f2bc809d.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..534
+FT                   /organism="Salmo trutta"
+FT                   /mol_type="genomic DNA"
+FT                   /db_xref="taxon:8032"
+FT   gene            <1..>534
+FT                   /gene="p53"
+FT   mRNA            join(<1..187,422..>534)
+FT                   /gene="p53"
+FT                   /product="p53 tumor suppressor"
+FT   CDS             join(<1..187,422..>534)
+FT                   /codon_start=1
+FT                   /gene="p53"
+FT                   /product="p53 tumor suppressor"
+FT                   /db_xref="GOA:Q66LL7"
+FT                   /db_xref="InterPro:IPR002117"
+FT                   /db_xref="InterPro:IPR008967"
+FT                   /db_xref="InterPro:IPR011615"
+FT                   /db_xref="InterPro:IPR012346"
+FT                   /db_xref="UniProtKB/TrEMBL:Q66LL7"
+FT                   /protein_id="AAY68035.1"
+FT                   /translation="YSPDLNKLFCQLAKTCPVQIVVDHPPPPGAVVRALAIYKKLSDVA
+FT                   DVVRRCPHHQSTSENNEGPAPRGHLVRVEGNQRAEYMEDGNTLRQSVLVPYEPPQ"
+FT   exon            1..187
+FT                   /gene="p53"
+FT                   /number=5
+FT   exon            422..534
+FT                   /gene="p53"
+FT                   /number=6
+XX
+SQ   Sequence 534 BP; 134 A; 126 C; 134 G; 140 T; 0 other;
+     tactcgccag acctgaacaa gttgttctgc caattggcaa agacttgtcc agttcagatc        60
+     gtggtggacc accctcctcc tcctggggca gtggtacgag ccctggccat ctataagaag       120
+     ctgagtgacg tggctgacgt ggtgagacgc tgccctcacc accagagtac cagcgagaac       180
+     aatgaaggta cacatcacag cgggaaggct actcttatcc atactaaaac atgttagatt       240
+     gatctagaat gttataccgt gtgcttttcg atgcagtata gagggtccac actataaaag       300
+     gagtttaaac gtcattttat acttaaactt gttgcctcct tgaatgagta acgcaaatgt       360
+     tttgactggt aggttatctt cagtgtgtcg cttaatactc aagtgttttc tgtgccttta       420
+     ggtcctgccc cgcgaggtca cctggtcaga gttgagggga accagcgagc agagtacatg       480
+     gaggatggta acactctgag acagagtgtg ctcgtcccct atgagcctcc tcag             534
+//

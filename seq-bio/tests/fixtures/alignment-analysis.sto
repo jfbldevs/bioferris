@@ -1,0 +1,9 @@
+# STOCKHOLM 1.0
+#=GF ID original
+# comment with coordinates 1-4
+#=GS reference DE original reference row
+reference AC-G
+sample ACTG
+#=GC SS_cons <..>
+#=GR reference SS <..>
+//

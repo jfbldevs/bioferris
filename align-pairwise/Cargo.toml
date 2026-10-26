@@ -1,0 +1,44 @@
+[package]
+name = "align-pairwise"
+description = "Exact pairwise sequence alignment algorithms reconstructed from scientific publications"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+align-core.workspace = true
+pulp.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+unicode-ident.workspace = true
+
+[lints]
+workspace = true
+
+[[example]]
+name = "needleman_wunsch"
+path = "examples/needleman_wunsch.rs"
+
+[[example]]
+name = "smith_waterman"
+path = "examples/smith_waterman.rs"
+
+[[example]]
+name = "gotoh"
+path = "examples/gotoh.rs"
+
+[[example]]
+name = "affine_modes"
+path = "examples/affine_modes.rs"
+
+[[example]]
+name = "affine_workspace"
+path = "examples/affine_workspace.rs"
+
+[[example]]
+name = "affine_score"
+path = "examples/affine_score.rs"

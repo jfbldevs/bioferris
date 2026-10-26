@@ -1,0 +1,9 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc 10f15e7b903fb75f386c96e0daa2415868a161849c7d56861ebb05d2604663e8 # shrinks to paired_symbols = [(2, 3)], insertion_position = 1, insertion_symbol = 0, query_symbols = [2, 1, 3], mismatch = 2, extension = 0, opening_delta = 1
+cc 1220458c916960b7dd38e4380ded39ce2319744b9a422eba65d0e0e5502e3ba2 # shrinks to generated = [[3, 3, 0, 0], [3, 0, 0]]
+cc b85cadd7abcb2cc1ceac39c67b36e29b6ceba717a7a20b314149dc70c2dbb61f # shrinks to generated = [[], [0]]

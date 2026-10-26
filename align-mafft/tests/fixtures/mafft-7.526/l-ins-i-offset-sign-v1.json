@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "suite": "MAFFT-7.526-L-INS-i-lep-sign-black-box-v1",
+  "purpose": "Resolve whether the positive public --lep value is added to or subtracted from the local normalized matrix",
+  "command_template": "mafft --localpair --maxiterate 0 --thread 1 --inputorder --treeout --quiet --lep VALUE INPUT",
+  "provenance": {
+    "name": "MAFFT",
+    "version": "v7.526 (2024/Apr/26)",
+    "source_inspected": false,
+    "package_sha256": "b8298e379bcd244be0e12f325461d863b93571da78c4499c2a2e4c252679c9de",
+    "generator_sha256": "6b912ba8dc5f419ca4873e7e3a9e8eb529c477cefe981e0484a0763f8eb72838",
+    "raw_output_sha256": "9bccaa57c0e623f929f1675fed4520020ea3f22af79ba8952eac473182884f8c",
+    "platform": "official Linux amd64 package invoked as an opaque process under WSL2"
+  },
+  "case": {
+    "id": "short_core_adversarial_flanks",
+    "sequences": [
+      ["a", "WWWWWWWWWWACDEFGHIKWWWW"],
+      ["b", "DDDDACDEFGHIKDDDDDDDDDDDD"],
+      ["c", "CCCCCCCCACDEFGHIKEEEE"]
+    ],
+    "observations": [
+      {
+        "lep": -1.0,
+        "alignment_width": 31,
+        "total_pair_homologies": 55,
+        "tree_branch_length_sum": 1.26513
+      },
+      {
+        "lep": -0.5,
+        "alignment_width": 31,
+        "total_pair_homologies": 55,
+        "tree_branch_length_sum": 1.54283
+      },
+      {
+        "lep": -0.1,
+        "alignment_width": 41,
+        "total_pair_homologies": 37,
+        "tree_branch_length_sum": 1.78671
+      },
+      {
+        "lep": 0.0,
+        "alignment_width": 41,
+        "total_pair_homologies": 37,
+        "tree_branch_length_sum": 1.81818
+      },
+      {
+        "lep": 0.1,
+        "alignment_width": 41,
+        "total_pair_homologies": 37,
+        "tree_branch_length_sum": 1.85503
+      },
+      {
+        "lep": 0.5,
+        "alignment_width": 44,
+        "total_pair_homologies": 35,
+        "tree_branch_length_sum": 2.04549
+      },
+      {
+        "lep": 1.0,
+        "alignment_width": 46,
+        "total_pair_homologies": 31,
+        "tree_branch_length_sum": 2.55972
+      }
+    ]
+  },
+  "inference": {
+    "public_lep": 0.1,
+    "effective_signed_matrix_offset": -0.1,
+    "reason": "Increasing --lep removes adversarial flank homologies and strictly increases the recorded tree length; negative values cause over-alignment. This is compatible with M_hat minus lep and contradicts M_hat plus lep."
+  }
+}

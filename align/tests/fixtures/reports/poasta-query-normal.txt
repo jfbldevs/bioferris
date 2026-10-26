@@ -1,0 +1,17 @@
+Algorithm            : POASTA
+Profile              : POASTA-2025-global-affine-ASTAR-DFS-superbubble-v1
+Mode                 : global affine sequence-to-graph
+Scoring              : mismatch=4 gap_open=6 gap_extend=2 (positive costs)
+Score (negated cost) : -8
+Backend              : Sparse
+Graph                : nodes=9 edges=10 classes=8 paths=3
+Query length         : 9
+Trace columns        : 9
+Aligned pairs        : 8
+Trace                : 4A1Q4A
+
+Graph  n0  ACGT-ACGT  n7
+           |||| ||||
+Query   1  ACGTTACGT   9
+
+Legend: | exact match, . substitution, blank graph/query gap; nX is a stable graph node

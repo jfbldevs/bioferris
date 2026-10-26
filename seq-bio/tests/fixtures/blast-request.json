@@ -1,0 +1,1 @@
+{"schema_version":1,"operation":"inspect-blast","input":"seq-bio/tests/fixtures/blast-minimal.tsv","format":"blast-tab6","blast_parameters":{"fields":["qseqid","sseqid"]}}

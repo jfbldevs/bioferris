@@ -1,0 +1,1 @@
+{"ok":true,"result":{"genetic_code":1,"ignored_trailing_bases":0,"input":"ATGGCTTAA","input_length":9,"length":2,"mode":"cds","molecule":"dna","operation":"translate","partial":"reject","peptide":"MA","reading_frame":0},"schema_version":1}

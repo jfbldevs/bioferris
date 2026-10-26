@@ -1,0 +1,22 @@
+[package]
+name = "align-mafft-compat"
+description = "Version-pinned MAFFT 7.526 compatibility profiles"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+align-core.workspace = true
+align-mafft.workspace = true
+align-msa.workspace = true
+mafft-7526-engine.workspace = true
+rayon.workspace = true
+
+[dev-dependencies]
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

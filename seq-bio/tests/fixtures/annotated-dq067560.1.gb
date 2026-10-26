@@ -1,0 +1,57 @@
+LOCUS       DQ067560                 534 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Salmo trutta p53 tumor suppressor (p53) gene, exons 5, 6 and
+            partial cds.
+ACCESSION   DQ067560
+VERSION     DQ067560.1
+KEYWORDS    .
+SOURCE      Salmo trutta (river trout)
+  ORGANISM  Salmo trutta
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Protacanthopterygii;
+            Salmoniformes; Salmonidae; Salmoninae; Salmo.
+REFERENCE   1  (bases 1 to 534)
+  AUTHORS   Dabrowska,A., Brzuzan,P. and Jurczyk,L.
+  TITLE     Characteristics of the p53 tumor suppressor gene from brown trout
+            (Salmo trutta m. fario)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 534)
+  AUTHORS   Dabrowska,A., Brzuzan,P. and Jurczyk,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-MAY-2005) Department of Environmental Biotechnology,
+            University of Warmia and Mazury, Sloneczna 45G, Olsztyn 10-723,
+            Poland
+FEATURES             Location/Qualifiers
+     source          1..534
+                     /organism="Salmo trutta"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:8032"
+     gene            <1..>534
+                     /gene="p53"
+     mRNA            join(<1..187,422..>534)
+                     /gene="p53"
+                     /product="p53 tumor suppressor"
+     CDS             join(<1..187,422..>534)
+                     /gene="p53"
+                     /codon_start=1
+                     /product="p53 tumor suppressor"
+                     /protein_id="AAY68035.1"
+                     /translation="YSPDLNKLFCQLAKTCPVQIVVDHPPPPGAVVRALAIYKKLSDV
+                     ADVVRRCPHHQSTSENNEGPAPRGHLVRVEGNQRAEYMEDGNTLRQSVLVPYEPPQ"
+     exon            1..187
+                     /gene="p53"
+                     /number=5
+     exon            422..534
+                     /gene="p53"
+                     /number=6
+ORIGIN      
+        1 tactcgccag acctgaacaa gttgttctgc caattggcaa agacttgtcc agttcagatc
+       61 gtggtggacc accctcctcc tcctggggca gtggtacgag ccctggccat ctataagaag
+      121 ctgagtgacg tggctgacgt ggtgagacgc tgccctcacc accagagtac cagcgagaac
+      181 aatgaaggta cacatcacag cgggaaggct actcttatcc atactaaaac atgttagatt
+      241 gatctagaat gttataccgt gtgcttttcg atgcagtata gagggtccac actataaaag
+      301 gagtttaaac gtcattttat acttaaactt gttgcctcct tgaatgagta acgcaaatgt
+      361 tttgactggt aggttatctt cagtgtgtcg cttaatactc aagtgttttc tgtgccttta
+      421 ggtcctgccc cgcgaggtca cctggtcaga gttgagggga accagcgagc agagtacatg
+      481 gaggatggta acactctgag acagagtgtg ctcgtcccct atgagcctcc tcag
+//
+

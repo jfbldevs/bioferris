@@ -1,0 +1,137 @@
+ID   M77789; SV 2; circular; other DNA; STD; SYN; 2686 BP.
+XX
+AC   M77789; M11662;
+XX
+DT   27-SEP-1991 (Rel. 29, Created)
+DT   08-AUG-2008 (Rel. 96, Last updated, Version 4)
+XX
+DE   Cloning vector pUC19, complete sequence.
+XX
+KW   .
+XX
+OS   Cloning vector pUC19
+OC   other sequences; artificial sequences; vectors.
+XX
+RN   [1]
+RP   1-2686
+RX   DOI; 10.1016/0378-1119(83)90040-9.
+RX   PUBMED; 6323249.
+RA   Norrander J., Kempe T., Messing J.;
+RT   "Construction of improved M13 vectors using oligodeoxynucleotide-directed
+RT   mutagenesis";
+RL   Gene 26(1):101-106(1983).
+XX
+RN   [2]
+RC   Erratum:[Gene. 1992 May 1;114(1):81-3. PMID: 1375182]
+RP   1-2686
+RX   DOI; 10.1016/0378-1119(85)90120-9.
+RX   PUBMED; 2985470.
+RA   Yanisch-Perron C., Vieira J., Messing J.;
+RT   "Improved M13 phage cloning vectors and host strains: nucleotide sequences
+RT   of the M13mp18 and pUC19 vectors";
+RL   Gene 33(1):103-119(1985).
+XX
+RN   [3]
+RP   1-2686
+RA   Messing J.;
+RT   ;
+RL   Submitted (27-SEP-1991) to the INSDC.
+RL   Waksman Institute, Rutgers State Univ., 190 Frelinghuysen Road, Piscataway,
+RL   NJ 08854, USA
+XX
+RN   [4]
+RC   Sequence update by submitter
+RP   1-2686
+RA   Messing J.;
+RT   ;
+RL   Submitted (12-JAN-2000) to the INSDC.
+RL   Waksman Institute, Rutgers State Univ., 190 Frelinghuysen Road, Piscataway,
+RL   NJ 08854, USA
+XX
+DR   MD5; dcaa58eea40748c8ed5417afbd3da5f5.
+DR   CABRI; LMBP 5026.
+DR   CABRI; LMBP 8058.
+DR   EuropePMC; PMC135234; 12142427.
+DR   EuropePMC; PMC2758499; 19812719.
+DR   EuropePMC; PMC2806910; 20090945.
+DR   EuropePMC; PMC4361335; 25774528.
+DR   EuropePMC; PMC5399532; 28407967.
+DR   EuropePMC; PMC5449547; 28130425.
+DR   EuropePMC; PMC6432748; 30962821.
+DR   EuropePMC; PMC6440458; 30941272.
+DR   EuropePMC; PMC6567190; 31100845.
+DR   EuropePMC; PMC6614890; 31126976.
+XX
+CC   On Jan 12, 2000 this sequence version replaced gi:209214.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..2686
+FT                   /organism="Cloning vector pUC19"
+FT                   /strain="ATCC 37254"
+FT                   /mol_type="other DNA"
+FT                   /db_xref="taxon:31851"
+FT                   /culture_collection="ATCC:37254"
+FT   misc_feature    1..447
+FT                   /note="M13mp19"
+FT   misc_feature    1..230
+FT                   /note="Lac-operon"
+FT   misc_feature    233..289
+FT                   /note="polylinker of M13mp19;
+FT                   HindIII-SphI-PstI-SalI-XbaI-BamHI-SmaI-KpnI-SacI-EcoRI"
+FT   misc_feature    290..447
+FT                   /note="Lac-Operon"
+FT   misc_feature    complement(448..547)
+FT                   /note="pBR322"
+FT   misc_feature    complement(548..684)
+FT                   /note="pBR322"
+FT   misc_feature    complement(685..2686)
+FT                   /note="pBR322"
+XX
+SQ   Sequence 2686 BP; 659 A; 685 C; 675 G; 667 T; 0 other;
+     gcgcccaata cgcaaaccgc ctctccccgc gcgttggccg attcattaat gcagctggca        60
+     cgacaggttt cccgactgga aagcgggcag tgagcgcaac gcaattaatg tgagttagct       120
+     cactcattag gcaccccagg ctttacactt tatgcttccg gctcgtatgt tgtgtggaat       180
+     tgtgagcgga taacaatttc acacaggaaa cagctatgac catgattacg ccaagcttgc       240
+     atgcctgcag gtcgactcta gaggatcccc gggtaccgag ctcgaattca ctggccgtcg       300
+     ttttacaacg tcgtgactgg gaaaaccctg gcgttaccca acttaatcgc cttgcagcac       360
+     atcccccttt cgccagctgg cgtaatagcg aagaggcccg caccgatcgc ccttcccaac       420
+     agttgcgcag cctgaatggc gaatggcgcc tgatgcggta ttttctcctt acgcatctgt       480
+     gcggtatttc acaccgcata tggtgcactc tcagtacaat ctgctctgat gccgcatagt       540
+     taagccagcc ccgacacccg ccaacacccg ctgacgcgcc ctgacgggct tgtctgctcc       600
+     cggcatccgc ttacagacaa gctgtgaccg tctccgggag ctgcatgtgt cagaggtttt       660
+     caccgtcatc accgaaacgc gcgagacgaa agggcctcgt gatacgccta tttttatagg       720
+     ttaatgtcat gataataatg gtttcttaga cgtcaggtgg cacttttcgg ggaaatgtgc       780
+     gcggaacccc tatttgttta tttttctaaa tacattcaaa tatgtatccg ctcatgagac       840
+     aataaccctg ataaatgctt caataatatt gaaaaaggaa gagtatgagt attcaacatt       900
+     tccgtgtcgc ccttattccc ttttttgcgg cattttgcct tcctgttttt gctcacccag       960
+     aaacgctggt gaaagtaaaa gatgctgaag atcagttggg tgcacgagtg ggttacatcg      1020
+     aactggatct caacagcggt aagatccttg agagttttcg ccccgaagaa cgttttccaa      1080
+     tgatgagcac ttttaaagtt ctgctatgtg gcgcggtatt atcccgtatt gacgccgggc      1140
+     aagagcaact cggtcgccgc atacactatt ctcagaatga cttggttgag tactcaccag      1200
+     tcacagaaaa gcatcttacg gatggcatga cagtaagaga attatgcagt gctgccataa      1260
+     ccatgagtga taacactgcg gccaacttac ttctgacaac gatcggagga ccgaaggagc      1320
+     taaccgcttt tttgcacaac atgggggatc atgtaactcg ccttgatcgt tgggaaccgg      1380
+     agctgaatga agccatacca aacgacgagc gtgacaccac gatgcctgta gcaatggcaa      1440
+     caacgttgcg caaactatta actggcgaac tacttactct agcttcccgg caacaattaa      1500
+     tagactggat ggaggcggat aaagttgcag gaccacttct gcgctcggcc cttccggctg      1560
+     gctggtttat tgctgataaa tctggagccg gtgagcgtgg gtctcgcggt atcattgcag      1620
+     cactggggcc agatggtaag ccctcccgta tcgtagttat ctacacgacg gggagtcagg      1680
+     caactatgga tgaacgaaat agacagatcg ctgagatagg tgcctcactg attaagcatt      1740
+     ggtaactgtc agaccaagtt tactcatata tactttagat tgatttaaaa cttcattttt      1800
+     aatttaaaag gatctaggtg aagatccttt ttgataatct catgaccaaa atcccttaac      1860
+     gtgagttttc gttccactga gcgtcagacc ccgtagaaaa gatcaaagga tcttcttgag      1920
+     atcctttttt tctgcgcgta atctgctgct tgcaaacaaa aaaaccaccg ctaccagcgg      1980
+     tggtttgttt gccggatcaa gagctaccaa ctctttttcc gaaggtaact ggcttcagca      2040
+     gagcgcagat accaaatact gttcttctag tgtagccgta gttaggccac cacttcaaga      2100
+     actctgtagc accgcctaca tacctcgctc tgctaatcct gttaccagtg gctgctgcca      2160
+     gtggcgataa gtcgtgtctt accgggttgg actcaagacg atagttaccg gataaggcgc      2220
+     agcggtcggg ctgaacgggg ggttcgtgca cacagcccag cttggagcga acgacctaca      2280
+     ccgaactgag atacctacag cgtgagctat gagaaagcgc cacgcttccc gaagggagaa      2340
+     aggcggacag gtatccggta agcggcaggg tcggaacagg agagcgcacg agggagcttc      2400
+     cagggggaaa cgcctggtat ctttatagtc ctgtcgggtt tcgccacctc tgacttgagc      2460
+     gtcgattttt gtgatgctcg tcaggggggc ggagcctatg gaaaaacgcc agcaacgcgg      2520
+     cctttttacg gttcctggcc ttttgctggc cttttgctca catgttcttt cctgcgttat      2580
+     cccctgattc tgtggataac cgtattaccg cctttgagtg agctgatacc gctcgccgca      2640
+     gccgaacgac cgagcgcagc gagtcagtga gcgaggaagc ggaaga                     2686
+//

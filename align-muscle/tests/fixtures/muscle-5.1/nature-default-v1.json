@@ -1,0 +1,877 @@
+{
+  "cases": [
+    {
+      "alphabet": "protein",
+      "id": "align_protein_globins",
+      "mode": "align",
+      "permutation": "none",
+      "reference_alignment": [
+        {
+          "aligned": "MV-LSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKH--L",
+          "id": "whale_myoglobin"
+        },
+        {
+          "aligned": "MV-LSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDL--S",
+          "id": "human_alpha"
+        },
+        {
+          "aligned": "MVHLTPEEKSAVTALWGKVNVD--EVGGEALGRLLVVYPWTQRFFESFGDLST",
+          "id": "human_beta"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "human_beta",
+          "sequence": "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLST"
+        },
+        {
+          "id": "human_alpha",
+          "sequence": "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLS"
+        },
+        {
+          "id": "whale_myoglobin",
+          "sequence": "MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHL"
+        }
+      ]
+    },
+    {
+      "alphabet": "dna",
+      "id": "align_dna_internal_terminal",
+      "mode": "align",
+      "permutation": "none",
+      "reference_alignment": [
+        {
+          "aligned": "TACG-TACGT",
+          "id": "dna_a"
+        },
+        {
+          "aligned": "-ACG--TACG",
+          "id": "dna_c"
+        },
+        {
+          "aligned": "-ACG--TCGT",
+          "id": "dna_b"
+        },
+        {
+          "aligned": "TACGTTACGT",
+          "id": "dna_d"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "dna_a",
+          "sequence": "TACGTACGT"
+        },
+        {
+          "id": "dna_b",
+          "sequence": "ACGTCGT"
+        },
+        {
+          "id": "dna_c",
+          "sequence": "ACGTACG"
+        },
+        {
+          "id": "dna_d",
+          "sequence": "TACGTTACGT"
+        }
+      ]
+    },
+    {
+      "alphabet": "rna",
+      "id": "align_rna_internal_terminal",
+      "mode": "align",
+      "permutation": "none",
+      "reference_alignment": [
+        {
+          "aligned": "UACG-UACGU",
+          "id": "rna_a"
+        },
+        {
+          "aligned": "-ACG--UACG",
+          "id": "rna_c"
+        },
+        {
+          "aligned": "-ACG--UCGU",
+          "id": "rna_b"
+        },
+        {
+          "aligned": "UACGUUACGU",
+          "id": "rna_d"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "rna_a",
+          "sequence": "UACGUACGU"
+        },
+        {
+          "id": "rna_b",
+          "sequence": "ACGUCGU"
+        },
+        {
+          "id": "rna_c",
+          "sequence": "ACGUACG"
+        },
+        {
+          "id": "rna_d",
+          "sequence": "UACGUUACGU"
+        }
+      ]
+    },
+    {
+      "alphabet": "dna",
+      "id": "align_dna_repetitive",
+      "mode": "align",
+      "permutation": "none",
+      "reference_alignment": [
+        {
+          "aligned": "ACACACACACA-C",
+          "id": "repeat_a"
+        },
+        {
+          "aligned": "--ACACACACA-C",
+          "id": "repeat_b"
+        },
+        {
+          "aligned": "-CACACACACACA",
+          "id": "repeat_c"
+        },
+        {
+          "aligned": "ACACGCACACA-C",
+          "id": "repeat_d"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "repeat_a",
+          "sequence": "ACACACACACAC"
+        },
+        {
+          "id": "repeat_b",
+          "sequence": "ACACACACAC"
+        },
+        {
+          "id": "repeat_c",
+          "sequence": "CACACACACACA"
+        },
+        {
+          "id": "repeat_d",
+          "sequence": "ACACGCACACAC"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "perm_none_protein",
+      "mode": "align",
+      "permutation": "none",
+      "reference_alignment": [
+        {
+          "aligned": "MKTAYIAKQRTISFVKSHFSRQ",
+          "id": "p1"
+        },
+        {
+          "aligned": "MKTAYIA-QRQISFVKSHFSRQ",
+          "id": "p3"
+        },
+        {
+          "aligned": "MKTAYIAKQRQVSFVKSHFTRQ",
+          "id": "p5"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSYFSRQ",
+          "id": "p2"
+        },
+        {
+          "aligned": "MKLAYIAKQRQISFVKAHFSRQ",
+          "id": "p4"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSHFSRQ",
+          "id": "p0"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "p0",
+          "sequence": "MKTAYIAKQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "p1",
+          "sequence": "MKTAYIAKQRTISFVKSHFSRQ"
+        },
+        {
+          "id": "p2",
+          "sequence": "MKTAYIAKQRQISFVKSYFSRQ"
+        },
+        {
+          "id": "p3",
+          "sequence": "MKTAYIAQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "p4",
+          "sequence": "MKLAYIAKQRQISFVKAHFSRQ"
+        },
+        {
+          "id": "p5",
+          "sequence": "MKTAYIAKQRQVSFVKSHFTRQ"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "perm_abc_protein",
+      "mode": "align",
+      "permutation": "abc",
+      "reference_alignment": [
+        {
+          "aligned": "MKTAYIAKQRTISFVKSHFSRQ",
+          "id": "p1"
+        },
+        {
+          "aligned": "MKTAYIA-QRQISFVKSHFSRQ",
+          "id": "p3"
+        },
+        {
+          "aligned": "MKTAYIAKQRQVSFVKSHFTRQ",
+          "id": "p5"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSYFSRQ",
+          "id": "p2"
+        },
+        {
+          "aligned": "MKLAYIAKQRQISFVKAHFSRQ",
+          "id": "p4"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSHFSRQ",
+          "id": "p0"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "p0",
+          "sequence": "MKTAYIAKQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "p1",
+          "sequence": "MKTAYIAKQRTISFVKSHFSRQ"
+        },
+        {
+          "id": "p2",
+          "sequence": "MKTAYIAKQRQISFVKSYFSRQ"
+        },
+        {
+          "id": "p3",
+          "sequence": "MKTAYIAQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "p4",
+          "sequence": "MKLAYIAKQRQISFVKAHFSRQ"
+        },
+        {
+          "id": "p5",
+          "sequence": "MKTAYIAKQRQVSFVKSHFTRQ"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "perm_acb_protein",
+      "mode": "align",
+      "permutation": "acb",
+      "reference_alignment": [
+        {
+          "aligned": "MKTAYIAKQRTISFVKSHFSRQ",
+          "id": "p1"
+        },
+        {
+          "aligned": "MKTAYIA-QRQISFVKSHFSRQ",
+          "id": "p3"
+        },
+        {
+          "aligned": "MKTAYIAKQRQVSFVKSHFTRQ",
+          "id": "p5"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSYFSRQ",
+          "id": "p2"
+        },
+        {
+          "aligned": "MKLAYIAKQRQISFVKAHFSRQ",
+          "id": "p4"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSHFSRQ",
+          "id": "p0"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "p0",
+          "sequence": "MKTAYIAKQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "p1",
+          "sequence": "MKTAYIAKQRTISFVKSHFSRQ"
+        },
+        {
+          "id": "p2",
+          "sequence": "MKTAYIAKQRQISFVKSYFSRQ"
+        },
+        {
+          "id": "p3",
+          "sequence": "MKTAYIAQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "p4",
+          "sequence": "MKLAYIAKQRQISFVKAHFSRQ"
+        },
+        {
+          "id": "p5",
+          "sequence": "MKTAYIAKQRQVSFVKSHFTRQ"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "perm_bca_protein",
+      "mode": "align",
+      "permutation": "bca",
+      "reference_alignment": [
+        {
+          "aligned": "MKTAYIAKQRTISFVKSHFSRQ",
+          "id": "p1"
+        },
+        {
+          "aligned": "MKTAYIA-QRQISFVKSHFSRQ",
+          "id": "p3"
+        },
+        {
+          "aligned": "MKTAYIAKQRQVSFVKSHFTRQ",
+          "id": "p5"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSYFSRQ",
+          "id": "p2"
+        },
+        {
+          "aligned": "MKLAYIAKQRQISFVKAHFSRQ",
+          "id": "p4"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSHFSRQ",
+          "id": "p0"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "p0",
+          "sequence": "MKTAYIAKQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "p1",
+          "sequence": "MKTAYIAKQRTISFVKSHFSRQ"
+        },
+        {
+          "id": "p2",
+          "sequence": "MKTAYIAKQRQISFVKSYFSRQ"
+        },
+        {
+          "id": "p3",
+          "sequence": "MKTAYIAQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "p4",
+          "sequence": "MKLAYIAKQRQISFVKAHFSRQ"
+        },
+        {
+          "id": "p5",
+          "sequence": "MKTAYIAKQRQVSFVKSHFTRQ"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "perturb_1_protein",
+      "mode": "align",
+      "permutation": "none",
+      "reference_alignment": [
+        {
+          "aligned": "AC-DFGHIKLMNPQRSAVWY",
+          "id": "b"
+        },
+        {
+          "aligned": "ACDEFGHIKLMNPQRSTVWY",
+          "id": "a"
+        },
+        {
+          "aligned": "ACDEYGHIK-MNPQRSTVWY",
+          "id": "c"
+        },
+        {
+          "aligned": "-C-EFGHIKLMNPQRSTVW-",
+          "id": "d"
+        }
+      ],
+      "seed": 1,
+      "sequences": [
+        {
+          "id": "a",
+          "sequence": "ACDEFGHIKLMNPQRSTVWY"
+        },
+        {
+          "id": "b",
+          "sequence": "ACDFGHIKLMNPQRSAVWY"
+        },
+        {
+          "id": "c",
+          "sequence": "ACDEYGHIKMNPQRSTVWY"
+        },
+        {
+          "id": "d",
+          "sequence": "CEFGHIKLMNPQRSTVW"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "perturb_7_bca_protein",
+      "mode": "align",
+      "permutation": "bca",
+      "reference_alignment": [
+        {
+          "aligned": "AC-DFGHIKLMNPQRSAVWY",
+          "id": "b"
+        },
+        {
+          "aligned": "ACDEFGHIKLMNPQRSTVWY",
+          "id": "a"
+        },
+        {
+          "aligned": "ACDEYGHIK-MNPQRSTVWY",
+          "id": "c"
+        },
+        {
+          "aligned": "-C-EFGHIKLMNPQRSTVW-",
+          "id": "d"
+        }
+      ],
+      "seed": 7,
+      "sequences": [
+        {
+          "id": "a",
+          "sequence": "ACDEFGHIKLMNPQRSTVWY"
+        },
+        {
+          "id": "b",
+          "sequence": "ACDFGHIKLMNPQRSAVWY"
+        },
+        {
+          "id": "c",
+          "sequence": "ACDEYGHIKMNPQRSTVWY"
+        },
+        {
+          "id": "d",
+          "sequence": "CEFGHIKLMNPQRSTVW"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "super5_protein",
+      "mode": "super5",
+      "permutation": "none",
+      "reference_alignment": [
+        {
+          "aligned": "MKTAYIA-QRQISFVKSHFSRQ",
+          "id": "s3"
+        },
+        {
+          "aligned": "MKTAYVAKQRQISFIKSHFSRQ",
+          "id": "s7"
+        },
+        {
+          "aligned": "-KTAYIAKQRQISFVKSHFSR-",
+          "id": "s6"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSHFSRQ",
+          "id": "s0"
+        },
+        {
+          "aligned": "MKTAYIAKQRTISFVKSHFSRQ",
+          "id": "s1"
+        },
+        {
+          "aligned": "MKTAYIAKQRQISFVKSYFSRQ",
+          "id": "s2"
+        },
+        {
+          "aligned": "MKLAYIAKQRQISFVKAHFSRQ",
+          "id": "s4"
+        },
+        {
+          "aligned": "MKTAYIAKQRQVSFVKSHFTRQ",
+          "id": "s5"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "s0",
+          "sequence": "MKTAYIAKQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "s1",
+          "sequence": "MKTAYIAKQRTISFVKSHFSRQ"
+        },
+        {
+          "id": "s2",
+          "sequence": "MKTAYIAKQRQISFVKSYFSRQ"
+        },
+        {
+          "id": "s3",
+          "sequence": "MKTAYIAQRQISFVKSHFSRQ"
+        },
+        {
+          "id": "s4",
+          "sequence": "MKLAYIAKQRQISFVKAHFSRQ"
+        },
+        {
+          "id": "s5",
+          "sequence": "MKTAYIAKQRQVSFVKSHFTRQ"
+        },
+        {
+          "id": "s6",
+          "sequence": "KTAYIAKQRQISFVKSHFSR"
+        },
+        {
+          "id": "s7",
+          "sequence": "MKTAYVAKQRQISFIKSHFSRQ"
+        }
+      ]
+    },
+    {
+      "alphabet": "dna",
+      "id": "super5_dna",
+      "mode": "super5",
+      "permutation": "abc",
+      "reference_alignment": [
+        {
+          "aligned": "-ACG-TACGTACGT",
+          "id": "d0"
+        },
+        {
+          "aligned": "--CG-TACGTAC-G",
+          "id": "d6"
+        },
+        {
+          "aligned": "-ACG-TACGTAC-G",
+          "id": "d3"
+        },
+        {
+          "aligned": "-ACG-TACGTCG-T",
+          "id": "d1"
+        },
+        {
+          "aligned": "-ACGTTACGTACGT",
+          "id": "d4"
+        },
+        {
+          "aligned": "TACG-TACGTACGT",
+          "id": "d2"
+        },
+        {
+          "aligned": "-ACG-TACCTACGT",
+          "id": "d5"
+        },
+        {
+          "aligned": "-ACG-TACGTTCGT",
+          "id": "d7"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "d0",
+          "sequence": "ACGTACGTACGT"
+        },
+        {
+          "id": "d1",
+          "sequence": "ACGTACGTCGT"
+        },
+        {
+          "id": "d2",
+          "sequence": "TACGTACGTACGT"
+        },
+        {
+          "id": "d3",
+          "sequence": "ACGTACGTACG"
+        },
+        {
+          "id": "d4",
+          "sequence": "ACGTTACGTACGT"
+        },
+        {
+          "id": "d5",
+          "sequence": "ACGTACCTACGT"
+        },
+        {
+          "id": "d6",
+          "sequence": "CGTACGTACG"
+        },
+        {
+          "id": "d7",
+          "sequence": "ACGTACGTTCGT"
+        }
+      ]
+    },
+    {
+      "alphabet": "rna",
+      "id": "super5_rna",
+      "mode": "super5",
+      "permutation": "acb",
+      "reference_alignment": [
+        {
+          "aligned": "-ACG-UACGUACGU",
+          "id": "r0"
+        },
+        {
+          "aligned": "--CG-UACGUAC-G",
+          "id": "r6"
+        },
+        {
+          "aligned": "-ACG-UACGUAC-G",
+          "id": "r3"
+        },
+        {
+          "aligned": "-ACG-UACGUCG-U",
+          "id": "r1"
+        },
+        {
+          "aligned": "-ACGUUACGUACGU",
+          "id": "r4"
+        },
+        {
+          "aligned": "UACG-UACGUACGU",
+          "id": "r2"
+        },
+        {
+          "aligned": "-ACG-UACCUACGU",
+          "id": "r5"
+        },
+        {
+          "aligned": "-ACG-UACGUUCGU",
+          "id": "r7"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "r0",
+          "sequence": "ACGUACGUACGU"
+        },
+        {
+          "id": "r1",
+          "sequence": "ACGUACGUCGU"
+        },
+        {
+          "id": "r2",
+          "sequence": "UACGUACGUACGU"
+        },
+        {
+          "id": "r3",
+          "sequence": "ACGUACGUACG"
+        },
+        {
+          "id": "r4",
+          "sequence": "ACGUUACGUACGU"
+        },
+        {
+          "id": "r5",
+          "sequence": "ACGUACCUACGU"
+        },
+        {
+          "id": "r6",
+          "sequence": "CGUACGUACG"
+        },
+        {
+          "id": "r7",
+          "sequence": "ACGUACGUUCGU"
+        }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "super5_redundant_protein",
+      "mode": "super5",
+      "permutation": "bca",
+      "reference_alignment": [
+        {
+          "aligned": "ACDEYGHIKLMNPQRSTVWY",
+          "id": "q5"
+        },
+        {
+          "aligned": "ACDEFGHIK-MNPQRSTVWY",
+          "id": "q8"
+        },
+        {
+          "aligned": "ACDEFGHIKLMNPQRSTVWY",
+          "id": "q0"
+        },
+        {
+          "aligned": "ACDEFGHIKLMNPQRSAVWY",
+          "id": "q3"
+        },
+        {
+          "aligned": "-CDEFGHIKLMNPQRSTVW-",
+          "id": "q7"
+        },
+        {
+          "aligned": "ACDEFGHIKLMNPQRSTVW-",
+          "id": "q9"
+        },
+        {
+          "aligned": "ACDEFGHIKLMNPQRSTVWY",
+          "id": "q1"
+        },
+        {
+          "aligned": "ACDEFGHIKLMNPQRSTVWY",
+          "id": "q2"
+        },
+        {
+          "aligned": "ACDEFGHIKLMNPQRSAVWY",
+          "id": "q4"
+        },
+        {
+          "aligned": "ACDEYGHIKLMNPQRSTVWY",
+          "id": "q6"
+        }
+      ],
+      "seed": 0,
+      "sequences": [
+        {
+          "id": "q0",
+          "sequence": "ACDEFGHIKLMNPQRSTVWY"
+        },
+        {
+          "id": "q1",
+          "sequence": "ACDEFGHIKLMNPQRSTVWY"
+        },
+        {
+          "id": "q2",
+          "sequence": "ACDEFGHIKLMNPQRSTVWY"
+        },
+        {
+          "id": "q3",
+          "sequence": "ACDEFGHIKLMNPQRSAVWY"
+        },
+        {
+          "id": "q4",
+          "sequence": "ACDEFGHIKLMNPQRSAVWY"
+        },
+        {
+          "id": "q5",
+          "sequence": "ACDEYGHIKLMNPQRSTVWY"
+        },
+        {
+          "id": "q6",
+          "sequence": "ACDEYGHIKLMNPQRSTVWY"
+        },
+        {
+          "id": "q7",
+          "sequence": "CDEFGHIKLMNPQRSTVW"
+        },
+        {
+          "id": "q8",
+          "sequence": "ACDEFGHIKMNPQRSTVWY"
+        },
+        {
+          "id": "q9",
+          "sequence": "ACDEFGHIKLMNPQRSTVW"
+        }
+      ]
+    },
+    {
+      "alphabet": "dna",
+      "id": "super5_divergent_dna",
+      "mode": "super5",
+      "permutation": "none",
+      "reference_alignment": [
+        {
+          "aligned": "CCCCCCCCCCCC",
+          "id": "x1"
+        },
+        {
+          "aligned": "ACGTACGTACGT",
+          "id": "x4"
+        },
+        {
+          "aligned": "AAAAAAAAAAAA",
+          "id": "x0"
+        },
+        {
+          "aligned": "GGGGGGGGGGGG",
+          "id": "x2"
+        },
+        {
+          "aligned": "TTTTTTTTTTTT",
+          "id": "x3"
+        },
+        {
+          "aligned": "TGCATGCATGCA",
+          "id": "x5"
+        }
+      ],
+      "seed": 3,
+      "sequences": [
+        {
+          "id": "x0",
+          "sequence": "AAAAAAAAAAAA"
+        },
+        {
+          "id": "x1",
+          "sequence": "CCCCCCCCCCCC"
+        },
+        {
+          "id": "x2",
+          "sequence": "GGGGGGGGGGGG"
+        },
+        {
+          "id": "x3",
+          "sequence": "TTTTTTTTTTTT"
+        },
+        {
+          "id": "x4",
+          "sequence": "ACGTACGTACGT"
+        },
+        {
+          "id": "x5",
+          "sequence": "TGCATGCATGCA"
+        }
+      ]
+    }
+  ],
+  "profile": "MUSCLE-5.1.0-Nature-2022-default-v1",
+  "provenance": {
+    "binary_sha256": "2bd82928a5cc72b5086b60928a3a820a0ce066ca9fbc0fecd1543eebca981e76",
+    "case_specification_sha256": "b2e8cda7286208191c11c30021d2c544a75639bb0520e479a25d45e90849f400",
+    "generator_sha256": "1124b017be24cb63405a3a088abea46fd7254bf904a14528227f6c4b04fd8277",
+    "name": "MUSCLE",
+    "platform": "official Linux x86-64 binary invoked as an opaque process under WSL2",
+    "source_inspected": false,
+    "version": "muscle 5.1.linux64 [12f0e2]"
+  },
+  "schema_version": 1,
+  "suite": "MUSCLE-5.1.0-Nature-2022-default-v1-black-box"
+}

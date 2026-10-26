@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "suite": "MAFFT-7.526-E-INS-i-ancestral-parameter-black-box-v1",
+  "command_template": "mafft --genafpair --oldgenafpair --maxiterate 0 --thread 1 --inputorder --treeout --quiet --ep 0 [OPTION VALUE] INPUT",
+  "provenance": {
+    "version": "v7.526 (2024/Apr/26)",
+    "source_inspected": false,
+    "package_sha256": "b8298e379bcd244be0e12f325461d863b93571da78c4499c2a2e4c252679c9de",
+    "generator_sha256": "49e58ce9b5afd1aaf3da8209a69c387ac1e71775d39fa05997a788723da113ae",
+    "raw_output_sha256": "93bc2c55de6bf1a418f4adbf6308b70850b065bf320206f024113c79ff3fc700"
+  },
+  "cases": [
+    {
+      "id": "two_equal_unalignable_internal_regions",
+      "local": { "alignment_width": 79, "homologies": 41, "tree_length": 0.95502 },
+      "generalized": { "alignment_width": 79, "homologies": 41, "tree_length": 0.87614 },
+      "LOP": [
+        { "value": -2.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.74238 },
+        { "value": -4.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.80926 },
+        { "value": -6.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.87614 },
+        { "value": -8.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.94304 },
+        { "value": -12.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.95502 }
+      ],
+      "LEXP": { "values": [-1.0, -0.5, -0.2, -0.1, 0.0, 0.1, 0.5, 1.0], "alignment_width": 79, "homologies": 41, "tree_length": 0.87614 },
+      "lep": [
+        { "value": -0.5, "alignment_width": 60, "homologies": 60, "tree_length": 0.68338 },
+        { "value": -0.1, "alignment_width": 79, "homologies": 41, "tree_length": 0.84162 },
+        { "value": 0.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.85734 },
+        { "value": 0.1, "alignment_width": 79, "homologies": 41, "tree_length": 0.87614 },
+        { "value": 0.5, "alignment_width": 79, "homologies": 41, "tree_length": 1.01658 }
+      ]
+    },
+    {
+      "id": "two_unequal_unalignable_internal_regions",
+      "local": { "alignment_width": 79, "homologies": 41, "tree_length": 0.91164 },
+      "generalized": { "alignment_width": 79, "homologies": 41, "tree_length": 0.8295 },
+      "LOP": [
+        { "value": -2.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.69018 },
+        { "value": -4.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.75984 },
+        { "value": -6.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.8295 },
+        { "value": -8.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.89916 },
+        { "value": -12.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.91164 }
+      ],
+      "LEXP": { "values": [-1.0, -0.5, -0.2, -0.1, 0.0, 0.1, 0.5, 1.0], "alignment_width": 79, "homologies": 41, "tree_length": 0.8295 },
+      "lep": [
+        { "value": -0.5, "alignment_width": 70, "homologies": 50, "tree_length": 0.64216 },
+        { "value": -0.1, "alignment_width": 79, "homologies": 41, "tree_length": 0.7667 },
+        { "value": 0.0, "alignment_width": 79, "homologies": 41, "tree_length": 0.79562 },
+        { "value": 0.1, "alignment_width": 79, "homologies": 41, "tree_length": 0.8295 },
+        { "value": 0.5, "alignment_width": 79, "homologies": 41, "tree_length": 1.05906 }
+      ]
+    },
+    {
+      "id": "equal_unalignable_internal_regions",
+      "local": { "alignment_width": 65, "homologies": 80, "tree_length": 2.35459 },
+      "generalized": { "alignment_width": 87, "homologies": 57, "tree_length": 2.21187 },
+      "LOP": [
+        { "value": -2.0, "alignment_width": 87, "homologies": 57, "tree_length": 1.92206 },
+        { "value": -4.0, "alignment_width": 87, "homologies": 57, "tree_length": 2.06698 },
+        { "value": -6.0, "alignment_width": 87, "homologies": 57, "tree_length": 2.21187 },
+        { "value": -8.0, "alignment_width": 65, "homologies": 80, "tree_length": 2.35459 },
+        { "value": -12.0, "alignment_width": 65, "homologies": 80, "tree_length": 2.35459 }
+      ],
+      "LEXP": { "values": [-1.0, -0.5, -0.2, -0.1, 0.0, 0.1, 0.5, 1.0], "alignment_width": 87, "homologies": 57, "tree_length": 2.21187 },
+      "lep": [
+        { "value": -0.5, "alignment_width": 42, "homologies": 126, "tree_length": 1.65859 },
+        { "value": -0.1, "alignment_width": 65, "homologies": 80, "tree_length": 2.12354 },
+        { "value": 0.0, "alignment_width": 65, "homologies": 80, "tree_length": 2.16528 },
+        { "value": 0.1, "alignment_width": 87, "homologies": 57, "tree_length": 2.21187 },
+        { "value": 0.5, "alignment_width": 87, "homologies": 57, "tree_length": 2.35353 }
+      ]
+    },
+    {
+      "id": "unequal_unalignable_internal_regions",
+      "local": { "alignment_width": 66, "homologies": 72, "tree_length": 2.40108 },
+      "generalized": { "alignment_width": 81, "homologies": 57, "tree_length": 2.27742 },
+      "LOP": [
+        { "value": -2.0, "alignment_width": 81, "homologies": 57, "tree_length": 2.01172 },
+        { "value": -4.0, "alignment_width": 81, "homologies": 57, "tree_length": 2.14457 },
+        { "value": -6.0, "alignment_width": 81, "homologies": 57, "tree_length": 2.27742 },
+        { "value": -8.0, "alignment_width": 66, "homologies": 72, "tree_length": 2.40108 },
+        { "value": -12.0, "alignment_width": 66, "homologies": 72, "tree_length": 2.40108 }
+      ],
+      "LEXP": { "values": [-1.0, -0.5, -0.2, -0.1, 0.0, 0.1, 0.5, 1.0], "alignment_width": 81, "homologies": 57, "tree_length": 2.27742 },
+      "lep": [
+        { "value": -0.5, "alignment_width": 46, "homologies": 108, "tree_length": 1.80224 },
+        { "value": -0.1, "alignment_width": 66, "homologies": 72, "tree_length": 2.14024 },
+        { "value": 0.0, "alignment_width": 81, "homologies": 57, "tree_length": 2.22176 },
+        { "value": 0.1, "alignment_width": 81, "homologies": 57, "tree_length": 2.27742 },
+        { "value": 0.5, "alignment_width": 81, "homologies": 57, "tree_length": 2.40945 }
+      ]
+    }
+  ],
+  "inference": {
+    "ancestral_LOP": -6.0,
+    "ancestral_LEXP": 0.0,
+    "public_lep": 0.1,
+    "effective_signed_matrix_offset": -0.1
+  }
+}

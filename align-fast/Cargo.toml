@@ -1,0 +1,22 @@
+[package]
+name = "align-fast"
+description = "Accelerated exact and heuristic sequence-alignment algorithms"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+align-core.workspace = true
+align-fast-kernels.workspace = true
+pulp.workspace = true
+
+[dev-dependencies]
+align-pairwise.workspace = true
+proptest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

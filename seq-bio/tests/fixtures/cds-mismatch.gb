@@ -1,0 +1,11 @@
+LOCUS       MISMATCH 9 bp DNA linear SYN 17-OCT-2026
+DEFINITION  Synthetic mismatching reference example.
+ACCESSION   MISMATCH
+VERSION     MISMATCH.1
+FEATURES             Location/Qualifiers
+     CDS             1..9
+                     /transl_table=1
+                     /translation="MV"
+ORIGIN
+        1 atggcttaa
+//

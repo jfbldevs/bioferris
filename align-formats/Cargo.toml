@@ -1,0 +1,17 @@
+[package]
+name = "align-formats"
+description = "Sequence and alignment input/output formats"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+align-core.workspace = true
+align-fast.workspace = true
+align-msa.workspace = true
+align-poa.workspace = true
+
+[lints]
+workspace = true

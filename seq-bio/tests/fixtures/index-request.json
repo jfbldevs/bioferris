@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "operation": "get-record",
+  "molecule": "dna",
+  "input": "seq-bio/tests/fixtures/index-example.fastq",
+  "index": "reads.index.json",
+  "id": "read2"
+}

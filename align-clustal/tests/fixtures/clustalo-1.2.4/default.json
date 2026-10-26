@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "reference": {
+    "name": "Clustal Omega",
+    "version": "1.2.4",
+    "ubuntu_package": "1.2.4-8build1",
+    "executable_sha256": "e695ae9d1fdc9b27540eaf041740b3dafc6e38670cbadee8afe3f6d9114062ea",
+    "generated_utc": "2026-08-03"
+  },
+  "cases": [
+    {
+      "name": "protein_internal_gap",
+      "molecule": "protein",
+      "records": [
+        ["human", "MKTAYIAKQRQISFVKSHFSRQ"],
+        ["mouse", "MKTAYIAKQKQISFVKSHFSRQ"],
+        ["fish", "MKTAYIAKQRQISFVKSFSRQ"]
+      ],
+      "alignment": [
+        ["human", "MKTAYIAKQRQISFVKSHFSRQ"],
+        ["mouse", "MKTAYIAKQKQISFVKSHFSRQ"],
+        ["fish", "MKTAYIAKQRQISFVKSFSRQ-"]
+      ],
+      "distance_matrix": [
+        [0.0, 0.045455, 0.142857],
+        [0.045455, 0.0, 0.190476],
+        [0.142857, 0.190476, 0.0]
+      ],
+      "guide_tree_newick": "(fish:0.0833333,(human:0.0227273,mouse:0.0227273):0.0606061);"
+    },
+    {
+      "name": "protein_terminal_and_ambiguity",
+      "molecule": "protein",
+      "records": [
+        ["canonical", "ARNDCQEGHILKMFPSTWYV"],
+        ["prefix", "CQEGHILKMFPSTWYV"],
+        ["extended", "ARNDBQEGHILJMFPSTWYX"]
+      ],
+      "alignment": [
+        ["canonical", "ARNDCQEGHILKMFPSTWYV"],
+        ["prefix", "----CQEGHILKMFPSTWYV"],
+        ["extended", "ARNDBQEGHILJMFPSTWYX"]
+      ],
+      "distance_matrix": [
+        [0.0, 0.0, 0.15],
+        [0.0, 0.0, 0.1875],
+        [0.15, 0.1875, 0.0]
+      ],
+      "guide_tree_newick": "(extended:0.084375,(canonical:0,prefix:0):0.084375);"
+    },
+    {
+      "name": "dna_internal_and_terminal_gaps",
+      "molecule": "dna",
+      "records": [
+        ["reference", "ACGTACGT"],
+        ["deletion", "ACGACGT"],
+        ["middle", "CGTACG"],
+        ["ambiguity", "ACGNACGT"]
+      ],
+      "alignment": [
+        ["reference", "ACGTACGT"],
+        ["deletion", "-ACGACGT"],
+        ["middle", "-CGTACG-"],
+        ["ambiguity", "ACGNACGT"]
+      ],
+      "distance_matrix": [
+        [0.0, 0.428571, 0.0, 0.125],
+        [0.428571, 0.0, 0.5, 0.428571],
+        [0.0, 0.5, 0.0, 0.166667],
+        [0.125, 0.428571, 0.166667, 0.0]
+      ],
+      "guide_tree_newick": "(deletion:0.223214,(ambiguity:0.0729167,(reference:0,middle:0):0.0729167):0.150298);"
+    },
+    {
+      "name": "rna_internal_gap",
+      "molecule": "rna",
+      "records": [
+        ["reference", "ACGUACGU"],
+        ["deletion", "ACGACGU"],
+        ["substitution", "ACGUUCGU"]
+      ],
+      "alignment": [
+        ["reference", "---ACGUACGU"],
+        ["deletion", "ACGACGU----"],
+        ["substitution", "---ACGUUCGU"]
+      ],
+      "distance_matrix": [
+        [0.0, 0.428571, 0.125],
+        [0.428571, 0.0, 0.428571],
+        [0.125, 0.428571, 0.0]
+      ],
+      "guide_tree_newick": "((reference:0.0625,substitution:0.0625):0.151786,deletion:0.214286);"
+    },
+    {
+      "name": "dna_repetitive",
+      "molecule": "dna",
+      "records": [
+        ["phase0", "ACACACAC"],
+        ["phase1", "CACACACA"],
+        ["short", "ACACAC"],
+        ["different", "GTGTGTGT"]
+      ],
+      "alignment": [
+        ["phase0", "-ACACACAC"],
+        ["phase1", "CACACACA-"],
+        ["short", "-ACA--CAC"],
+        ["different", "GTGT-GTGT"]
+      ],
+      "distance_matrix": [
+        [0.0, 0.125, 0.0, 1.0],
+        [0.125, 0.0, 0.0, 1.0],
+        [0.0, 0.0, 0.0, 1.0],
+        [1.0, 1.0, 1.0, 0.0]
+      ],
+      "guide_tree_newick": "((phase1:0.03125,(phase0:0,short:0):0.03125):0.46875,different:0.5);"
+    }
+  ]
+}

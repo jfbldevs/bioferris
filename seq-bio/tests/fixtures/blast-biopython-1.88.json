@@ -1,0 +1,1983 @@
+{
+  "schema_version": 1,
+  "reference": "Biopython",
+  "version": "1.88",
+  "python": "3.12.3",
+  "numpy": "2.3.3",
+  "cases": [
+    {
+      "file": "blast-ncbi-2.9.0-nucleotide.xml",
+      "format": "blast-xml",
+      "api": "Bio.Blast.NCBIXML.parse",
+      "queries": [
+        {
+          "id": "G26684.1",
+          "length": 285,
+          "hits": [
+            {
+              "id": "gi|372099107|ref|NC_000069.6|",
+              "length": 160039680,
+              "hsps": [
+                {
+                  "reported_query": [
+                    134,
+                    166
+                  ],
+                  "query_range": [
+                    133,
+                    166
+                  ],
+                  "reported_hit": [
+                    101449177,
+                    101449144
+                  ],
+                  "hit_range": [
+                    101449143,
+                    101449177
+                  ],
+                  "evalue": 0.375311,
+                  "bit_score": 40.9604,
+                  "raw_score": 44.0,
+                  "alignment_length": 34,
+                  "identical": 30,
+                  "positives": 30,
+                  "gaps": 1,
+                  "query_alignment": "GAATCCTAGAGGCTTGATTGGCCCAGG-CTGCTG",
+                  "hit_alignment": "GAATCCTAGAGGCTGGACTGGCCCTGGCCTGCTG",
+                  "midline": "|||||||||||||| || |||||| || ||||||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099103|ref|NC_000073.6|",
+              "length": 145441459,
+              "hsps": [
+                {
+                  "reported_query": [
+                    205,
+                    233
+                  ],
+                  "query_range": [
+                    204,
+                    233
+                  ],
+                  "reported_hit": [
+                    131772185,
+                    131772157
+                  ],
+                  "hit_range": [
+                    131772156,
+                    131772185
+                  ],
+                  "evalue": 0.375311,
+                  "bit_score": 40.9604,
+                  "raw_score": 44.0,
+                  "alignment_length": 29,
+                  "identical": 26,
+                  "positives": 26,
+                  "gaps": 0,
+                  "query_alignment": "GAAAGGAAATNAAAATGGAAAGTTCTTGT",
+                  "hit_alignment": "GAAAGGAAAAAAAAATGGAAAGTTCTGGT",
+                  "midline": "|||||||||  ||||||||||||||| ||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099106|ref|NC_000070.6|",
+              "length": 156508116,
+              "hsps": [
+                {
+                  "reported_query": [
+                    62,
+                    85
+                  ],
+                  "query_range": [
+                    61,
+                    85
+                  ],
+                  "reported_hit": [
+                    9607562,
+                    9607539
+                  ],
+                  "hit_range": [
+                    9607538,
+                    9607562
+                  ],
+                  "evalue": 1.30996,
+                  "bit_score": 40.0587,
+                  "raw_score": 43.0,
+                  "alignment_length": 24,
+                  "identical": 23,
+                  "positives": 23,
+                  "gaps": 0,
+                  "query_alignment": "CCAACACAGGCCAGCGACTTCTGG",
+                  "hit_alignment": "CCAACACAGGCCAGCGGCTTCTGG",
+                  "midline": "|||||||||||||||| |||||||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                },
+                {
+                  "reported_query": [
+                    242,
+                    272
+                  ],
+                  "query_range": [
+                    241,
+                    272
+                  ],
+                  "reported_hit": [
+                    142902532,
+                    142902563
+                  ],
+                  "hit_range": [
+                    142902531,
+                    142902563
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 32,
+                  "identical": 28,
+                  "positives": 28,
+                  "gaps": 1,
+                  "query_alignment": "GCCTGACATGG-GTAGCTGCTCAATAAATGCT",
+                  "hit_alignment": "GCCTGGCATGAAGTAACTGCTCAATAAATGCT",
+                  "midline": "||||| ||||  ||| ||||||||||||||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099108|ref|NC_000068.7|",
+              "length": 182113224,
+              "hsps": [
+                {
+                  "reported_query": [
+                    239,
+                    269
+                  ],
+                  "query_range": [
+                    238,
+                    269
+                  ],
+                  "reported_hit": [
+                    3799647,
+                    3799677
+                  ],
+                  "hit_range": [
+                    3799646,
+                    3799677
+                  ],
+                  "evalue": 1.30996,
+                  "bit_score": 39.157,
+                  "raw_score": 42.0,
+                  "alignment_length": 31,
+                  "identical": 27,
+                  "positives": 27,
+                  "gaps": 0,
+                  "query_alignment": "AAGGCCTGACATGGGTAGCTGCTCAATAAAT",
+                  "hit_alignment": "AAGTCCTGGCATGAGTAGTTGCTCAATAAAT",
+                  "midline": "||| |||| |||| |||| ||||||||||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "reported_query": [
+                    211,
+                    235
+                  ],
+                  "query_range": [
+                    210,
+                    235
+                  ],
+                  "reported_hit": [
+                    70278960,
+                    70278984
+                  ],
+                  "hit_range": [
+                    70278959,
+                    70278984
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 38.2554,
+                  "raw_score": 41.0,
+                  "alignment_length": 25,
+                  "identical": 23,
+                  "positives": 23,
+                  "gaps": 0,
+                  "query_alignment": "AAATNAAAATGGAAAGTTCTTGTAG",
+                  "hit_alignment": "AAATGAAAATGGAAAGTTCTTATAG",
+                  "midline": "|||| |||||||||||||||| |||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099097|ref|NC_000079.6|",
+              "length": 120421639,
+              "hsps": [
+                {
+                  "reported_query": [
+                    207,
+                    234
+                  ],
+                  "query_range": [
+                    206,
+                    234
+                  ],
+                  "reported_hit": [
+                    26806584,
+                    26806557
+                  ],
+                  "hit_range": [
+                    26806556,
+                    26806584
+                  ],
+                  "evalue": 1.30996,
+                  "bit_score": 39.157,
+                  "raw_score": 42.0,
+                  "alignment_length": 28,
+                  "identical": 25,
+                  "positives": 25,
+                  "gaps": 0,
+                  "query_alignment": "AAGGAAATNAAAATGGAAAGTTCTTGTA",
+                  "hit_alignment": "AAGGACATCAAAATGGAAAGTTCTTCTA",
+                  "midline": "||||| || |||||||||||||||| ||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                },
+                {
+                  "reported_query": [
+                    234,
+                    273
+                  ],
+                  "query_range": [
+                    233,
+                    273
+                  ],
+                  "reported_hit": [
+                    56840340,
+                    56840301
+                  ],
+                  "hit_range": [
+                    56840300,
+                    56840340
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 40,
+                  "identical": 32,
+                  "positives": 32,
+                  "gaps": 0,
+                  "query_alignment": "AGCGCAAGGCCTGACATGGGTAGCTGCTCAATAAATGCTA",
+                  "hit_alignment": "AGCGCAAGGCCTGACATAGGAAAATGTTCAGTGAATACTA",
+                  "midline": "||||||||||||||||| || |  || ||| | ||| |||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099098|ref|NC_000078.6|",
+              "length": 120129022,
+              "hsps": [
+                {
+                  "reported_query": [
+                    49,
+                    71
+                  ],
+                  "query_range": [
+                    48,
+                    71
+                  ],
+                  "reported_hit": [
+                    113030663,
+                    113030685
+                  ],
+                  "hit_range": [
+                    113030662,
+                    113030685
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 38.2554,
+                  "raw_score": 41.0,
+                  "alignment_length": 23,
+                  "identical": 22,
+                  "positives": 22,
+                  "gaps": 0,
+                  "query_alignment": "CATCCATTCACACCCAACACAGG",
+                  "hit_alignment": "CATCCATTCACACCCAGCACAGG",
+                  "midline": "|||||||||||||||| ||||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "reported_query": [
+                    231,
+                    262
+                  ],
+                  "query_range": [
+                    230,
+                    262
+                  ],
+                  "reported_hit": [
+                    108990272,
+                    108990242
+                  ],
+                  "hit_range": [
+                    108990241,
+                    108990272
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 32,
+                  "identical": 28,
+                  "positives": 28,
+                  "gaps": 1,
+                  "query_alignment": "TGTAGCGCAAGGCCTGACATGGGTAGCTGCTC",
+                  "hit_alignment": "TGTAGCTCTAGGCCTGACATGGGT-GCTGGTC",
+                  "midline": "|||||| | ||||||||||||||| |||| ||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099109|ref|NC_000067.6|",
+              "length": 195471971,
+              "hsps": [
+                {
+                  "reported_query": [
+                    87,
+                    129
+                  ],
+                  "query_range": [
+                    86,
+                    129
+                  ],
+                  "reported_hit": [
+                    65190108,
+                    65190148
+                  ],
+                  "hit_range": [
+                    65190107,
+                    65190148
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 43,
+                  "identical": 35,
+                  "positives": 35,
+                  "gaps": 2,
+                  "query_alignment": "GCTCAGCCACAGACATGGTTTGTNACTNTTGAGCTTCTGTTCC",
+                  "hit_alignment": "GCTCAGCCACATACATGGTTT-TAAGTGTTGAGGCTCT-TTCC",
+                  "midline": "||||||||||| ||||||||| | | | |||||  ||| ||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099101|ref|NC_000075.6|",
+              "length": 124595110,
+              "hsps": [
+                {
+                  "reported_query": [
+                    238,
+                    284
+                  ],
+                  "query_range": [
+                    237,
+                    284
+                  ],
+                  "reported_hit": [
+                    58227241,
+                    58227195
+                  ],
+                  "hit_range": [
+                    58227194,
+                    58227241
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 47,
+                  "identical": 36,
+                  "positives": 36,
+                  "gaps": 0,
+                  "query_alignment": "CAAGGCCTGACATGGGTAGCTGCTCAATAAATGCTAGTNTGTTATTT",
+                  "hit_alignment": "CAAAGCCTGACAGGTATGACTGCTCAATAAATACTATTTTTTTTTTT",
+                  "midline": "||| |||||||| |  |  ||||||||||||| ||| | | || |||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099100|ref|NC_000076.6|",
+              "length": 130694993,
+              "hsps": [
+                {
+                  "reported_query": [
+                    255,
+                    274
+                  ],
+                  "query_range": [
+                    254,
+                    274
+                  ],
+                  "reported_hit": [
+                    119337186,
+                    119337205
+                  ],
+                  "hit_range": [
+                    119337185,
+                    119337205
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 20,
+                  "identical": 20,
+                  "positives": 20,
+                  "gaps": 0,
+                  "query_alignment": "AGCTGCTCAATAAATGCTAG",
+                  "hit_alignment": "AGCTGCTCAATAAATGCTAG",
+                  "midline": "||||||||||||||||||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099094|ref|NC_000082.6|",
+              "length": 98207768,
+              "hsps": [
+                {
+                  "reported_query": [
+                    175,
+                    228
+                  ],
+                  "query_range": [
+                    174,
+                    228
+                  ],
+                  "reported_hit": [
+                    18854780,
+                    18854835
+                  ],
+                  "hit_range": [
+                    18854779,
+                    18854835
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 56,
+                  "identical": 43,
+                  "positives": 43,
+                  "gaps": 2,
+                  "query_alignment": "GGAGGCAAAGAATCCCTACCTCCT-AGGGGTGA-AAGGAAATNAAAATGGAAAGTT",
+                  "hit_alignment": "GGAGGCAAAGAATCCCTACATTGTGACAGCTGATAAAGAAGGTAAAATGGAAAATT",
+                  "midline": "||||||||||||||||||| |  | |  | ||| || |||   |||||||||| ||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "blast-ncbi-2.9.0-nucleotide-xml2.xml",
+      "format": "blast-xml2",
+      "api": "Bio.Blast.NCBIXML.parse",
+      "queries": [
+        {
+          "id": "G26684.1",
+          "length": 285,
+          "hits": [
+            {
+              "id": "gi|372099107|ref|NC_000069.6|",
+              "length": 160039680,
+              "hsps": [
+                {
+                  "reported_query": [
+                    134,
+                    166
+                  ],
+                  "query_range": [
+                    133,
+                    166
+                  ],
+                  "reported_hit": [
+                    101449177,
+                    101449144
+                  ],
+                  "hit_range": [
+                    101449143,
+                    101449177
+                  ],
+                  "evalue": 0.375311,
+                  "bit_score": 40.9604,
+                  "raw_score": 44.0,
+                  "alignment_length": 34,
+                  "identical": 30,
+                  "positives": 30,
+                  "gaps": 1,
+                  "query_alignment": "GAATCCTAGAGGCTTGATTGGCCCAGG-CTGCTG",
+                  "hit_alignment": "GAATCCTAGAGGCTGGACTGGCCCTGGCCTGCTG",
+                  "midline": "|||||||||||||| || |||||| || ||||||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099103|ref|NC_000073.6|",
+              "length": 145441459,
+              "hsps": [
+                {
+                  "reported_query": [
+                    205,
+                    233
+                  ],
+                  "query_range": [
+                    204,
+                    233
+                  ],
+                  "reported_hit": [
+                    131772185,
+                    131772157
+                  ],
+                  "hit_range": [
+                    131772156,
+                    131772185
+                  ],
+                  "evalue": 0.375311,
+                  "bit_score": 40.9604,
+                  "raw_score": 44.0,
+                  "alignment_length": 29,
+                  "identical": 26,
+                  "positives": 26,
+                  "gaps": 0,
+                  "query_alignment": "GAAAGGAAATNAAAATGGAAAGTTCTTGT",
+                  "hit_alignment": "GAAAGGAAAAAAAAATGGAAAGTTCTGGT",
+                  "midline": "|||||||||  ||||||||||||||| ||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099106|ref|NC_000070.6|",
+              "length": 156508116,
+              "hsps": [
+                {
+                  "reported_query": [
+                    62,
+                    85
+                  ],
+                  "query_range": [
+                    61,
+                    85
+                  ],
+                  "reported_hit": [
+                    9607562,
+                    9607539
+                  ],
+                  "hit_range": [
+                    9607538,
+                    9607562
+                  ],
+                  "evalue": 1.30996,
+                  "bit_score": 40.0587,
+                  "raw_score": 43.0,
+                  "alignment_length": 24,
+                  "identical": 23,
+                  "positives": 23,
+                  "gaps": 0,
+                  "query_alignment": "CCAACACAGGCCAGCGACTTCTGG",
+                  "hit_alignment": "CCAACACAGGCCAGCGGCTTCTGG",
+                  "midline": "|||||||||||||||| |||||||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                },
+                {
+                  "reported_query": [
+                    242,
+                    272
+                  ],
+                  "query_range": [
+                    241,
+                    272
+                  ],
+                  "reported_hit": [
+                    142902532,
+                    142902563
+                  ],
+                  "hit_range": [
+                    142902531,
+                    142902563
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 32,
+                  "identical": 28,
+                  "positives": 28,
+                  "gaps": 1,
+                  "query_alignment": "GCCTGACATGG-GTAGCTGCTCAATAAATGCT",
+                  "hit_alignment": "GCCTGGCATGAAGTAACTGCTCAATAAATGCT",
+                  "midline": "||||| ||||  ||| ||||||||||||||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099108|ref|NC_000068.7|",
+              "length": 182113224,
+              "hsps": [
+                {
+                  "reported_query": [
+                    239,
+                    269
+                  ],
+                  "query_range": [
+                    238,
+                    269
+                  ],
+                  "reported_hit": [
+                    3799647,
+                    3799677
+                  ],
+                  "hit_range": [
+                    3799646,
+                    3799677
+                  ],
+                  "evalue": 1.30996,
+                  "bit_score": 39.157,
+                  "raw_score": 42.0,
+                  "alignment_length": 31,
+                  "identical": 27,
+                  "positives": 27,
+                  "gaps": 0,
+                  "query_alignment": "AAGGCCTGACATGGGTAGCTGCTCAATAAAT",
+                  "hit_alignment": "AAGTCCTGGCATGAGTAGTTGCTCAATAAAT",
+                  "midline": "||| |||| |||| |||| ||||||||||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "reported_query": [
+                    211,
+                    235
+                  ],
+                  "query_range": [
+                    210,
+                    235
+                  ],
+                  "reported_hit": [
+                    70278960,
+                    70278984
+                  ],
+                  "hit_range": [
+                    70278959,
+                    70278984
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 38.2554,
+                  "raw_score": 41.0,
+                  "alignment_length": 25,
+                  "identical": 23,
+                  "positives": 23,
+                  "gaps": 0,
+                  "query_alignment": "AAATNAAAATGGAAAGTTCTTGTAG",
+                  "hit_alignment": "AAATGAAAATGGAAAGTTCTTATAG",
+                  "midline": "|||| |||||||||||||||| |||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099097|ref|NC_000079.6|",
+              "length": 120421639,
+              "hsps": [
+                {
+                  "reported_query": [
+                    207,
+                    234
+                  ],
+                  "query_range": [
+                    206,
+                    234
+                  ],
+                  "reported_hit": [
+                    26806584,
+                    26806557
+                  ],
+                  "hit_range": [
+                    26806556,
+                    26806584
+                  ],
+                  "evalue": 1.30996,
+                  "bit_score": 39.157,
+                  "raw_score": 42.0,
+                  "alignment_length": 28,
+                  "identical": 25,
+                  "positives": 25,
+                  "gaps": 0,
+                  "query_alignment": "AAGGAAATNAAAATGGAAAGTTCTTGTA",
+                  "hit_alignment": "AAGGACATCAAAATGGAAAGTTCTTCTA",
+                  "midline": "||||| || |||||||||||||||| ||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                },
+                {
+                  "reported_query": [
+                    234,
+                    273
+                  ],
+                  "query_range": [
+                    233,
+                    273
+                  ],
+                  "reported_hit": [
+                    56840340,
+                    56840301
+                  ],
+                  "hit_range": [
+                    56840300,
+                    56840340
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 40,
+                  "identical": 32,
+                  "positives": 32,
+                  "gaps": 0,
+                  "query_alignment": "AGCGCAAGGCCTGACATGGGTAGCTGCTCAATAAATGCTA",
+                  "hit_alignment": "AGCGCAAGGCCTGACATAGGAAAATGTTCAGTGAATACTA",
+                  "midline": "||||||||||||||||| || |  || ||| | ||| |||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099098|ref|NC_000078.6|",
+              "length": 120129022,
+              "hsps": [
+                {
+                  "reported_query": [
+                    49,
+                    71
+                  ],
+                  "query_range": [
+                    48,
+                    71
+                  ],
+                  "reported_hit": [
+                    113030663,
+                    113030685
+                  ],
+                  "hit_range": [
+                    113030662,
+                    113030685
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 38.2554,
+                  "raw_score": 41.0,
+                  "alignment_length": 23,
+                  "identical": 22,
+                  "positives": 22,
+                  "gaps": 0,
+                  "query_alignment": "CATCCATTCACACCCAACACAGG",
+                  "hit_alignment": "CATCCATTCACACCCAGCACAGG",
+                  "midline": "|||||||||||||||| ||||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "reported_query": [
+                    231,
+                    262
+                  ],
+                  "query_range": [
+                    230,
+                    262
+                  ],
+                  "reported_hit": [
+                    108990272,
+                    108990242
+                  ],
+                  "hit_range": [
+                    108990241,
+                    108990272
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 32,
+                  "identical": 28,
+                  "positives": 28,
+                  "gaps": 1,
+                  "query_alignment": "TGTAGCGCAAGGCCTGACATGGGTAGCTGCTC",
+                  "hit_alignment": "TGTAGCTCTAGGCCTGACATGGGT-GCTGGTC",
+                  "midline": "|||||| | ||||||||||||||| |||| ||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099109|ref|NC_000067.6|",
+              "length": 195471971,
+              "hsps": [
+                {
+                  "reported_query": [
+                    87,
+                    129
+                  ],
+                  "query_range": [
+                    86,
+                    129
+                  ],
+                  "reported_hit": [
+                    65190108,
+                    65190148
+                  ],
+                  "hit_range": [
+                    65190107,
+                    65190148
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 43,
+                  "identical": 35,
+                  "positives": 35,
+                  "gaps": 2,
+                  "query_alignment": "GCTCAGCCACAGACATGGTTTGTNACTNTTGAGCTTCTGTTCC",
+                  "hit_alignment": "GCTCAGCCACATACATGGTTT-TAAGTGTTGAGGCTCT-TTCC",
+                  "midline": "||||||||||| ||||||||| | | | |||||  ||| ||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099101|ref|NC_000075.6|",
+              "length": 124595110,
+              "hsps": [
+                {
+                  "reported_query": [
+                    238,
+                    284
+                  ],
+                  "query_range": [
+                    237,
+                    284
+                  ],
+                  "reported_hit": [
+                    58227241,
+                    58227195
+                  ],
+                  "hit_range": [
+                    58227194,
+                    58227241
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 47,
+                  "identical": 36,
+                  "positives": 36,
+                  "gaps": 0,
+                  "query_alignment": "CAAGGCCTGACATGGGTAGCTGCTCAATAAATGCTAGTNTGTTATTT",
+                  "hit_alignment": "CAAAGCCTGACAGGTATGACTGCTCAATAAATACTATTTTTTTTTTT",
+                  "midline": "||| |||||||| |  |  ||||||||||||| ||| | | || |||",
+                  "observed_frame": [
+                    1,
+                    -1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099100|ref|NC_000076.6|",
+              "length": 130694993,
+              "hsps": [
+                {
+                  "reported_query": [
+                    255,
+                    274
+                  ],
+                  "query_range": [
+                    254,
+                    274
+                  ],
+                  "reported_hit": [
+                    119337186,
+                    119337205
+                  ],
+                  "hit_range": [
+                    119337185,
+                    119337205
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 20,
+                  "identical": 20,
+                  "positives": 20,
+                  "gaps": 0,
+                  "query_alignment": "AGCTGCTCAATAAATGCTAG",
+                  "hit_alignment": "AGCTGCTCAATAAATGCTAG",
+                  "midline": "||||||||||||||||||||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|372099094|ref|NC_000082.6|",
+              "length": 98207768,
+              "hsps": [
+                {
+                  "reported_query": [
+                    175,
+                    228
+                  ],
+                  "query_range": [
+                    174,
+                    228
+                  ],
+                  "reported_hit": [
+                    18854780,
+                    18854835
+                  ],
+                  "hit_range": [
+                    18854779,
+                    18854835
+                  ],
+                  "evalue": 4.57222,
+                  "bit_score": 37.3537,
+                  "raw_score": 40.0,
+                  "alignment_length": 56,
+                  "identical": 43,
+                  "positives": 43,
+                  "gaps": 2,
+                  "query_alignment": "GGAGGCAAAGAATCCCTACCTCCT-AGGGGTGA-AAGGAAATNAAAATGGAAAGTT",
+                  "hit_alignment": "GGAGGCAAAGAATCCCTACATTGTGACAGCTGATAAAGAAGGTAAAATGGAAAATT",
+                  "midline": "||||||||||||||||||| |  | |  | ||| || |||   |||||||||| ||",
+                  "observed_frame": [
+                    1,
+                    1
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "blast-ncbi-2.9.0-translated.xml",
+      "format": "blast-xml",
+      "api": "Bio.Blast.NCBIXML.parse",
+      "queries": [
+        {
+          "id": "AI021773.1",
+          "length": 365,
+          "hits": [
+            {
+              "id": "gi|1530504495|emb|VDM03167.1|",
+              "length": 132,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 8.11609e-49,
+                  "bit_score": 161.77,
+                  "raw_score": 408.0,
+                  "alignment_length": 108,
+                  "identical": 81,
+                  "positives": 83,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MADEEVQALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|510859078|gb|EPB74633.1|",
+              "length": 119,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    364
+                  ],
+                  "query_range": [
+                    19,
+                    364
+                  ],
+                  "reported_hit": [
+                    1,
+                    115
+                  ],
+                  "hit_range": [
+                    0,
+                    115
+                  ],
+                  "evalue": 1.40046e-48,
+                  "bit_score": 160.614,
+                  "raw_score": 405.0,
+                  "alignment_length": 115,
+                  "identical": 81,
+                  "positives": 85,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTELHCIRKP",
+                  "hit_alignment": "MCDDDVAALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTEAHSILKP",
+                  "midline": "M D++V ALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE H I KP",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|684409690|ref|XP_009175831.1|",
+              "length": 246,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 4.40404e-48,
+                  "bit_score": 163.696,
+                  "raw_score": 413.0,
+                  "alignment_length": 108,
+                  "identical": 81,
+                  "positives": 83,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MADEEVQALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|449710331|gb|EMD49430.1|",
+              "length": 124,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 9.0486e-48,
+                  "bit_score": 159.073,
+                  "raw_score": 401.0,
+                  "alignment_length": 108,
+                  "identical": 78,
+                  "positives": 81,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MGDEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHVSVMAGMGQKDAYVGDEAQSKRGILTLKYPIEHGIVNNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "M DEEVQALVVDNGSGMCKAG       ++  P               G KD+YVGDEAQSKRGILTLKYPIEHGIV NWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|257215766|emb|CAX83035.1|",
+              "length": 252,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.00219e-47,
+                  "bit_score": 162.925,
+                  "raw_score": 411.0,
+                  "alignment_length": 108,
+                  "identical": 81,
+                  "positives": 83,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MADEEVQALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|1535393712|emb|VDP83060.1|",
+              "length": 209,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.16397e-47,
+                  "bit_score": 161.384,
+                  "raw_score": 407.0,
+                  "alignment_length": 108,
+                  "identical": 80,
+                  "positives": 83,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADDEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MAD+EVQALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|312773|emb|CAA50205.1|",
+              "length": 137,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.25869e-47,
+                  "bit_score": 159.073,
+                  "raw_score": 401.0,
+                  "alignment_length": 108,
+                  "identical": 78,
+                  "positives": 81,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MGDEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHVSVMAGMGQKDAYVGDEAQSKRGILTLKYPIEHGIVNNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "M DEEVQALVVDNGSGMCKAG       ++  P               G KD+YVGDEAQSKRGILTLKYPIEHGIV NWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|1530341495|emb|VDN44756.1|",
+              "length": 145,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.78336e-47,
+                  "bit_score": 158.688,
+                  "raw_score": 400.0,
+                  "alignment_length": 108,
+                  "identical": 78,
+                  "positives": 82,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MGDEDVQALVIDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "M DE+VQALV+DNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|1524877828|ref|XP_027046469.1|",
+              "length": 122,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.93331e-47,
+                  "bit_score": 157.918,
+                  "raw_score": 398.0,
+                  "alignment_length": 108,
+                  "identical": 78,
+                  "positives": 82,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEEVAALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRIAPEEHPILLTE",
+                  "midline": "MADEEV ALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELR+APEEHP+LLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|1524877860|ref|XP_027046487.1|",
+              "length": 134,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 2.36088e-47,
+                  "bit_score": 158.303,
+                  "raw_score": 399.0,
+                  "alignment_length": 108,
+                  "identical": 79,
+                  "positives": 82,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEDVAALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MADE+V ALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "blast-ncbi-2.9.0-translated-xml2.xml",
+      "format": "blast-xml2",
+      "api": "Bio.Blast.NCBIXML.parse",
+      "queries": [
+        {
+          "id": "AI021773.1",
+          "length": 365,
+          "hits": [
+            {
+              "id": "gi|1530504495|emb|VDM03167.1|",
+              "length": 132,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 8.11609e-49,
+                  "bit_score": 161.77,
+                  "raw_score": 408.0,
+                  "alignment_length": 108,
+                  "identical": 81,
+                  "positives": 83,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MADEEVQALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|510859078|gb|EPB74633.1|",
+              "length": 119,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    364
+                  ],
+                  "query_range": [
+                    19,
+                    364
+                  ],
+                  "reported_hit": [
+                    1,
+                    115
+                  ],
+                  "hit_range": [
+                    0,
+                    115
+                  ],
+                  "evalue": 1.40046e-48,
+                  "bit_score": 160.614,
+                  "raw_score": 405.0,
+                  "alignment_length": 115,
+                  "identical": 81,
+                  "positives": 85,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTELHCIRKP",
+                  "hit_alignment": "MCDDDVAALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTEAHSILKP",
+                  "midline": "M D++V ALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE H I KP",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|684409690|ref|XP_009175831.1|",
+              "length": 246,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 4.40404e-48,
+                  "bit_score": 163.696,
+                  "raw_score": 413.0,
+                  "alignment_length": 108,
+                  "identical": 81,
+                  "positives": 83,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MADEEVQALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|449710331|gb|EMD49430.1|",
+              "length": 124,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 9.0486e-48,
+                  "bit_score": 159.073,
+                  "raw_score": 401.0,
+                  "alignment_length": 108,
+                  "identical": 78,
+                  "positives": 81,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MGDEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHVSVMAGMGQKDAYVGDEAQSKRGILTLKYPIEHGIVNNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "M DEEVQALVVDNGSGMCKAG       ++  P               G KD+YVGDEAQSKRGILTLKYPIEHGIV NWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|257215766|emb|CAX83035.1|",
+              "length": 252,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.00219e-47,
+                  "bit_score": 162.925,
+                  "raw_score": 411.0,
+                  "alignment_length": 108,
+                  "identical": 81,
+                  "positives": 83,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MADEEVQALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|1535393712|emb|VDP83060.1|",
+              "length": 209,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.16397e-47,
+                  "bit_score": 161.384,
+                  "raw_score": 407.0,
+                  "alignment_length": 108,
+                  "identical": 80,
+                  "positives": 83,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADDEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MAD+EVQALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|312773|emb|CAA50205.1|",
+              "length": 137,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.25869e-47,
+                  "bit_score": 159.073,
+                  "raw_score": 401.0,
+                  "alignment_length": 108,
+                  "identical": 78,
+                  "positives": 81,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MGDEEVQALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHVSVMAGMGQKDAYVGDEAQSKRGILTLKYPIEHGIVNNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "M DEEVQALVVDNGSGMCKAG       ++  P               G KD+YVGDEAQSKRGILTLKYPIEHGIV NWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|1530341495|emb|VDN44756.1|",
+              "length": 145,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.78336e-47,
+                  "bit_score": 158.688,
+                  "raw_score": 400.0,
+                  "alignment_length": 108,
+                  "identical": 78,
+                  "positives": 82,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MGDEDVQALVIDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "M DE+VQALV+DNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|1524877828|ref|XP_027046469.1|",
+              "length": 122,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 1.93331e-47,
+                  "bit_score": 157.918,
+                  "raw_score": 398.0,
+                  "alignment_length": 108,
+                  "identical": 78,
+                  "positives": 82,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEEVAALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRIAPEEHPILLTE",
+                  "midline": "MADEEV ALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELR+APEEHP+LLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gi|1524877860|ref|XP_027046487.1|",
+              "length": 134,
+              "hsps": [
+                {
+                  "reported_query": [
+                    20,
+                    343
+                  ],
+                  "query_range": [
+                    19,
+                    343
+                  ],
+                  "reported_hit": [
+                    1,
+                    108
+                  ],
+                  "hit_range": [
+                    0,
+                    108
+                  ],
+                  "evalue": 2.36088e-47,
+                  "bit_score": 158.303,
+                  "raw_score": 399.0,
+                  "alignment_length": 108,
+                  "identical": 79,
+                  "positives": 82,
+                  "gaps": 0,
+                  "query_alignment": "MADEEVQALVVDNGSGMCKAGIRW**CTKSSIPFHRWTTSTSRCDGWYGSKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "hit_alignment": "MADEDVAALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "midline": "MADE+V ALVVDNGSGMCKAG       ++  P               G KDSYVGDEAQSKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTE",
+                  "observed_frame": [
+                    2,
+                    0
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "blast-example.xml",
+      "format": "blast-xml",
+      "api": "Bio.Blast.NCBIXML.parse",
+      "queries": [
+        {
+          "id": "one",
+          "length": 4,
+          "hits": []
+        },
+        {
+          "id": "two",
+          "length": 5,
+          "hits": []
+        }
+      ]
+    },
+    {
+      "file": "blast-example-xml2.xml",
+      "format": "blast-xml2",
+      "api": "Bio.Blast.NCBIXML.parse",
+      "queries": [
+        {
+          "id": "one",
+          "length": 4,
+          "hits": []
+        },
+        {
+          "id": "two",
+          "length": 5,
+          "hits": []
+        }
+      ]
+    },
+    {
+      "file": "blast-ncbi-cookbook.tsv",
+      "format": "blast-tab6",
+      "api": "Bio.SearchIO.parse",
+      "queries": [
+        {
+          "id": "AE000111.1",
+          "hits": [
+            {
+              "id": "AE000111.1",
+              "hsps": [
+                {
+                  "query_range": [
+                    0,
+                    10596
+                  ],
+                  "hit_range": [
+                    0,
+                    10596
+                  ],
+                  "evalue": 0.0,
+                  "bit_score": 19568.0,
+                  "alignment_length": 10596,
+                  "mismatches": 0,
+                  "gap_openings": 0,
+                  "identity_percent": 100.0
+                }
+              ]
+            },
+            {
+              "id": "AE000174.1",
+              "hsps": [
+                {
+                  "query_range": [
+                    5564,
+                    5671
+                  ],
+                  "hit_range": [
+                    6820,
+                    6928
+                  ],
+                  "evalue": 7.69e-30,
+                  "bit_score": 132.0,
+                  "alignment_length": 109,
+                  "mismatches": 9,
+                  "gap_openings": 3,
+                  "identity_percent": 88.991
+                }
+              ]
+            },
+            {
+              "id": "AE000394.1",
+              "hsps": [
+                {
+                  "query_range": [
+                    5586,
+                    5671
+                  ],
+                  "hit_range": [
+                    134,
+                    219
+                  ],
+                  "evalue": 1.29e-27,
+                  "bit_score": 124.0,
+                  "alignment_length": 85,
+                  "mismatches": 6,
+                  "gap_openings": 0,
+                  "identity_percent": 92.941
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "blast-example.tab7",
+      "format": "blast-tab7",
+      "api": "Bio.SearchIO.parse",
+      "queries": [
+        {
+          "id": "q",
+          "hits": [
+            {
+              "id": "s",
+              "hsps": [
+                {
+                  "query_range": [
+                    0,
+                    4
+                  ],
+                  "hit_range": [
+                    4,
+                    8
+                  ],
+                  "evalue": 1e-20,
+                  "bit_score": 42.0,
+                  "alignment_length": 4,
+                  "mismatches": 0,
+                  "gap_openings": 0,
+                  "identity_percent": 100.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "absent",
+          "hits": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<BlastXML2 xmlns="http://www.ncbi.nlm.nih.gov">
+  <BlastOutput2><report><Report>
+    <program>blastn</program><version>BLASTN synthetic</version><reference>Synthetic format demonstration</reference>
+    <search-target><Target><db>synthetic</db></Target></search-target>
+    <params><Parameters><expect>10</expect></Parameters></params>
+    <results><Results><search><Search><query-id>one</query-id><query-title>first query</query-title><query-len>4</query-len><hits/><message>No hits found</message></Search></search></Results></results>
+  </Report></report></BlastOutput2>
+  <BlastOutput2><report><Report>
+    <program>blastn</program><version>BLASTN synthetic</version><reference>Synthetic format demonstration</reference>
+    <search-target><Target><db>synthetic</db></Target></search-target>
+    <params><Parameters><expect>10</expect></Parameters></params>
+    <results><Results><search><Search><query-id>two</query-id><query-title>second query</query-title><query-len>5</query-len><hits/><message>No hits found</message></Search></search></Results></results>
+  </Report></report></BlastOutput2>
+</BlastXML2>

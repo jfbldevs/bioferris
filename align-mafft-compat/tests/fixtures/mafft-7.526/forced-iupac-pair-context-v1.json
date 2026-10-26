@@ -1,0 +1,355 @@
+{
+  "cases": [
+    {
+      "id": "molecule-policy.mafft-linsi.dna.canonical-74-of-100",
+      "native_distance_upper_bits": [
+        4591134952859768512,
+        4580686601724268992,
+        4592392297938729776
+      ],
+      "native_final_fasta_sha256": "165be9180009daedfa3bd5f762fc8e03632f935b96ecb95552e0646e3306e785",
+      "native_final_rows": [
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacryryryryryryryryryryryryry-",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-cgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacryryryryryryryryryryryryryacgta",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtatgtacgtacgtacgtacgtacgtacgtacgtacgtacryryryryryryryryryryryryry-",
+          "id": "third:row"
+        }
+      ],
+      "native_progressive_fasta_sha256": "165be9180009daedfa3bd5f762fc8e03632f935b96ecb95552e0646e3306e785",
+      "native_progressive_rows": [
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacryryryryryryryryryryryryry-",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-cgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacryryryryryryryryryryryryryacgta",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtatgtacgtacgtacgtacgtacgtacgtacgtacgtacryryryryryryryryryryryryry-",
+          "id": "third:row"
+        }
+      ],
+      "request": {
+        "alphabet": "dna",
+        "profile": "mafft-linsi",
+        "records": [
+          {
+            "id": "z original label",
+            "sequence": "ACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACRYRYRYRYRYRYRYRYRYRYRYRYRY"
+          },
+          {
+            "id": "a|second",
+            "sequence": "CGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACRYRYRYRYRYRYRYRYRYRYRYRYRYACGTA"
+          },
+          {
+            "id": "third:row",
+            "sequence": "ACGTACGTACGTACGTACGTACGTACGTACGTACGTATGTACGTACGTACGTACGTACGTACGTACGTACGTACRYRYRYRYRYRYRYRYRYRYRYRYRY"
+          }
+        ],
+        "threads": 1
+      }
+    },
+    {
+      "id": "molecule-policy.mafft-linsi.dna.canonical-75-of-100",
+      "native_distance_upper_bits": [
+        4591870180066957728,
+        4580686601724268992,
+        4593127525145918976
+      ],
+      "native_final_fasta_sha256": "a226e3869d8ce97bab4a85509e6150de676a0ffd63fd8f3aa4ad1f2e0b0e893d",
+      "native_final_rows": [
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgryryryryryryryryryryryryr-----",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-----cgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgryryryryryryryryryryryryracgta",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtatgtacgtacgtacgtacgtacgtacgtacgtacgtacgryryryryryryryryryryryryr-----",
+          "id": "third:row"
+        }
+      ],
+      "native_progressive_fasta_sha256": "a226e3869d8ce97bab4a85509e6150de676a0ffd63fd8f3aa4ad1f2e0b0e893d",
+      "native_progressive_rows": [
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgryryryryryryryryryryryryr-----",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-----cgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgryryryryryryryryryryryryracgta",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtatgtacgtacgtacgtacgtacgtacgtacgtacgtacgryryryryryryryryryryryryr-----",
+          "id": "third:row"
+        }
+      ],
+      "request": {
+        "alphabet": "dna",
+        "profile": "mafft-linsi",
+        "records": [
+          {
+            "id": "z original label",
+            "sequence": "ACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGRYRYRYRYRYRYRYRYRYRYRYRYR"
+          },
+          {
+            "id": "a|second",
+            "sequence": "CGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGRYRYRYRYRYRYRYRYRYRYRYRYRACGTA"
+          },
+          {
+            "id": "third:row",
+            "sequence": "ACGTACGTACGTACGTACGTACGTACGTACGTACGTATGTACGTACGTACGTACGTACGTACGTACGTACGTACGRYRYRYRYRYRYRYRYRYRYRYRYR"
+          }
+        ],
+        "threads": 1
+      }
+    },
+    {
+      "id": "molecule-policy.mafft-linsi.dna.canonical-76-of-100",
+      "native_distance_upper_bits": [
+        4591134952859768512,
+        4585296756019348032,
+        4593687270134725616
+      ],
+      "native_final_fasta_sha256": "2f3347872f6cbc47514af647dff98d0eb6ebdeefc4342832375d4853c6467a16",
+      "native_final_rows": [
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtryryryryryryryryryryryry-",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-cgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtryryryryryryryryryryryryacgta",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtacttacgtacgtacgtacgtacgtacgtacgtacgtacgtryryryryryryryryryryryry-",
+          "id": "third:row"
+        }
+      ],
+      "native_progressive_fasta_sha256": "2f3347872f6cbc47514af647dff98d0eb6ebdeefc4342832375d4853c6467a16",
+      "native_progressive_rows": [
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtryryryryryryryryryryryry-",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-cgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtryryryryryryryryryryryryacgta",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acgtacgtacgtacgtacgtacgtacgtacgtacgtacttacgtacgtacgtacgtacgtacgtacgtacgtacgtryryryryryryryryryryryry-",
+          "id": "third:row"
+        }
+      ],
+      "request": {
+        "alphabet": "dna",
+        "profile": "mafft-linsi",
+        "records": [
+          {
+            "id": "z original label",
+            "sequence": "ACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTRYRYRYRYRYRYRYRYRYRYRYRY"
+          },
+          {
+            "id": "a|second",
+            "sequence": "CGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTRYRYRYRYRYRYRYRYRYRYRYRYACGTA"
+          },
+          {
+            "id": "third:row",
+            "sequence": "ACGTACGTACGTACGTACGTACGTACGTACGTACGTACTTACGTACGTACGTACGTACGTACGTACGTACGTACGTRYRYRYRYRYRYRYRYRYRYRYRY"
+          }
+        ],
+        "threads": 1
+      }
+    },
+    {
+      "id": "molecule-policy.mafft-linsi.rna.canonical-74-of-100",
+      "native_distance_upper_bits": [
+        4591134952859768512,
+        4580686601724268992,
+        4592392297938729776
+      ],
+      "native_final_fasta_sha256": "0c2bf75ad7af1205b99555619880ce7aa99c1b840ff683c6419385f624bf23f2",
+      "native_final_rows": [
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacryryryryryryryryryryryryry-",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-cguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacryryryryryryryryryryryryryacgua",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguauguacguacguacguacguacguacguacguacguacryryryryryryryryryryryryry-",
+          "id": "third:row"
+        }
+      ],
+      "native_progressive_fasta_sha256": "0c2bf75ad7af1205b99555619880ce7aa99c1b840ff683c6419385f624bf23f2",
+      "native_progressive_rows": [
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacryryryryryryryryryryryryry-",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-cguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacryryryryryryryryryryryryryacgua",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguauguacguacguacguacguacguacguacguacguacryryryryryryryryryryryryry-",
+          "id": "third:row"
+        }
+      ],
+      "request": {
+        "alphabet": "rna",
+        "profile": "mafft-linsi",
+        "records": [
+          {
+            "id": "z original label",
+            "sequence": "ACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACRYRYRYRYRYRYRYRYRYRYRYRYRY"
+          },
+          {
+            "id": "a|second",
+            "sequence": "CGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACRYRYRYRYRYRYRYRYRYRYRYRYRYACGUA"
+          },
+          {
+            "id": "third:row",
+            "sequence": "ACGUACGUACGUACGUACGUACGUACGUACGUACGUAUGUACGUACGUACGUACGUACGUACGUACGUACGUACRYRYRYRYRYRYRYRYRYRYRYRYRY"
+          }
+        ],
+        "threads": 1
+      }
+    },
+    {
+      "id": "molecule-policy.mafft-linsi.rna.canonical-75-of-100",
+      "native_distance_upper_bits": [
+        4591870180066957728,
+        4580686601724268992,
+        4593127525145918976
+      ],
+      "native_final_fasta_sha256": "cf9fa2b9dc7825235534c61274ecebc20b86fcdda4a543f5cb6ee7ecaa8e5230",
+      "native_final_rows": [
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacgryryryryryryryryryryryryr-----",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-----cguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacgryryryryryryryryryryryryracgua",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguauguacguacguacguacguacguacguacguacguacgryryryryryryryryryryryryr-----",
+          "id": "third:row"
+        }
+      ],
+      "native_progressive_fasta_sha256": "cf9fa2b9dc7825235534c61274ecebc20b86fcdda4a543f5cb6ee7ecaa8e5230",
+      "native_progressive_rows": [
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacgryryryryryryryryryryryryr-----",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-----cguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacgryryryryryryryryryryryryracgua",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguauguacguacguacguacguacguacguacguacguacgryryryryryryryryryryryryr-----",
+          "id": "third:row"
+        }
+      ],
+      "request": {
+        "alphabet": "rna",
+        "profile": "mafft-linsi",
+        "records": [
+          {
+            "id": "z original label",
+            "sequence": "ACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGRYRYRYRYRYRYRYRYRYRYRYRYR"
+          },
+          {
+            "id": "a|second",
+            "sequence": "CGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGRYRYRYRYRYRYRYRYRYRYRYRYRACGUA"
+          },
+          {
+            "id": "third:row",
+            "sequence": "ACGUACGUACGUACGUACGUACGUACGUACGUACGUAUGUACGUACGUACGUACGUACGUACGUACGUACGUACGRYRYRYRYRYRYRYRYRYRYRYRYR"
+          }
+        ],
+        "threads": 1
+      }
+    },
+    {
+      "id": "molecule-policy.mafft-linsi.rna.canonical-76-of-100",
+      "native_distance_upper_bits": [
+        4591134952859768512,
+        4585296756019348032,
+        4593687270134725616
+      ],
+      "native_final_fasta_sha256": "6e0e8e62cfc7299833266cc203b70879bb4cb21ea3ffcae751a655e1b4991b65",
+      "native_final_rows": [
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguryryryryryryryryryryryry-",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-cguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguryryryryryryryryryryryryacgua",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguacuuacguacguacguacguacguacguacguacguacguryryryryryryryryryryryry-",
+          "id": "third:row"
+        }
+      ],
+      "native_progressive_fasta_sha256": "6e0e8e62cfc7299833266cc203b70879bb4cb21ea3ffcae751a655e1b4991b65",
+      "native_progressive_rows": [
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguryryryryryryryryryryryry-",
+          "id": "z original label"
+        },
+        {
+          "aligned": "-cguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguacguryryryryryryryryryryryryacgua",
+          "id": "a|second"
+        },
+        {
+          "aligned": "acguacguacguacguacguacguacguacguacguacuuacguacguacguacguacguacguacguacguacguryryryryryryryryryryryry-",
+          "id": "third:row"
+        }
+      ],
+      "request": {
+        "alphabet": "rna",
+        "profile": "mafft-linsi",
+        "records": [
+          {
+            "id": "z original label",
+            "sequence": "ACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGURYRYRYRYRYRYRYRYRYRYRYRY"
+          },
+          {
+            "id": "a|second",
+            "sequence": "CGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGUACGURYRYRYRYRYRYRYRYRYRYRYRYACGUA"
+          },
+          {
+            "id": "third:row",
+            "sequence": "ACGUACGUACGUACGUACGUACGUACGUACGUACGUACUUACGUACGUACGUACGUACGUACGUACGUACGUACGURYRYRYRYRYRYRYRYRYRYRYRY"
+          }
+        ],
+        "threads": 1
+      }
+    }
+  ],
+  "qualified": false,
+  "reference": {
+    "boundary": "Actual pinned static ELF DFORMAT printf XMM0 double arguments; cold observed/untraced scientific files identical.",
+    "native_manifest_sha256": "8e0918f72213c12bed52b27c97063908fc9bdcb9364f0a402ce1416c4e43624f",
+    "native_result_sha256": "22443bd0bc3e1e55e93868ac8b3db555bbd061f29a4ef79177543193f6db95de",
+    "native_tbfast_sha256": "69af170fa1d0ce6b955eedd388fb7c1dbd5f47d213eae1bf2cc3c2f4d39f9525",
+    "version": "7.526"
+  },
+  "schema": "mafft-forced-iupac-pair-context-v1"
+}

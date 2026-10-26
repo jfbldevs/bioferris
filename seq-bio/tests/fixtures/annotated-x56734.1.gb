@@ -1,0 +1,91 @@
+LOCUS       X56734                  1859 bp    mRNA    linear   PLN 25-NOV-2005
+DEFINITION  Trifolium repens mRNA for non-cyanogenic beta-glucosidase.
+ACCESSION   X56734 S46826
+VERSION     X56734.1
+KEYWORDS    beta-glucosidase.
+SOURCE      Trifolium repens (white clover)
+  ORGANISM  Trifolium repens
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; rosids; fabids; Fabales; Fabaceae; Papilionoideae; 50
+            kb inversion clade; NPAAA clade; Hologalegina; IRL clade;
+            Trifolieae; Trifolium.
+REFERENCE   1  (bases 1 to 1859)
+  AUTHORS   Oxtoby,E., Dunn,M.A., Pancoro,A. and Hughes,M.A.
+  TITLE     Nucleotide and derived amino acid sequence of the cyanogenic
+            beta-glucosidase (linamarase) from white clover (Trifolium repens
+            L.)
+  JOURNAL   Plant Mol. Biol. 17 (2), 209-219 (1991)
+   PUBMED   1907511
+REFERENCE   2  (bases 1 to 1859)
+  AUTHORS   Hughes,M.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-NOV-1990) Hughes M.A., University of Newcastle Upon
+            Tyne, Medical School, Newcastle Upon Tyne, NE2 4HH, UK
+COMMENT     On Jun 10, 2005 this sequence version replaced S46826.1.
+FEATURES             Location/Qualifiers
+     source          1..1859
+                     /organism="Trifolium repens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:3899"
+                     /clone="TRE361"
+                     /tissue_type="leaves"
+                     /clone_lib="lambda gt10"
+     mRNA            1..1859
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+     CDS             14..1495
+                     /EC_number="3.2.1.21"
+                     /note="non-cyanogenic"
+                     /codon_start=1
+                     /product="beta-glucosidase"
+                     /protein_id="CAA40058.1"
+                     /db_xref="GOA:P26204"
+                     /db_xref="InterPro:IPR001360"
+                     /db_xref="InterPro:IPR013781"
+                     /db_xref="InterPro:IPR017853"
+                     /db_xref="InterPro:IPR018120"
+                     /db_xref="UniProtKB/Swiss-Prot:P26204"
+                     /translation="MDFIVAIFALFVISSFTITSTNAVEASTLLDIGNLSRSSFPRGF
+                     IFGAGSSAYQFEGAVNEGGRGPSIWDTFTHKYPEKIRDGSNADITVDQYHRYKEDVGI
+                     MKDQNMDSYRFSISWPRILPKGKLSGGINHEGIKYYNNLINELLANGIQPFVTLFHWD
+                     LPQVLEDEYGGFLNSGVINDFRDYTDLCFKEFGDRVRYWSTLNEPWVFSNSGYALGTN
+                     APGRCSASNVAKPGDSGTGPYIVTHNQILAHAEAVHVYKTKYQAYQKGKIGITLVSNW
+                     LMPLDDNSIPDIKAAERSLDFQFGLFMEQLTTGDYSKSMRRIVKNRLPKFSKFESSLV
+                     NGSFDFIGINYYSSSYISNAPSHGNAKPSYSTNPMTNISFEKHGIPLGPRAASIWIYV
+                     YPYMFIQEDFEIFCYILKINITILQFSITENGMNEFNDATLPVEEALLNTYRIDYYYR
+                     HLYYIRSAIRAGSNVKGFYAWSFLDCNEWFAGFTVRFGLNFVD"
+ORIGIN      
+        1 aaacaaacca aatatggatt ttattgtagc catatttgct ctgtttgtta ttagctcatt
+       61 cacaattact tccacaaatg cagttgaagc ttctactctt cttgacatag gtaacctgag
+      121 tcggagcagt tttcctcgtg gcttcatctt tggtgctgga tcttcagcat accaatttga
+      181 aggtgcagta aacgaaggcg gtagaggacc aagtatttgg gataccttca cccataaata
+      241 tccagaaaaa ataagggatg gaagcaatgc agacatcacg gttgaccaat atcaccgcta
+      301 caaggaagat gttgggatta tgaaggatca aaatatggat tcgtatagat tctcaatctc
+      361 ttggccaaga atactcccaa agggaaagtt gagcggaggc ataaatcacg aaggaatcaa
+      421 atattacaac aaccttatca acgaactatt ggctaacggt atacaaccat ttgtaactct
+      481 ttttcattgg gatcttcccc aagtcttaga agatgagtat ggtggtttct taaactccgg
+      541 tgtaataaat gattttcgag actatacgga tctttgcttc aaggaatttg gagatagagt
+      601 gaggtattgg agtactctaa atgagccatg ggtgtttagc aattctggat atgcactagg
+      661 aacaaatgca ccaggtcgat gttcggcctc caacgtggcc aagcctggtg attctggaac
+      721 aggaccttat atagttacac acaatcaaat tcttgctcat gcagaagctg tacatgtgta
+      781 taagactaaa taccaggcat atcaaaaggg aaagataggc ataacgttgg tatctaactg
+      841 gttaatgcca cttgatgata atagcatacc agatataaag gctgccgaga gatcacttga
+      901 cttccaattt ggattgttta tggaacaatt aacaacagga gattattcta agagcatgcg
+      961 gcgtatagtt aaaaaccgat tacctaagtt ctcaaaattc gaatcaagcc tagtgaatgg
+     1021 ttcatttgat tttattggta taaactatta ctcttctagt tatattagca atgccccttc
+     1081 acatggcaat gccaaaccca gttactcaac aaatcctatg accaatattt catttgaaaa
+     1141 acatgggata cccttaggtc caagggctgc ttcaatttgg atatatgttt atccatatat
+     1201 gtttatccaa gaggacttcg agatcttttg ttacatatta aaaataaata taacaatcct
+     1261 gcaattttca atcactgaaa atggtatgaa tgaattcaac gatgcaacac ttccagtaga
+     1321 agaagctctt ttgaatactt acagaattga ttactattac cgtcacttat actacattcg
+     1381 ttctgcaatc agggctggct caaatgtgaa gggtttttac gcatggtcat ttttggactg
+     1441 taatgaatgg tttgcaggct ttactgttcg ttttggatta aactttgtag attagaaaga
+     1501 tggattaaaa aggtacccta agctttctgc ccaatggtac aagaactttc tcaaaagaaa
+     1561 ctagctagta ttattaaaag aactttgtag tagattacag tacatcgttt gaagttgagt
+     1621 tggtgcacct aattaaataa aagaggttac tcttaacata tttttaggcc attcgttgtg
+     1681 aagttgttag gctgttattt ctattatact atgttgtagt aataagtgca ttgttgtacc
+     1741 agaagctatg atcataacta taggttgatc cttcatgtat cagtttgatg ttgagaatac
+     1801 tttgaattaa aagtcttttt ttattttttt aaaaaaaaaa aaaaaaaaaa aaaaaaaaa
+//
+

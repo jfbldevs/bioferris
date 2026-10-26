@@ -1,0 +1,75 @@
+{
+  "crate": "mafft-core",
+  "version": "0.1.2",
+  "registry_checksum": "d495dd7441385aeca74abf0fbf7bec2238832bdffbcaa66e48a04bad04ccc8ce",
+  "repository": "https://github.com/luksgrin/rust-MAFFT",
+  "revision": "aff77991c0a07372ea6afa622bc7c841c4baecc5",
+  "license": "MIT AND BSD-3-Clause",
+  "upstream_files_sha256": {
+    "src/add.rs": "3c7b6ca4e9a6c808b8721cfc4a35dd1fd998f94f7b9a3f883e60226f687eb97c",
+    "src/adjust_direction.rs": "4908d38e0aa76b4ea9748a8d9c266a452e9374f4adf1b55298bb1ca5f6c36aa7",
+    "src/engine.rs": "9df078aea8777c10315123530bd67bc9787da446aa8aae8005d2efec4c2ea872",
+    "src/external.rs": "c98aee5ffe6b743fd60e75aea62e742fd3048628faeabd8d97aac881425576dc",
+    "src/lib.rs": "833961cbb653f22d0fc8d35b4f90bfc604c2c0e67d25f2052a419bdc928eb4e9",
+    "src/progressive.rs": "839cbd15d1f732e9e9f3e7714859809a6bd0d9fbf2d560046057bca6bdf4e1e9",
+    "src/refinement.rs": "8afb491b7adcf62f14fe1538d9715255c80adc67470e3d59dd3ed686208cadf4",
+    "src/varidist.rs": "2648c9d486fb116d172b98d4cebf7f2864985a2c987a90fef0314e65abcf4876",
+    "README.md": "b552ee1fdf8e477cad76f2e30d79b73105b367b760244efd0ee93056c6eeb8ab"
+  },
+  "license_sha256": {
+    "LICENSE-MIT": "d1b67e9d11015491d6753fed4c05c16a547b19b96e001b7ad7540d3f795cd510",
+    "LICENSE-BSD": "ceb2e94a04970403f063070dba49fd21231d22a9904698bbade5d8081b6e66db"
+  },
+  "original_source": {
+    "repository": "https://gitlab.com/sysimm/mafft",
+    "tag": "v7.526",
+    "revision": "ee9799916df6a5d5103d46d54933f8eb6d28e244",
+    "scope": "BSD core/constants.c; extensions excluded"
+  },
+  "local_changes": [
+    "Standalone runtime Cargo.toml: pin existing dependency versions and omit original C-binding integration tests/fixtures.",
+    "M2: nucleotide pairwise gap open/extend/generalized-open scale is 3*600/1000; offset remains 600/1000.",
+    "IUPAC pair context: derive existing owned ambiguity scores from the pair-offset canonical matrix rather than retaining progressive-context ambiguity scores. Reapply the existing optional N-wildcard construction after that dependency update."
+  ],
+  "iupac_pair_context_checkpoint": {
+    "qualified": false,
+    "native_tbfast_sha256": "69af170fa1d0ce6b955eedd388fb7c1dbd5f47d213eae1bf2cc3c2f4d39f9525",
+    "native_options": "L-INS-i with explicit --nuc, separately retained original 1000-iteration and diagnostic zero-iteration controls.",
+    "native_boundary": "Original pinned static x86-64 ELF, no source rebuild or on-disk patch. External private-child ptrace observer reads the original DFORMAT printf XMM0 doubles, with scientific-file noninterference against untraced native controls twice.",
+    "native_distance_pairs": 18,
+    "native_controls": 6,
+    "fixture": "align-mafft-compat/tests/fixtures/mafft-7.526/forced-iupac-pair-context-v1.json",
+    "fixture_sha256": "ebb036c4fad95cc6ca1423c5a214fe61a45bff328557b402420e1d94f85fb00d",
+    "adapter_boundary": "The compatibility adapter supplies nucleotide engine data in lowercase, retaining immutable original typed source/ownership and restoring canonical typed output. Raw upper-case ambiguity bytes were unmapped in the existing nucleotide alphabet.",
+    "negative_control": "Lowercase-only prototype matches all six progressive/final outputs but fails every rounded distance export; retained and not promoted to full numerical fidelity. Initial untraced pipe control is rejected because native readers require seekable input; the successful original-binary control uses regular input files in both modes.",
+    "runtime_policy": "Only owned Rust data/arithmetic and existing reviewed Rust dependency APIs. No registry modification, native process, FFI, external observer or reference state is used at runtime.",
+    "causal_joint_archive": {
+      "path": "docs/validation/results/msa-mafft-causal-joint-v1",
+      "artifact_index_sha256": "92aa4f342974c4e7b2aff13ded2acd9223ba65a1411f7c25ce5cf545aeccfaf6",
+      "inert_artifacts": 6744,
+      "stored_artifact_bytes": 16162043,
+      "offline_auditor": "scripts/validation/audit_mafft_causal_joint.py",
+      "adversarial_evidence_tests": 14,
+      "original_model_inputs": 52,
+      "successful_model_matches_per_build": 50,
+      "separate_model_native_failures": 2,
+      "clean_revision_unique_inputs": 193,
+      "clean_revision_successful_inputs": 189,
+      "separate_clean_revision_native_failures": 4,
+      "overlapping_original_requests_not_double_counted": 24,
+      "source_files_in_actual_clean_freeze": 470,
+      "historical_source_files_preserved_separately": 469,
+      "runtime_production_source_unchanged_by_added_prefix_test": true
+    },
+    "native_prefix_fixture": {
+      "path": "align-mafft-compat/tests/fixtures/mafft-7.526/native-prefix-scalar-v1.json",
+      "sha256": "366d265c7d78468fc94a6101cc17cc3a9a447cb5d96bbf6b32050432fe88cdd1",
+      "native_scalar_controls": 5,
+      "owned_rust_replay": "All five original native model decisions replay through the actual library decision function in debug and release. Exact source-defined sampled counts and the complete-record stopping boundary are checked.",
+      "large_alignment_fidelity_claimed": false,
+      "native_counter_quirk_preserved": "nfreq=2.000000 remains literal native evidence, not a biologically normalized fraction."
+    },
+    "pending": "Remaining declared source/options/failure/resource-domain contracts and final actual-clean qualification before sealed evaluation. Permanent causal/model-policy/prototype/original-bit/corrected-counter/193-request archival and offline replay now pass, including five native scalar-prefix fixture tests. The actual clean development result remains 189 successful unique inputs plus four separate native failures, never evaluation authority."
+  },
+  "scope": "Versioned source-guided compatibility dependency; no registry/cache modification, FFI, reference subprocess or historical-profile change."
+}

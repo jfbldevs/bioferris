@@ -1,0 +1,182 @@
+{
+  "legacy_missing_eof": {
+    "final_virtual_position": 104529920,
+    "length": 140005
+  },
+  "native_blocks": [
+    [
+      0,
+      605,
+      0,
+      65536
+    ],
+    [
+      605,
+      605,
+      65536,
+      65536
+    ],
+    [
+      1210,
+      385,
+      131072,
+      8933
+    ],
+    [
+      1595,
+      28,
+      140005,
+      0
+    ]
+  ],
+  "native_writer": {
+    "payload_crc32": 3774126258,
+    "payload_length": 140005,
+    "positions": [
+      39649280,
+      79307493
+    ]
+  },
+  "public_blocks": [
+    [
+      0,
+      18239,
+      0,
+      65536
+    ],
+    [
+      18239,
+      18223,
+      65536,
+      65536
+    ],
+    [
+      36462,
+      18017,
+      131072,
+      65536
+    ],
+    [
+      54479,
+      17342,
+      196608,
+      65536
+    ],
+    [
+      71821,
+      17715,
+      262144,
+      65536
+    ],
+    [
+      89536,
+      17728,
+      327680,
+      65536
+    ],
+    [
+      107264,
+      17292,
+      393216,
+      63398
+    ],
+    [
+      124556,
+      28,
+      456614,
+      0
+    ]
+  ],
+  "public_positions": [
+    {
+      "after": 1,
+      "before": 0,
+      "length": 1,
+      "prefix_hex": "42",
+      "read": 1
+    },
+    {
+      "after": 65535,
+      "before": 1,
+      "length": 65534,
+      "prefix_hex": "414d010000000002",
+      "read": 65534
+    },
+    {
+      "after": 1195311104,
+      "before": 65535,
+      "length": 1,
+      "prefix_hex": "11",
+      "read": 1
+    },
+    {
+      "after": 1195311105,
+      "before": 1195311104,
+      "length": 1,
+      "prefix_hex": "84",
+      "read": 1
+    },
+    {
+      "after": 2389573632,
+      "before": 1195311105,
+      "length": 65535,
+      "prefix_hex": "1121121441141111",
+      "read": 65535
+    },
+    {
+      "after": 2389573633,
+      "before": 2389573632,
+      "length": 1,
+      "prefix_hex": "39",
+      "read": 1
+    }
+  ],
+  "public_uncompressed": {
+    "crc32": 1043922902,
+    "final_virtual_position": 8164737024,
+    "length": 456614,
+    "prefix_hex": "42414d0100000000020000000500000063687231002706000005000000636872"
+  },
+  "reference": "Biopython 1.88",
+  "virtual_components": [
+    {
+      "compressed": 0,
+      "raw": 0,
+      "split": [
+        0,
+        0
+      ],
+      "within": 0
+    },
+    {
+      "compressed": 55074,
+      "raw": 3609329790,
+      "split": [
+        55074,
+        126
+      ],
+      "within": 126
+    },
+    {
+      "compressed": 281474976710655,
+      "raw": 18446744073709551615,
+      "split": [
+        281474976710655,
+        65535
+      ],
+      "within": 65535
+    },
+    {
+      "compressed": 0,
+      "error": "Require 0 <= within_block_offset < 2**16, got 65536",
+      "error_type": "ValueError",
+      "within": 65536
+    },
+    {
+      "compressed": 281474976710656,
+      "error": "Require 0 <= block_start_offset < 2**48, got 281474976710656",
+      "error_type": "ValueError",
+      "within": 0
+    }
+  ]
+}

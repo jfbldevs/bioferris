@@ -1,0 +1,88 @@
+{
+  "profile": "MAFFT-7.526-G-INS-i-globalpair-v1",
+  "provenance": {
+    "version": "v7.526 (2024/Apr/26)",
+    "source_inspected": false,
+    "package": "mafft-7.526-win64-signed.zip",
+    "package_sha256": "7c3a508c8512af04007d68019c6fbd4ff00d891244b58f87ec9aa0e53fbae8a7",
+    "command": "mafft.bat --globalpair --maxiterate 1000 --thread 1 --inputorder --quiet"
+  },
+  "cases": [
+    {
+      "id": "dna_identical",
+      "alphabet": "dna",
+      "sequences": [
+        { "id": "d1", "sequence": "ACGTACGTACGT" },
+        { "id": "d2", "sequence": "ACGTACGTACGT" },
+        { "id": "d3", "sequence": "ACGTACGTACGT" }
+      ],
+      "reference_alignment": [
+        { "id": "d1", "aligned": "ACGTACGTACGT" },
+        { "id": "d2", "aligned": "ACGTACGTACGT" },
+        { "id": "d3", "aligned": "ACGTACGTACGT" }
+      ]
+    },
+    {
+      "id": "protein_identical",
+      "alphabet": "protein",
+      "sequences": [
+        { "id": "p1", "sequence": "MKTAYIAKQRQISFVKSHFSRQ" },
+        { "id": "p2", "sequence": "MKTAYIAKQRQISFVKSHFSRQ" },
+        { "id": "p3", "sequence": "MKTAYIAKQRQISFVKSHFSRQ" }
+      ],
+      "reference_alignment": [
+        { "id": "p1", "aligned": "MKTAYIAKQRQISFVKSHFSRQ" },
+        { "id": "p2", "aligned": "MKTAYIAKQRQISFVKSHFSRQ" },
+        { "id": "p3", "aligned": "MKTAYIAKQRQISFVKSHFSRQ" }
+      ]
+    },
+    {
+      "id": "dna_indels",
+      "alphabet": "dna",
+      "sequences": [
+        { "id": "d1", "sequence": "TACGTACGTACGT" },
+        { "id": "d2", "sequence": "ACGTCGTACGT" },
+        { "id": "d3", "sequence": "ACGTACGTACG" },
+        { "id": "d4", "sequence": "TACGTTACGTACGT" }
+      ],
+      "reference_alignment": [
+        { "id": "d1", "aligned": "TACG-TACGTACGT" },
+        { "id": "d2", "aligned": "-ACG--TCGTACGT" },
+        { "id": "d3", "aligned": "-ACG-TACGTACG-" },
+        { "id": "d4", "aligned": "TACGTTACGTACGT" }
+      ]
+    },
+    {
+      "id": "rna_indels",
+      "alphabet": "rna",
+      "sequences": [
+        { "id": "r1", "sequence": "UACGUACGUACGU" },
+        { "id": "r2", "sequence": "ACGUCGUACGU" },
+        { "id": "r3", "sequence": "ACGUACGUACG" },
+        { "id": "r4", "sequence": "UACGUUACGUACGU" }
+      ],
+      "reference_alignment": [
+        { "id": "r1", "aligned": "UACG-UACGUACGU" },
+        { "id": "r2", "aligned": "-ACG--UCGUACGU" },
+        { "id": "r3", "aligned": "-ACG-UACGUACG-" },
+        { "id": "r4", "aligned": "UACGUUACGUACGU" }
+      ]
+    },
+    {
+      "id": "protein_globins",
+      "alphabet": "protein",
+      "sequences": [
+        { "id": "human_beta", "sequence": "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLST" },
+        { "id": "human_alpha", "sequence": "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLS" },
+        { "id": "whale_myoglobin", "sequence": "MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHL" },
+        { "id": "soy_leghemoglobin", "sequence": "MVAFTEKQDALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSFLANGVDPT" }
+      ],
+      "reference_alignment": [
+        { "id": "human_beta", "aligned": "MVHLTPEEKSAVTALWGKV--NVDEVGGEALGRLLVVYPWTQRFFESFGDLS--T" },
+        { "id": "human_alpha", "aligned": "MV-LSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF-DLS---" },
+        { "id": "whale_myoglobin", "aligned": "MV-LSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHL----" },
+        { "id": "soy_leghemoglobin", "aligned": "MVAFTEKQDALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSFLANGVDPT" }
+      ]
+    }
+  ]
+}

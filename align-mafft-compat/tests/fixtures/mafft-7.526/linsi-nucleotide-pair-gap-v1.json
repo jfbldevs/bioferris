@@ -1,0 +1,74 @@
+{
+  "profile": "MAFFT-7.526-L-INS-i-localpair-v1",
+  "provenance": {
+    "source": "Frozen diagnostic corpus, before M2; independent evaluation remains sealed.",
+    "mafft_package_sha256": "b8298e379bcd244be0e12f325461d863b93571da78c4499c2a2e4c252679c9de",
+    "original_worker_sha256": "19a1414ea35533e40ad7cd907023edf50d568a6183f798ccec2275bd4459697e"
+  },
+  "cases": [
+    {
+      "id": "diagnostic.mafft-linsi.dna.divergent",
+      "alphabet": "dna",
+      "sequences": [
+        {
+          "id": "s0",
+          "sequence": "GTTAGCTCGTATGACTCACGCGGAACCGAGCAAGCGGGGCGACTCCTA"
+        },
+        {
+          "id": "s1",
+          "sequence": "CGGACCTATCCCGACCCGTCCTTAGGTCCGATGTGCTGCT"
+        },
+        {
+          "id": "s2",
+          "sequence": "TATCGTGTACCTATGACCTAGGGACTGGCTTGCGTATATGATCCATAATCGC"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "id": "s0",
+          "aligned": "-----------------------GTTAGCTCGTATGACTCACGCGGAACCGAGC--AAGCGGGGCGACTCCTA"
+        },
+        {
+          "id": "s1",
+          "aligned": "CG---------------------------------GACCTATCCCGACCCGTCCTTAGGTCCGATGTGCTGCT"
+        },
+        {
+          "id": "s2",
+          "aligned": "TATCGTGTACCTATGACCTAGGGACTGGCTTGCGTATATGATCCATAATCGC---------------------"
+        }
+      ]
+    },
+    {
+      "id": "diagnostic.mafft-linsi.rna.divergent",
+      "alphabet": "rna",
+      "sequences": [
+        {
+          "id": "s0",
+          "sequence": "CGGCAUGCUAGUACUGCCGAGCCUUCAAUGGCGUUAUGUAAUCAACUG"
+        },
+        {
+          "id": "s1",
+          "sequence": "UAGUAUUAUCGGCGCCGGGGUGGACAAACGGAUCGGUUCA"
+        },
+        {
+          "id": "s2",
+          "sequence": "UCUGCGAUGUCUCUCGCGGUUAACGUCCUUUUCCAUCCCAUGUUGUUUUAUG"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "id": "s0",
+          "aligned": "----CGGCAU--------GCUAGUACUGCCGAGCCUUCAAUGGCGUUAUGUAAUCAACUG"
+        },
+        {
+          "id": "s1",
+          "aligned": "--------------------UAGUAUUAUCGGCGCCGGGGUGGACAAACGGAUCGGUUCA"
+        },
+        {
+          "id": "s2",
+          "aligned": "UCUGCGAUGUCUCUCGCGGUUAACGUCCUUUUCCAUCCCAUGUUGUUUUA--------UG"
+        }
+      ]
+    }
+  ]
+}

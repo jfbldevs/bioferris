@@ -1,0 +1,1348 @@
+{
+  "cases": [
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "ACGT",
+        "aligned_second": "ACGT",
+        "first_range": [
+          0,
+          4
+        ],
+        "score": 8,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "first": "ACGT",
+      "gap_extend": -1,
+      "gap_open": -5,
+      "id": "dna_identity_downstream",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "ACGT",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 4
+    },
+    {
+      "alphabet": "dna",
+      "direction": "upstream",
+      "expected": {
+        "aligned_first": "ACGT",
+        "aligned_second": "ACGT",
+        "first_range": [
+          0,
+          4
+        ],
+        "score": 8,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "first": "ACGT",
+      "gap_extend": -1,
+      "gap_open": -5,
+      "id": "dna_identity_upstream",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "ACGT",
+      "seed": [
+        3,
+        3
+      ],
+      "threshold": 4
+    },
+    {
+      "alphabet": "dna",
+      "direction": "both",
+      "expected": {
+        "aligned_first": "ACGT",
+        "aligned_second": "ACGT",
+        "first_range": [
+          0,
+          4
+        ],
+        "score": 8,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "first": "ACGT",
+      "gap_extend": -1,
+      "gap_open": -5,
+      "id": "dna_identity_both",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "ACGT",
+      "seed": [
+        2,
+        2
+      ],
+      "threshold": 4
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "ACGGT",
+        "aligned_second": "AC-GT",
+        "first_range": [
+          0,
+          5
+        ],
+        "score": 18,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      },
+      "first": "ACGGT",
+      "gap_extend": -1,
+      "gap_open": -2,
+      "id": "dna_internal_deletion_downstream",
+      "match_score": 5,
+      "mismatch_score": -4,
+      "second": "ACGT",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 20
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "AC-GT",
+        "aligned_second": "ACGGT",
+        "first_range": [
+          0,
+          4
+        ],
+        "score": 18,
+        "second_range": [
+          0,
+          5
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            -1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "first": "ACGT",
+      "gap_extend": -1,
+      "gap_open": -2,
+      "id": "dna_internal_insertion_downstream",
+      "match_score": 5,
+      "mismatch_score": -4,
+      "second": "ACGGT",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 20
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "ACG",
+        "aligned_second": "ACG",
+        "first_range": [
+          0,
+          3
+        ],
+        "score": 15,
+        "second_range": [
+          0,
+          3
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "first": "ACGGGGT",
+      "gap_extend": -1,
+      "gap_open": -3,
+      "id": "dna_long_affine_gap",
+      "match_score": 5,
+      "mismatch_score": -4,
+      "second": "ACGT",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 20
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "AAATAAA",
+        "aligned_second": "AAACAAA",
+        "first_range": [
+          0,
+          7
+        ],
+        "score": 15,
+        "second_range": [
+          0,
+          7
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ]
+      },
+      "first": "AAATAAA",
+      "gap_extend": -1,
+      "gap_open": -6,
+      "id": "dna_threshold_equality",
+      "match_score": 3,
+      "mismatch_score": -3,
+      "second": "AAACAAA",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 3
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "AAA",
+        "aligned_second": "AAA",
+        "first_range": [
+          0,
+          3
+        ],
+        "score": 9,
+        "second_range": [
+          0,
+          3
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "first": "AAATAAA",
+      "gap_extend": -1,
+      "gap_open": -6,
+      "id": "dna_threshold_strict_excess",
+      "match_score": 3,
+      "mismatch_score": -3,
+      "second": "AAACAAA",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 2
+    },
+    {
+      "alphabet": "dna",
+      "direction": "both",
+      "expected": {
+        "aligned_first": "ACGT",
+        "aligned_second": "ACGT",
+        "first_range": [
+          2,
+          6
+        ],
+        "score": 8,
+        "second_range": [
+          2,
+          6
+        ],
+        "trace": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      },
+      "first": "TTACGTAA",
+      "gap_extend": -1,
+      "gap_open": -6,
+      "id": "dna_two_way_local_region",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "GGACGTCC",
+      "seed": [
+        3,
+        3
+      ],
+      "threshold": 2
+    },
+    {
+      "alphabet": "dna",
+      "direction": "upstream",
+      "expected": {
+        "aligned_first": "ACGGT",
+        "aligned_second": "ACG-T",
+        "first_range": [
+          0,
+          5
+        ],
+        "score": 18,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      },
+      "first": "ACGGT",
+      "gap_extend": -1,
+      "gap_open": -2,
+      "id": "dna_upstream_internal_gap",
+      "match_score": 5,
+      "mismatch_score": -4,
+      "second": "ACGT",
+      "seed": [
+        4,
+        3
+      ],
+      "threshold": 20
+    },
+    {
+      "alphabet": "dna",
+      "direction": "both",
+      "expected": {
+        "aligned_first": "A",
+        "aligned_second": "T",
+        "first_range": [
+          0,
+          1
+        ],
+        "score": -3,
+        "second_range": [
+          0,
+          1
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "first": "A",
+      "gap_extend": -1,
+      "gap_open": -5,
+      "id": "dna_forced_mismatch",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "T",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 5
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "TAAA",
+        "aligned_second": "CAAA",
+        "first_range": [
+          0,
+          4
+        ],
+        "score": 5,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "first": "TAAA",
+      "gap_extend": -1,
+      "gap_open": -6,
+      "id": "dna_forced_mismatch_then_matches",
+      "match_score": 3,
+      "mismatch_score": -4,
+      "second": "CAAA",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 3
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "AAAAACAAAA",
+        "aligned_second": "AAAAAGAAAA",
+        "first_range": [
+          0,
+          10
+        ],
+        "score": 15,
+        "second_range": [
+          0,
+          10
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ]
+        ]
+      },
+      "first": "AAAAACAAAA",
+      "gap_extend": -1,
+      "gap_open": -6,
+      "id": "dna_repetitive_valley",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "AAAAAGAAAA",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 3
+    },
+    {
+      "alphabet": "dna",
+      "direction": "both",
+      "expected": {
+        "aligned_first": "ANGT",
+        "aligned_second": "ANGT",
+        "first_range": [
+          0,
+          4
+        ],
+        "score": 8,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "first": "ANGT",
+      "gap_extend": -1,
+      "gap_open": -5,
+      "id": "dna_ambiguous_identity",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "ANGT",
+      "seed": [
+        1,
+        1
+      ],
+      "threshold": 4
+    },
+    {
+      "alphabet": "dna",
+      "direction": "both",
+      "expected": {
+        "aligned_first": "ANGT",
+        "aligned_second": "AAGT",
+        "first_range": [
+          0,
+          4
+        ],
+        "score": 3,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "first": "ANGT",
+      "gap_extend": -1,
+      "gap_open": -5,
+      "id": "dna_ambiguous_forced_mismatch",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "AAGT",
+      "seed": [
+        1,
+        1
+      ],
+      "threshold": 4
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "ACG",
+        "aligned_second": "ACG",
+        "first_range": [
+          0,
+          3
+        ],
+        "score": 6,
+        "second_range": [
+          0,
+          3
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "first": "ACG",
+      "gap_extend": -1,
+      "gap_open": -1,
+      "id": "dna_terminal_gap_stops_at_best",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "ACGT",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 0
+    },
+    {
+      "alphabet": "protein",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "MKTW",
+        "aligned_second": "MKTW",
+        "first_range": [
+          0,
+          4
+        ],
+        "score": 16,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "first": "MKTW",
+      "gap_extend": -1,
+      "gap_open": -7,
+      "id": "protein_identity_downstream",
+      "match_score": 4,
+      "mismatch_score": -3,
+      "second": "MKTW",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 5
+    },
+    {
+      "alphabet": "protein",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "MKTW",
+        "aligned_second": "MKAW",
+        "first_range": [
+          0,
+          4
+        ],
+        "score": 9,
+        "second_range": [
+          0,
+          4
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "first": "MKTW",
+      "gap_extend": -1,
+      "gap_open": -7,
+      "id": "protein_threshold_equality",
+      "match_score": 4,
+      "mismatch_score": -3,
+      "second": "MKAW",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 3
+    },
+    {
+      "alphabet": "protein",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "MKLLTW",
+        "aligned_second": "MK-LTW",
+        "first_range": [
+          0,
+          6
+        ],
+        "score": 18,
+        "second_range": [
+          0,
+          5
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ]
+      },
+      "first": "MKLLTW",
+      "gap_extend": -1,
+      "gap_open": -2,
+      "id": "protein_internal_gap",
+      "match_score": 4,
+      "mismatch_score": -3,
+      "second": "MKLTW",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 15
+    },
+    {
+      "alphabet": "protein",
+      "direction": "both",
+      "expected": {
+        "aligned_first": "MKTW",
+        "aligned_second": "MKTW",
+        "first_range": [
+          2,
+          6
+        ],
+        "score": 16,
+        "second_range": [
+          2,
+          6
+        ],
+        "trace": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      },
+      "first": "QNMKTWAAA",
+      "gap_extend": -1,
+      "gap_open": -7,
+      "id": "protein_two_way_local_region",
+      "match_score": 4,
+      "mismatch_score": -3,
+      "second": "RRMKTWCCC",
+      "seed": [
+        3,
+        3
+      ],
+      "threshold": 2
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "GATTACAGATTACA",
+        "aligned_second": "GACTACAGATTTCA",
+        "first_range": [
+          0,
+          14
+        ],
+        "score": 32,
+        "second_range": [
+          0,
+          14
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ]
+        ]
+      },
+      "first": "GATTACAGATTACA",
+      "gap_extend": -1,
+      "gap_open": -5,
+      "id": "dna_long_noisy_downstream",
+      "match_score": 3,
+      "mismatch_score": -2,
+      "second": "GACTACAGATTTCA",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 5
+    },
+    {
+      "alphabet": "dna",
+      "direction": "both",
+      "expected": {
+        "aligned_first": "ACGTACGT",
+        "aligned_second": "ACGTTCGT",
+        "first_range": [
+          4,
+          12
+        ],
+        "score": 18,
+        "second_range": [
+          4,
+          12
+        ],
+        "trace": [
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ]
+        ]
+      },
+      "first": "CCCCACGTACGTAAAA",
+      "gap_extend": -1,
+      "gap_open": -6,
+      "id": "dna_middle_seed_noisy_flanks",
+      "match_score": 3,
+      "mismatch_score": -3,
+      "second": "TTTTACGTTCGTGGGG",
+      "seed": [
+        5,
+        5
+      ],
+      "threshold": 4
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "AAAAA-----CCCCC",
+        "aligned_second": "AAAAAGGGGGCCCCC",
+        "first_range": [
+          0,
+          10
+        ],
+        "score": 12,
+        "second_range": [
+          0,
+          15
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            -1,
+            5
+          ],
+          [
+            -1,
+            6
+          ],
+          [
+            -1,
+            7
+          ],
+          [
+            -1,
+            8
+          ],
+          [
+            -1,
+            9
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            9,
+            14
+          ]
+        ]
+      },
+      "first": "AAAAACCCCC",
+      "gap_extend": -1,
+      "gap_open": -4,
+      "id": "dna_long_insertion",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "AAAAAGGGGGCCCCC",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 8
+    },
+    {
+      "alphabet": "dna",
+      "direction": "downstream",
+      "expected": {
+        "aligned_first": "AAAAAGGGGGCCCCC",
+        "aligned_second": "AAAAA-----CCCCC",
+        "first_range": [
+          0,
+          15
+        ],
+        "score": 12,
+        "second_range": [
+          0,
+          10
+        ],
+        "trace": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            6,
+            -1
+          ],
+          [
+            7,
+            -1
+          ],
+          [
+            8,
+            -1
+          ],
+          [
+            9,
+            -1
+          ],
+          [
+            10,
+            5
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            12,
+            7
+          ],
+          [
+            13,
+            8
+          ],
+          [
+            14,
+            9
+          ]
+        ]
+      },
+      "first": "AAAAAGGGGGCCCCC",
+      "gap_extend": -1,
+      "gap_open": -4,
+      "id": "dna_long_deletion",
+      "match_score": 2,
+      "mismatch_score": -3,
+      "second": "AAAAACCCCC",
+      "seed": [
+        0,
+        0
+      ],
+      "threshold": 8
+    }
+  ],
+  "environment": {
+    "byteorder": "little",
+    "dependencies": {
+      "biotraj": "1.2.2",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.4.9",
+      "idna": "3.18",
+      "msgpack": "1.2.1",
+      "networkx": "3.6.1",
+      "numpy": "2.5.1",
+      "packaging": "26.2",
+      "requests": "2.34.2",
+      "scipy": "1.18.0",
+      "urllib3": "2.7.0"
+    },
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "inputs": {
+    "cases_file": "xdrop.json",
+    "cases_sha256": "37fe86d9a89d5bec95863e30a99406f984f97b35cfdd6c559839f04010cfbec5",
+    "generator_sha256": "1090dba808ea1c186347f3630618fff1778f21272040203c6f2bbe399fec5ab7"
+  },
+  "profile": "XDROP-forward-affine-v1",
+  "reference": {
+    "license": "BSD-3-Clause",
+    "name": "Biotite align_local_gapped",
+    "package": "biotite",
+    "public_api_documentation": "https://www.biotite-python.org/latest/apidoc/biotite.sequence.align.align_local_gapped.html",
+    "requires_python": ">=3.12",
+    "scientific_method_doi": "10.1089/10665270050081478",
+    "source_code_inspected": false,
+    "version": "1.7.1",
+    "wheel": {
+      "filename": "biotite-1.7.1-cp313-cp313-win_amd64.whl",
+      "sha256": "965824257f716a77de3df35616cdaf302483a9ab8df98dc1dd0096c987342c49"
+    }
+  },
+  "schema_version": 1
+}

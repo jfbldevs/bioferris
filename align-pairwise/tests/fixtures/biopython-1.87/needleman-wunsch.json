@@ -1,0 +1,441 @@
+{
+  "schema_version": 1,
+  "suite": "NW-global-linear-v1 Biopython conformance",
+  "generated_at_utc": "2026-08-03T05:56:04+00:00",
+  "provenance": {
+    "generator_sha256": "68e6464bad9be4c4da7ea6a4d48ce7a1ae9d5719d2e6d633004a968e36dcf854",
+    "case_specification_sha256": "baf1f6a5aecdfe2dbab2892e252155735fe0498c41fa48e185425add376b2276",
+    "python_version": "3.13.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "package": "biopython",
+    "package_version": "1.87",
+    "numpy_version": "2.5.1",
+    "api": "Bio.Align.PairwiseAligner",
+    "required_algorithm": "Needleman-Wunsch",
+    "mode": "global",
+    "epsilon": 1e-09
+  },
+  "cases": [
+    {
+      "id": "dna_identical",
+      "alphabet": "dna",
+      "first": "ACGTACGT",
+      "second": "ACGTACGT",
+      "scoring": {
+        "match": 2,
+        "mismatch": -1,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 16,
+        "reported_optimal_alignment_count": 1,
+        "unique_rendered_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "ACGTACGT",
+            "second_aligned": "ACGTACGT",
+            "columns": 8,
+            "matches": 8,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna_classic_gattaca",
+      "alphabet": "dna",
+      "first": "GATTACA",
+      "second": "GCATGCT",
+      "scoring": {
+        "match": 2,
+        "mismatch": -1,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 2,
+        "reported_optimal_alignment_count": 4,
+        "unique_rendered_alignment_count": 4,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "G-ATTACA",
+            "second_aligned": "GCA-TGCT",
+            "columns": 8,
+            "matches": 4,
+            "substitutions": 2,
+            "deletions": 1,
+            "insertions": 1,
+            "score": 2
+          },
+          {
+            "first_aligned": "G-ATTACA",
+            "second_aligned": "GCAT-GCT",
+            "columns": 8,
+            "matches": 4,
+            "substitutions": 2,
+            "deletions": 1,
+            "insertions": 1,
+            "score": 2
+          },
+          {
+            "first_aligned": "G-ATTACA",
+            "second_aligned": "GCATG-CT",
+            "columns": 8,
+            "matches": 4,
+            "substitutions": 2,
+            "deletions": 1,
+            "insertions": 1,
+            "score": 2
+          },
+          {
+            "first_aligned": "GATTACA",
+            "second_aligned": "GCATGCT",
+            "columns": 7,
+            "matches": 3,
+            "substitutions": 4,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna_leading_insertion",
+      "alphabet": "dna",
+      "first": "ACGT",
+      "second": "TACGT",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 10,
+        "reported_optimal_alignment_count": 1,
+        "unique_rendered_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "-ACGT",
+            "second_aligned": "TACGT",
+            "columns": 5,
+            "matches": 4,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna_internal_deletion",
+      "alphabet": "dna",
+      "first": "ACGTT",
+      "second": "ACTT",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 10,
+        "reported_optimal_alignment_count": 1,
+        "unique_rendered_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "ACGTT",
+            "second_aligned": "AC-TT",
+            "columns": 5,
+            "matches": 4,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 0,
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna_trailing_insertion",
+      "alphabet": "dna",
+      "first": "ACGT",
+      "second": "ACGTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 10,
+        "reported_optimal_alignment_count": 1,
+        "unique_rendered_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "ACGT-",
+            "second_aligned": "ACGTG",
+            "columns": 5,
+            "matches": 4,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna_completely_different",
+      "alphabet": "dna",
+      "first": "AAAA",
+      "second": "TTTT",
+      "scoring": {
+        "match": 2,
+        "mismatch": -1,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": -4,
+        "reported_optimal_alignment_count": 1,
+        "unique_rendered_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "AAAA",
+            "second_aligned": "TTTT",
+            "columns": 4,
+            "matches": 0,
+            "substitutions": 4,
+            "deletions": 0,
+            "insertions": 0,
+            "score": -4
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna_repetitive_tie",
+      "alphabet": "dna",
+      "first": "AAAA",
+      "second": "AAA",
+      "scoring": {
+        "match": 2,
+        "mismatch": -3,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 4,
+        "reported_optimal_alignment_count": 4,
+        "unique_rendered_alignment_count": 4,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "AAAA",
+            "second_aligned": "-AAA",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 0,
+            "score": 4
+          },
+          {
+            "first_aligned": "AAAA",
+            "second_aligned": "A-AA",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 0,
+            "score": 4
+          },
+          {
+            "first_aligned": "AAAA",
+            "second_aligned": "AA-A",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 0,
+            "score": 4
+          },
+          {
+            "first_aligned": "AAAA",
+            "second_aligned": "AAA-",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 0,
+            "score": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "dna_literal_ambiguity",
+      "alphabet": "dna",
+      "first": "ACGN",
+      "second": "ACGA",
+      "scoring": {
+        "match": 2,
+        "mismatch": -1,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 5,
+        "reported_optimal_alignment_count": 1,
+        "unique_rendered_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "ACGN",
+            "second_aligned": "ACGA",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "rna_internal_deletion",
+      "alphabet": "rna",
+      "first": "AUGCUA",
+      "second": "AUCUA",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 13,
+        "reported_optimal_alignment_count": 1,
+        "unique_rendered_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "AUGCUA",
+            "second_aligned": "AU-CUA",
+            "columns": 6,
+            "matches": 5,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 0,
+            "score": 13
+          }
+        ]
+      }
+    },
+    {
+      "id": "protein_substitution",
+      "alphabet": "protein",
+      "first": "MKTW",
+      "second": "MKAW",
+      "scoring": {
+        "match": 3,
+        "mismatch": -2,
+        "gap": -4
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 7,
+        "reported_optimal_alignment_count": 1,
+        "unique_rendered_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "MKTW",
+            "second_aligned": "MKAW",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "protein_internal_deletion",
+      "alphabet": "protein",
+      "first": "MKTW",
+      "second": "MTW",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "gap": -2
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": 7,
+        "reported_optimal_alignment_count": 1,
+        "unique_rendered_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_aligned": "MKTW",
+            "second_aligned": "M-TW",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 0,
+            "score": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "scientific_myoglobin_vs_beta_globin",
+      "alphabet": "protein",
+      "first": "MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGDFGADAQGAMNKALELFRKDIAAKYKELGYQG",
+      "second": "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH",
+      "scoring": {
+        "match": 2,
+        "mismatch": -1,
+        "gap": -2
+      },
+      "comparison": "score_only",
+      "expected": {
+        "algorithm": "Needleman-Wunsch",
+        "score": -32,
+        "reported_optimal_alignment_count": null,
+        "unique_rendered_alignment_count": null,
+        "alignments_complete": false,
+        "alignments": []
+      }
+    }
+  ]
+}

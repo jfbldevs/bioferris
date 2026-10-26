@@ -1,0 +1,603 @@
+{
+  "cases": [
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "41ffc448559457e64c70fc4825a1c6afab31eef9bf6f3172ea21d1165b981517",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "8aebc3204f14216160db3b27a97f74c12e0643c51a95a46b09dc0c87b30ad8b7",
+      "id": "dna-identical",
+      "input_sha256": "41ffc448559457e64c70fc4825a1c6afab31eef9bf6f3172ea21d1165b981517",
+      "molecule": "dna",
+      "pairwise_alignment_score": 0,
+      "records": [
+        {
+          "identifier": "dna-a",
+          "sequence": "ACGT"
+        },
+        {
+          "identifier": "dna-b",
+          "sequence": "ACGT"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "ACGT",
+          "identifier": "dna-a"
+        },
+        {
+          "aligned": "ACGT",
+          "identifier": "dna-b"
+        }
+      ],
+      "reference_graph": {
+        "links": 3,
+        "paths": 2,
+        "segments": 4
+      }
+    },
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "ad60b790c2b243cfcf45f387c349a8afebeb238337bbaa0dc853c5f4d468abbd",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "3e52ead4107ea2cd444578ea435ebce8192a485597d729237140af544fbbcf5f",
+      "id": "dna-mismatch",
+      "input_sha256": "ad60b790c2b243cfcf45f387c349a8afebeb238337bbaa0dc853c5f4d468abbd",
+      "molecule": "dna",
+      "pairwise_alignment_score": -4,
+      "records": [
+        {
+          "identifier": "dna-a",
+          "sequence": "ACGT"
+        },
+        {
+          "identifier": "dna-b",
+          "sequence": "ATGT"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "ACGT",
+          "identifier": "dna-a"
+        },
+        {
+          "aligned": "ATGT",
+          "identifier": "dna-b"
+        }
+      ],
+      "reference_graph": {
+        "links": 5,
+        "paths": 2,
+        "segments": 5
+      }
+    },
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "e9fb7d4a408635ecbbfaf1b49966be01e4edd6ea78a65c9a3b4e2689f4a9f0de",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "c4a4346ab6ead041d4545d78c2d80a2badfde441925068ee8e6f2c8850aa660a",
+      "id": "dna-internal-deletion",
+      "input_sha256": "e5f4c192729d70b9a43609cb306dce1145e68646c4e2c262de89e79b0d744e72",
+      "molecule": "dna",
+      "pairwise_alignment_score": -8,
+      "records": [
+        {
+          "identifier": "dna-a",
+          "sequence": "ACGT"
+        },
+        {
+          "identifier": "dna-b",
+          "sequence": "AGT"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "ACGT",
+          "identifier": "dna-a"
+        },
+        {
+          "aligned": "A-GT",
+          "identifier": "dna-b"
+        }
+      ],
+      "reference_graph": {
+        "links": 4,
+        "paths": 2,
+        "segments": 4
+      }
+    },
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "e7827f749e03559a03489e6476fd1af57112a04e598f62e5a82e05f5ae3c2185",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "f2a0ed17a12eb2d1eb40d46b8e63d5a1a0b43e0d7351e6b75f02f85ecbfb9f9a",
+      "id": "dna-internal-insertion",
+      "input_sha256": "2b44bdcad5b54bfa0cfe603f4ff610a0b30e75f2d1190a43d15ae9f3934270e4",
+      "molecule": "dna",
+      "pairwise_alignment_score": -8,
+      "records": [
+        {
+          "identifier": "dna-a",
+          "sequence": "ACGT"
+        },
+        {
+          "identifier": "dna-b",
+          "sequence": "ACAGT"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "AC-GT",
+          "identifier": "dna-a"
+        },
+        {
+          "aligned": "ACAGT",
+          "identifier": "dna-b"
+        }
+      ],
+      "reference_graph": {
+        "links": 5,
+        "paths": 2,
+        "segments": 5
+      }
+    },
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "5c8380fc4cf3f6162a9a7657cdd43b7527f7933b0b509b54df266fccd9bb54e4",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "21a7afe7ca26f17b50998825c9b112c959ae2d27c8008d59b960628ba0f31106",
+      "id": "dna-leading-gap",
+      "input_sha256": "45d67dae1ac28ef49d976b9c705ef16aa5d3389dad589a77838f44befe237169",
+      "molecule": "dna",
+      "pairwise_alignment_score": -10,
+      "records": [
+        {
+          "identifier": "dna-a",
+          "sequence": "ACGT"
+        },
+        {
+          "identifier": "dna-b",
+          "sequence": "TTACGT"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "--ACGT",
+          "identifier": "dna-a"
+        },
+        {
+          "aligned": "TTACGT",
+          "identifier": "dna-b"
+        }
+      ],
+      "reference_graph": {
+        "links": 5,
+        "paths": 2,
+        "segments": 6
+      }
+    },
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "d96160eae66d9d95b594b13bc459e83b07852b75dbd3105abf2dec9c8d3b49a7",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "3c9d467b498b88ba0b2b84e7fe4db2097e927bf3fe5f228fe1330e2595f9f68d",
+      "id": "dna-trailing-gap",
+      "input_sha256": "f6bcab9afbb39ddb45dc37652210597b8d735eb5135b7edb623d416e0540fb8f",
+      "molecule": "dna",
+      "pairwise_alignment_score": -10,
+      "records": [
+        {
+          "identifier": "dna-a",
+          "sequence": "ACGT"
+        },
+        {
+          "identifier": "dna-b",
+          "sequence": "ACGTAA"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "ACGT--",
+          "identifier": "dna-a"
+        },
+        {
+          "aligned": "ACGTAA",
+          "identifier": "dna-b"
+        }
+      ],
+      "reference_graph": {
+        "links": 5,
+        "paths": 2,
+        "segments": 6
+      }
+    },
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "bcf0017df22ccc662265745b27c337844bd3ee8889d9538be6a0e64531f091ea",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "9382428667502ae6c0e71e34f365cb39cfc1a6621af22deeabd6df9eab99c378",
+      "id": "dna-repetitive",
+      "input_sha256": "bcf0017df22ccc662265745b27c337844bd3ee8889d9538be6a0e64531f091ea",
+      "molecule": "dna",
+      "pairwise_alignment_score": -8,
+      "records": [
+        {
+          "identifier": "dna-a",
+          "sequence": "AAAACAAA"
+        },
+        {
+          "identifier": "dna-b",
+          "sequence": "AAACAAAA"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "AAAACAAA",
+          "identifier": "dna-a"
+        },
+        {
+          "aligned": "AAACAAAA",
+          "identifier": "dna-b"
+        }
+      ],
+      "reference_graph": {
+        "links": 10,
+        "paths": 2,
+        "segments": 10
+      }
+    },
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "fd200bd266f7e5d9f8470eae1b32eb47567e2748cacbca418693e8b22024a377",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "ee0898b0368ddc92cf5c481b76e3c3c94b2596c55660f6e802e1836ba95a1f49",
+      "id": "dna-branching-progressive",
+      "input_sha256": "52f8d128b96ed0f965749c918e8a9aefd11922de773646899881f87e142279af",
+      "molecule": "dna",
+      "pairwise_alignment_score": null,
+      "records": [
+        {
+          "identifier": "reference",
+          "sequence": "ACGT"
+        },
+        {
+          "identifier": "allele",
+          "sequence": "ATGT"
+        },
+        {
+          "identifier": "deletion",
+          "sequence": "AGT"
+        },
+        {
+          "identifier": "insertion",
+          "sequence": "ACAGT"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "AC-GT",
+          "identifier": "reference"
+        },
+        {
+          "aligned": "AT-GT",
+          "identifier": "allele"
+        },
+        {
+          "aligned": "A--GT",
+          "identifier": "deletion"
+        },
+        {
+          "aligned": "ACAGT",
+          "identifier": "insertion"
+        }
+      ],
+      "reference_graph": {
+        "links": 8,
+        "paths": 4,
+        "segments": 6
+      }
+    },
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "6848e3b800dd591aa7e7c932c02e51ae125dc58f030df42169c02b1a82310717",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "e9b23f749ffe8ed309a8e95887c047fdf03e08a88c15a73b8bded34357e3dba5",
+      "id": "rna-internal-deletion",
+      "input_sha256": "763851883212c934b2d466efb0940bd6aac033625f0cf73cfe2ca83eb4148195",
+      "molecule": "rna",
+      "pairwise_alignment_score": -8,
+      "records": [
+        {
+          "identifier": "rna-a",
+          "sequence": "ACGU"
+        },
+        {
+          "identifier": "rna-b",
+          "sequence": "AGU"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "ACGU",
+          "identifier": "rna-a"
+        },
+        {
+          "aligned": "A-GU",
+          "identifier": "rna-b"
+        }
+      ],
+      "reference_graph": {
+        "links": 4,
+        "paths": 2,
+        "segments": 4
+      }
+    },
+    {
+      "alignment_command": [
+        "spoa",
+        "-m",
+        "0",
+        "-n",
+        "-4",
+        "-g",
+        "-8",
+        "-e",
+        "-2",
+        "-q",
+        "-8",
+        "-c",
+        "-2",
+        "-l",
+        "1",
+        "INPUT",
+        "-r",
+        "1"
+      ],
+      "alignment_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "alignment_stdout_sha256": "db3d1e852dcd2bcb262b9c09d950f4ae31c6d60978729e41f0f2eb6779c0a42b",
+      "graph_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graph_stdout_sha256": "b72ab3fcd34d61f8603a05fb440ced06a8fe51f6c2c9b9e22f5305f6bca8d3e2",
+      "id": "protein-mismatch",
+      "input_sha256": "db3d1e852dcd2bcb262b9c09d950f4ae31c6d60978729e41f0f2eb6779c0a42b",
+      "molecule": "protein",
+      "pairwise_alignment_score": -4,
+      "records": [
+        {
+          "identifier": "protein-a",
+          "sequence": "ARND"
+        },
+        {
+          "identifier": "protein-b",
+          "sequence": "ARXD"
+        }
+      ],
+      "reference_alignment": [
+        {
+          "aligned": "ARND",
+          "identifier": "protein-a"
+        },
+        {
+          "aligned": "ARXD",
+          "identifier": "protein-b"
+        }
+      ],
+      "reference_graph": {
+        "links": 5,
+        "paths": 2,
+        "segments": 5
+      }
+    }
+  ],
+  "cases_sha256": "7a548cca1bf2515f9f7bf0da62384bc9e3fb2dc8189533c04342d8736c942115",
+  "generator_sha256": "68d496cceb9682a5448b2c10bca9cc5afa3b00808096588f2b836e7d3458c912",
+  "options": {
+    "boundary": "global (-l 1)",
+    "gap_model": "affine with equal first and second functions",
+    "result_alignment": "multiple sequence alignment (-r 1)",
+    "result_graph": "GFA (-r 3)",
+    "threads": 1
+  },
+  "profile": "LEE-2002-POASTA-2025-global-affine-iterative-v1",
+  "reference": {
+    "build": {
+      "cmake": "4.4.2",
+      "cmake_archive_sha256": "3ada9a3f5d8a85413579bdd0ea6aa8e8da86efdd6d15c91a1afa517f2021956c",
+      "compiler": "g++ 13.3.0",
+      "mode": "Release"
+    },
+    "commit": "167bdcc41a25e397cbd4487b6338989266d815d8",
+    "executable_sha256": "672d8fe684c063a6154797a14e953aa8a41b88abe26a370f5c6f3bf090813a01",
+    "license": "MIT (external black-box laboratory only)",
+    "project": "rvaser/spoa",
+    "release": "4.1.5"
+  },
+  "schema_version": 1,
+  "scoring": {
+    "gap_extension_score": -2,
+    "gap_open_score": -8,
+    "match": 0,
+    "mismatch": -4,
+    "poasta_gap_extension_cost": 2,
+    "poasta_gap_opening_cost": 6,
+    "poasta_mismatch_cost": 4
+  }
+}

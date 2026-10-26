@@ -1,0 +1,15 @@
+LOCUS       DEMO 15 bp DNA circular SYN 15-OCT-2026
+DEFINITION  Original coding record.
+ACCESSION   DEMO
+VERSION     DEMO.2
+FEATURES             Location/Qualifiers
+     source          1..15
+                     /organism="Synthetic construct"
+     CDS             4..12
+                     /gene="demo"
+                     /codon_start=1
+                     /transl_table=1
+                     /translation="MA"
+ORIGIN
+        1 aaaATGGCTT AAccc
+//

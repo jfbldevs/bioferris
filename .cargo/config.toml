@@ -1,0 +1,2 @@
+[alias]
+bio = "run --quiet -p bioferris --example"

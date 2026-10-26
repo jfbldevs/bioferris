@@ -1,0 +1,342 @@
+{
+    "cases":  [
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  true,
+                      "expected":  {
+                                       "cigar":  "2M1X1M1X1M",
+                                       "penalty":  8,
+                                       "raw_reference_score":  -8
+                                   },
+                      "first":  "GATACA",
+                      "gap_extension":  2,
+                      "gap_opening":  6,
+                      "id":  "affine_paper_pair",
+                      "mismatch":  4,
+                      "mode":  "affine",
+                      "second":  "GAGATA"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  true,
+                      "expected":  {
+                                       "cigar":  "8M",
+                                       "penalty":  0,
+                                       "raw_reference_score":  0
+                                   },
+                      "first":  "ACGTACGT",
+                      "gap_extension":  2,
+                      "gap_opening":  6,
+                      "id":  "affine_dna_identity",
+                      "mismatch":  4,
+                      "mode":  "affine",
+                      "second":  "ACGTACGT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  true,
+                      "expected":  {
+                                       "cigar":  "2M1X1M",
+                                       "penalty":  4,
+                                       "raw_reference_score":  -4
+                                   },
+                      "first":  "ACGT",
+                      "gap_extension":  2,
+                      "gap_opening":  6,
+                      "id":  "affine_dna_single_mismatch",
+                      "mismatch":  4,
+                      "mode":  "affine",
+                      "second":  "ACCT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "3M5D1M",
+                                       "penalty":  16,
+                                       "raw_reference_score":  -16
+                                   },
+                      "first":  "ACGGGGGGT",
+                      "gap_extension":  2,
+                      "gap_opening":  6,
+                      "id":  "affine_dna_long_deletion",
+                      "mismatch":  4,
+                      "mode":  "affine",
+                      "second":  "ACGT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "3M5I1M",
+                                       "penalty":  16,
+                                       "raw_reference_score":  -16
+                                   },
+                      "first":  "ACGT",
+                      "gap_extension":  2,
+                      "gap_opening":  6,
+                      "id":  "affine_dna_long_insertion",
+                      "mismatch":  4,
+                      "mode":  "affine",
+                      "second":  "ACGGGGGGT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  true,
+                      "expected":  {
+                                       "cigar":  "3D4M",
+                                       "penalty":  6,
+                                       "raw_reference_score":  -6
+                                   },
+                      "first":  "GGGACGT",
+                      "gap_extension":  1,
+                      "gap_opening":  3,
+                      "id":  "affine_dna_leading_gap",
+                      "mismatch":  5,
+                      "mode":  "affine",
+                      "second":  "ACGT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  true,
+                      "expected":  {
+                                       "cigar":  "4M3I",
+                                       "penalty":  6,
+                                       "raw_reference_score":  -6
+                                   },
+                      "first":  "ACGT",
+                      "gap_extension":  1,
+                      "gap_opening":  3,
+                      "id":  "affine_dna_trailing_gap",
+                      "mismatch":  5,
+                      "mode":  "affine",
+                      "second":  "ACGTTTT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "4M2I4M",
+                                       "penalty":  5,
+                                       "raw_reference_score":  -5
+                                   },
+                      "first":  "ACGTACGT",
+                      "gap_extension":  1,
+                      "gap_opening":  3,
+                      "id":  "affine_dna_internal_gap",
+                      "mismatch":  5,
+                      "mode":  "affine",
+                      "second":  "ACGTTTACGT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "4M2D4M",
+                                       "penalty":  5,
+                                       "raw_reference_score":  -5
+                                   },
+                      "first":  "ACGTTTACGT",
+                      "gap_extension":  1,
+                      "gap_opening":  3,
+                      "id":  "affine_dna_internal_gap_reversed",
+                      "mismatch":  5,
+                      "mode":  "affine",
+                      "second":  "ACGTACGT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  true,
+                      "expected":  {
+                                       "cigar":  "6X",
+                                       "penalty":  6,
+                                       "raw_reference_score":  -6
+                                   },
+                      "first":  "AAAAAA",
+                      "gap_extension":  3,
+                      "gap_opening":  10,
+                      "id":  "affine_dna_all_mismatches",
+                      "mismatch":  1,
+                      "mode":  "affine",
+                      "second":  "TTTTTT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "1I3M1D",
+                                       "penalty":  2,
+                                       "raw_reference_score":  -2
+                                   },
+                      "first":  "ACAC",
+                      "gap_extension":  1,
+                      "gap_opening":  0,
+                      "id":  "affine_dna_zero_opening",
+                      "mismatch":  2,
+                      "mode":  "affine",
+                      "second":  "CACA"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "3M1D4M",
+                                       "penalty":  3,
+                                       "raw_reference_score":  -3
+                                   },
+                      "first":  "ACGTACGT",
+                      "gap_extension":  1,
+                      "gap_opening":  2,
+                      "id":  "affine_dna_gap_preferred",
+                      "mismatch":  9,
+                      "mode":  "affine",
+                      "second":  "ACGACGT"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "6M4D",
+                                       "penalty":  6,
+                                       "raw_reference_score":  -6
+                                   },
+                      "first":  "AAAAAAAAAA",
+                      "gap_extension":  1,
+                      "gap_opening":  2,
+                      "id":  "affine_dna_repetitive",
+                      "mismatch":  7,
+                      "mode":  "affine",
+                      "second":  "AAAAAA"
+                  },
+                  {
+                      "alphabet":  "dna",
+                      "compare_cigar":  true,
+                      "expected":  {
+                                       "cigar":  "2M1X3M",
+                                       "penalty":  7,
+                                       "raw_reference_score":  -7
+                                   },
+                      "first":  "ACNGTN",
+                      "gap_extension":  2,
+                      "gap_opening":  5,
+                      "id":  "affine_dna_ambiguous",
+                      "mismatch":  7,
+                      "mode":  "affine",
+                      "second":  "ACTGTN"
+                  },
+                  {
+                      "alphabet":  "rna",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "1M1X4M1X1M",
+                                       "penalty":  8,
+                                       "raw_reference_score":  -8
+                                   },
+                      "first":  "ACGUUAGC",
+                      "gap_extension":  2,
+                      "gap_opening":  6,
+                      "id":  "affine_rna_mixed",
+                      "mismatch":  4,
+                      "mode":  "affine",
+                      "second":  "AGGUUAAC"
+                  },
+                  {
+                      "alphabet":  "rna",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "3M1D2M",
+                                       "penalty":  4,
+                                       "raw_reference_score":  -4
+                                   },
+                      "first":  "AUGCUU",
+                      "gap_extension":  1,
+                      "gap_opening":  3,
+                      "id":  "affine_rna_gap",
+                      "mismatch":  8,
+                      "mode":  "affine",
+                      "second":  "AUGUU"
+                  },
+                  {
+                      "alphabet":  "protein",
+                      "compare_cigar":  true,
+                      "expected":  {
+                                       "cigar":  "3M1X6M",
+                                       "penalty":  5,
+                                       "raw_reference_score":  -5
+                                   },
+                      "first":  "MTEYKLVVVG",
+                      "gap_extension":  2,
+                      "gap_opening":  8,
+                      "id":  "affine_protein_mismatch",
+                      "mismatch":  5,
+                      "mode":  "affine",
+                      "second":  "MTEFKLVVVG"
+                  },
+                  {
+                      "alphabet":  "protein",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "7M1D6M1D5M",
+                                       "penalty":  10,
+                                       "raw_reference_score":  -10
+                                   },
+                      "first":  "ARNDCQEGHILKMFPSTWYV",
+                      "gap_extension":  1,
+                      "gap_opening":  4,
+                      "id":  "affine_protein_gap",
+                      "mismatch":  9,
+                      "mode":  "affine",
+                      "second":  "ARNDCQEHILKMFSTWYV"
+                  },
+                  {
+                      "alphabet":  "protein",
+                      "compare_cigar":  false,
+                      "expected":  {
+                                       "cigar":  "6M4D",
+                                       "penalty":  11,
+                                       "raw_reference_score":  -11
+                                   },
+                      "first":  "MAMAMAMAMA",
+                      "gap_extension":  2,
+                      "gap_opening":  3,
+                      "id":  "affine_protein_repetitive",
+                      "mismatch":  6,
+                      "mode":  "affine",
+                      "second":  "MAMAMA"
+                  }
+              ],
+    "environment":  {
+                        "build_tool":  "GNU Make 4.3",
+                        "compiler":  "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+                        "host_platform":  "Windows-11-10.0.26200-SP0",
+                        "linux":  "Linux 6.18.33.2-microsoft-standard-WSL2 x86_64 GNU/Linux",
+                        "wsl_distribution":  "Ubuntu-24.04"
+                    },
+    "generated_at_utc":  "2026-08-03T18:31:02+00:00",
+    "inputs":  {
+                   "cases_file":  "wfa.json",
+                   "cases_sha256":  "127940143693b9e8d4d855028e22d47a72f42cd6e5601b77e2712c1953f76eee",
+                   "generator_sha256":  "2ab883376e843d67369c9fbbcad70a83e2c498a51a8060d71d3ca5fb7c94966b"
+               },
+    "profile":  "WFA-global-affine-v1",
+    "reference":  {
+                      "algorithms":  [
+                                         "gap-affine-wfa"
+                                     ],
+                      "binary":  "bin/align_benchmark",
+                      "binary_sha256":  "4f66f758e94bacb577b82aafe624b2e63fc817d77d79d4d037c01fc3b7cb9192",
+                      "commit":  "bcf473a6561fa297934a80eaa7c04b4ee412360c",
+                      "heuristic":  null,
+                      "license":  "MIT",
+                      "memory_mode":  "high",
+                      "project":  "WFA2-lib",
+                      "public_interface":  "tools/README.md align-benchmark CLI",
+                      "repository":  "https://github.com/smarco/WFA2-lib",
+                      "source_code_inspected":  false,
+                      "span":  "global",
+                      "tag":  "v2.3.6",
+                      "tag_object":  "0db345a8fe862fd7873d3354c499da385583a65a",
+                      "threads":  1
+                  },
+    "schema_version":  1
+}

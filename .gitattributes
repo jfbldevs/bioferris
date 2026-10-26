@@ -1,0 +1,25 @@
+*.rs text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+*.yml text eol=lf
+# Do not normalize original fixtures or historical qualification bytes.
+seq-bio/tests/fixtures/** -text
+docs/validation/results/** -text
+docs/benchmarks/results/mafft-fft-ns-i-*.json text eol=lf
+align-benchmarks/data/matrices/* -text
+# Byte-exact primary-source snapshots; preserve original line endings.
+seq-bio/tests/fixtures/annotated-*.gb -text
+seq-bio/tests/fixtures/annotated-*.embl -text
+seq-bio/tests/fixtures/annotated-nc_001422.1.gb -text whitespace=-blank-at-eol,-blank-at-eof
+# Preserve raw command output, including Cargo's final blank line.
+docs/validation/results/reading-frames-v1/*.log -text whitespace=-blank-at-eof
+docs/validation/results/cds-translation-v1/*.log -text whitespace=-blank-at-eof
+docs/validation/results/protein-properties-v1/*.log -text whitespace=-blank-at-eof
+docs/validation/results/analysis-interoperability-v1/*.log -text whitespace=-blank-at-eof
+docs/validation/results/analysis-interoperability-final-v1/*.log -text whitespace=-blank-at-eof
+docs/validation/results/analysis-interoperability-final-v1/workspace-tests.log -text whitespace=-blank-at-eol,-blank-at-eof
+docs/validation/results/analysis-interoperability-v1/integration-wiring.patch -text whitespace=-blank-at-eol,-blank-at-eof
+# Preserve unmodified public NCBI XML2 snapshots, including their final blank line.
+seq-bio/tests/fixtures/blast-ncbi-2.9.0-nucleotide-xml2.xml -text whitespace=-blank-at-eof
+seq-bio/tests/fixtures/blast-ncbi-2.9.0-translated-xml2.xml -text whitespace=-blank-at-eof

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "operation": "protein-properties",
+  "molecule": "protein",
+  "sequence": "INGAR",
+  "ph": 7.0
+}

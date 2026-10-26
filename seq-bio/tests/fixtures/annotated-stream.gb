@@ -1,0 +1,24 @@
+LOCUS       DEMO1 9 bp DNA linear SYN 22-OCT-2026
+DEFINITION  First record: a coding sequence.
+ACCESSION   DEMO1
+VERSION     DEMO1.1
+FEATURES             Location/Qualifiers
+     CDS             1..9
+                     /gene="demo"
+ORIGIN
+        1 atggcttaa
+//
+LOCUS       DEMO2 6 bp RNA linear SYN 22-OCT-2026
+DEFINITION  Second record: declared as RNA.
+ACCESSION   DEMO2
+VERSION     DEMO2.1
+ORIGIN
+        1 augcuu
+//
+LOCUS       DEMO3 12 bp DNA linear SYN 22-OCT-2026
+DEFINITION  Third record: no features.
+ACCESSION   DEMO3
+VERSION     DEMO3.1
+ORIGIN
+        1 ggatccgaat tc
+//

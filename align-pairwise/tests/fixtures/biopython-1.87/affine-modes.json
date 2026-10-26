@@ -1,0 +1,1223 @@
+{
+  "schema_version": 1,
+  "suite": "AFFINE-MODES-v1 Biopython conformance",
+  "generated_at_utc": "2026-08-05T23:29:30+00:00",
+  "provenance": {
+    "generator_sha256": "dfe257d5e201a9f629e4de91e19d7dd161e1857b9f3d84594b9e628ad8ec8a96",
+    "case_specification_sha256": "cbda5eec88fa9364b941957814d933a7181f14ee626ea381438d4be8475cb9c8",
+    "python_version": "3.13.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "package": "biopython",
+    "package_version": "1.87",
+    "numpy_version": "2.5.1",
+    "api": "Bio.Align.PairwiseAligner",
+    "global_algorithm": "Gotoh global alignment algorithm",
+    "local_algorithm": "Gotoh local alignment algorithm",
+    "global_mode": "global",
+    "local_mode": "local",
+    "gap_convention": "open + (length - 1) * extend",
+    "boundary_mapping": {
+      "first_start": "left deletion",
+      "first_end": "right deletion",
+      "second_start": "left insertion",
+      "second_end": "right insertion"
+    },
+    "epsilon": 1e-09
+  },
+  "cases": [
+    {
+      "id": "endgap_mode_0000",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": false,
+        "second_start": false,
+        "second_end": false
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": -1,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "TAC-G",
+            "second_aligned": "-ACTG",
+            "columns": 5,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 1,
+            "score": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_0001",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": true,
+        "first_end": false,
+        "second_start": false,
+        "second_end": false
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 4,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 1,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "AC-G",
+            "second_aligned": "ACTG",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "score": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_0010",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": true,
+        "second_start": false,
+        "second_end": false
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": -1,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "TAC-G",
+            "second_aligned": "-ACTG",
+            "columns": 5,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 1,
+            "score": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_0011",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": true,
+        "first_end": true,
+        "second_start": false,
+        "second_end": false
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 4,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 1,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "AC-G",
+            "second_aligned": "ACTG",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "score": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_0100",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": false,
+        "second_start": true,
+        "second_end": false
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 0,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 4,
+            "second_start": 2,
+            "second_end": 4,
+            "first_aligned": "TACG",
+            "second_aligned": "T--G",
+            "columns": 4,
+            "matches": 2,
+            "substitutions": 0,
+            "deletions": 2,
+            "insertions": 0,
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_0101",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": true,
+        "first_end": false,
+        "second_start": true,
+        "second_end": false
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 4,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 1,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "AC-G",
+            "second_aligned": "ACTG",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "score": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_0110",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": true,
+        "second_start": true,
+        "second_end": false
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 0,
+        "reported_optimal_alignment_count": 2,
+        "profile_compatible_reference_alignment_count": 2,
+        "unique_alignment_count": 2,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 0,
+            "second_start": 4,
+            "second_end": 4,
+            "first_aligned": "",
+            "second_aligned": "",
+            "columns": 0,
+            "matches": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 0
+          },
+          {
+            "first_start": 0,
+            "first_end": 4,
+            "second_start": 2,
+            "second_end": 4,
+            "first_aligned": "TACG",
+            "second_aligned": "T--G",
+            "columns": 4,
+            "matches": 2,
+            "substitutions": 0,
+            "deletions": 2,
+            "insertions": 0,
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_0111",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": true,
+        "first_end": true,
+        "second_start": true,
+        "second_end": false
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 4,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 1,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "AC-G",
+            "second_aligned": "ACTG",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "score": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_1000",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": false,
+        "second_start": false,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": -1,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "TAC-G",
+            "second_aligned": "-ACTG",
+            "columns": 5,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 1,
+            "score": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_1001",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": true,
+        "first_end": false,
+        "second_start": false,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 4,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 1,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "AC-G",
+            "second_aligned": "ACTG",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "score": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_1010",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": true,
+        "second_start": false,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": -1,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "TAC-G",
+            "second_aligned": "-ACTG",
+            "columns": 5,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 1,
+            "score": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_1011",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": true,
+        "first_end": true,
+        "second_start": false,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 4,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 1,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "AC-G",
+            "second_aligned": "ACTG",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "score": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_1100",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": false,
+        "second_start": true,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 0,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 4,
+            "second_start": 2,
+            "second_end": 4,
+            "first_aligned": "TACG",
+            "second_aligned": "T--G",
+            "columns": 4,
+            "matches": 2,
+            "substitutions": 0,
+            "deletions": 2,
+            "insertions": 0,
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_1101",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": true,
+        "first_end": false,
+        "second_start": true,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 4,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 1,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "AC-G",
+            "second_aligned": "ACTG",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "score": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_1110",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TACG",
+      "second": "ACTG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": true,
+        "second_start": true,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 0,
+        "reported_optimal_alignment_count": 2,
+        "profile_compatible_reference_alignment_count": 2,
+        "unique_alignment_count": 2,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 0,
+            "second_start": 4,
+            "second_end": 4,
+            "first_aligned": "",
+            "second_aligned": "",
+            "columns": 0,
+            "matches": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 0
+          },
+          {
+            "first_start": 0,
+            "first_end": 4,
+            "second_start": 2,
+            "second_end": 4,
+            "first_aligned": "TACG",
+            "second_aligned": "T--G",
+            "columns": 4,
+            "matches": 2,
+            "substitutions": 0,
+            "deletions": 2,
+            "insertions": 0,
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_mode_1111",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "TTACGT",
+      "second": "ACGTGG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": true,
+        "first_end": true,
+        "second_start": true,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 12,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 2,
+            "first_end": 6,
+            "second_start": 0,
+            "second_end": 4,
+            "first_aligned": "ACGT",
+            "second_aligned": "ACGT",
+            "columns": 4,
+            "matches": 4,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_internal_affine_run",
+      "profile": "end_gap",
+      "alphabet": "dna",
+      "first": "ACGGGT",
+      "second": "ACT",
+      "scoring": {
+        "match": 3,
+        "mismatch": -10,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": false,
+        "second_start": false,
+        "second_end": false
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 2,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 6,
+            "second_start": 0,
+            "second_end": 3,
+            "first_aligned": "ACGGGT",
+            "second_aligned": "AC---T",
+            "columns": 6,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 3,
+            "insertions": 0,
+            "score": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_rna_fitting",
+      "profile": "end_gap",
+      "alphabet": "rna",
+      "first": "AUGCUA",
+      "second": "CCAUGCUAGG",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": false,
+        "second_start": true,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 18,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 6,
+            "second_start": 2,
+            "second_end": 8,
+            "first_aligned": "AUGCUA",
+            "second_aligned": "AUGCUA",
+            "columns": 6,
+            "matches": 6,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 18
+          }
+        ]
+      }
+    },
+    {
+      "id": "endgap_protein_fitting",
+      "profile": "end_gap",
+      "alphabet": "protein",
+      "first": "MTEYK",
+      "second": "GGMTEYKPP",
+      "scoring": {
+        "match": 3,
+        "mismatch": -4,
+        "open": -5,
+        "extend": -1
+      },
+      "free_ends": {
+        "first_start": false,
+        "first_end": false,
+        "second_start": true,
+        "second_end": true
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh global alignment algorithm",
+        "score": 15,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 5,
+            "second_start": 2,
+            "second_end": 7,
+            "first_aligned": "MTEYK",
+            "second_aligned": "MTEYK",
+            "columns": 5,
+            "matches": 5,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 15
+          }
+        ]
+      }
+    },
+    {
+      "id": "local_dna_internal_affine_run",
+      "profile": "local",
+      "alphabet": "dna",
+      "first": "TTACGGGTAA",
+      "second": "CCACTCC",
+      "scoring": {
+        "match": 6,
+        "mismatch": -10,
+        "open": -3,
+        "extend": -1
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh local alignment algorithm",
+        "score": 13,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 2,
+            "first_end": 8,
+            "second_start": 2,
+            "second_end": 5,
+            "first_aligned": "ACGGGT",
+            "second_aligned": "AC---T",
+            "columns": 6,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 3,
+            "insertions": 0,
+            "score": 13
+          }
+        ]
+      }
+    },
+    {
+      "id": "local_dna_classic",
+      "profile": "local",
+      "alphabet": "dna",
+      "first": "ACACACTA",
+      "second": "AGCACACA",
+      "scoring": {
+        "match": 2,
+        "mismatch": -1,
+        "open": -3,
+        "extend": -1
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh local alignment algorithm",
+        "score": 10,
+        "reported_optimal_alignment_count": 2,
+        "profile_compatible_reference_alignment_count": 2,
+        "unique_alignment_count": 2,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 5,
+            "second_start": 3,
+            "second_end": 8,
+            "first_aligned": "ACACA",
+            "second_aligned": "ACACA",
+            "columns": 5,
+            "matches": 5,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 10
+          },
+          {
+            "first_start": 1,
+            "first_end": 6,
+            "second_start": 2,
+            "second_end": 7,
+            "first_aligned": "CACAC",
+            "second_aligned": "CACAC",
+            "columns": 5,
+            "matches": 5,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "local_dna_repetitive_tie",
+      "profile": "local",
+      "alphabet": "dna",
+      "first": "AAAA",
+      "second": "AAA",
+      "scoring": {
+        "match": 2,
+        "mismatch": -3,
+        "open": -4,
+        "extend": -1
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh local alignment algorithm",
+        "score": 6,
+        "reported_optimal_alignment_count": 2,
+        "profile_compatible_reference_alignment_count": 2,
+        "unique_alignment_count": 2,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 0,
+            "first_end": 3,
+            "second_start": 0,
+            "second_end": 3,
+            "first_aligned": "AAA",
+            "second_aligned": "AAA",
+            "columns": 3,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 6
+          },
+          {
+            "first_start": 1,
+            "first_end": 4,
+            "second_start": 0,
+            "second_end": 3,
+            "first_aligned": "AAA",
+            "second_aligned": "AAA",
+            "columns": 3,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": "local_dna_no_positive_similarity",
+      "profile": "local",
+      "alphabet": "dna",
+      "first": "AAAA",
+      "second": "TTTT",
+      "scoring": {
+        "match": 2,
+        "mismatch": -3,
+        "open": -4,
+        "extend": -1
+      },
+      "comparison": "score_only",
+      "expected": {
+        "algorithm": "Gotoh local alignment algorithm",
+        "score": 0,
+        "reported_optimal_alignment_count": null,
+        "profile_compatible_reference_alignment_count": null,
+        "unique_alignment_count": null,
+        "alignments_complete": false,
+        "alignments": []
+      }
+    },
+    {
+      "id": "local_dna_literal_ambiguity",
+      "profile": "local",
+      "alphabet": "dna",
+      "first": "TTACGNAA",
+      "second": "GGACGACC",
+      "scoring": {
+        "match": 3,
+        "mismatch": -2,
+        "open": -5,
+        "extend": -1
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh local alignment algorithm",
+        "score": 9,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 2,
+            "first_end": 5,
+            "second_start": 2,
+            "second_end": 5,
+            "first_aligned": "ACG",
+            "second_aligned": "ACG",
+            "columns": 3,
+            "matches": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "local_rna_internal_gap",
+      "profile": "local",
+      "alphabet": "rna",
+      "first": "CCAUGGGCUGG",
+      "second": "GGAUGCUGCC",
+      "scoring": {
+        "match": 4,
+        "mismatch": -5,
+        "open": -3,
+        "extend": -1
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh local alignment algorithm",
+        "score": 20,
+        "reported_optimal_alignment_count": 3,
+        "profile_compatible_reference_alignment_count": 3,
+        "unique_alignment_count": 3,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 4,
+            "first_end": 10,
+            "second_start": 0,
+            "second_end": 8,
+            "first_aligned": "GG--GCUG",
+            "second_aligned": "GGAUGCUG",
+            "columns": 8,
+            "matches": 6,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 2,
+            "score": 20
+          },
+          {
+            "first_start": 2,
+            "first_end": 10,
+            "second_start": 2,
+            "second_end": 8,
+            "first_aligned": "AUGGGCUG",
+            "second_aligned": "AU--GCUG",
+            "columns": 8,
+            "matches": 6,
+            "substitutions": 0,
+            "deletions": 2,
+            "insertions": 0,
+            "score": 20
+          },
+          {
+            "first_start": 2,
+            "first_end": 10,
+            "second_start": 2,
+            "second_end": 8,
+            "first_aligned": "AUGGGCUG",
+            "second_aligned": "AUG--CUG",
+            "columns": 8,
+            "matches": 6,
+            "substitutions": 0,
+            "deletions": 2,
+            "insertions": 0,
+            "score": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "local_protein_substitution",
+      "profile": "local",
+      "alphabet": "protein",
+      "first": "QQMKTWZZ",
+      "second": "AAMKAWPP",
+      "scoring": {
+        "match": 3,
+        "mismatch": -1,
+        "open": -5,
+        "extend": -1
+      },
+      "comparison": "all_optimal",
+      "expected": {
+        "algorithm": "Gotoh local alignment algorithm",
+        "score": 8,
+        "reported_optimal_alignment_count": 1,
+        "profile_compatible_reference_alignment_count": 1,
+        "unique_alignment_count": 1,
+        "alignments_complete": true,
+        "alignments": [
+          {
+            "first_start": 2,
+            "first_end": 6,
+            "second_start": 2,
+            "second_end": 6,
+            "first_aligned": "MKTW",
+            "second_aligned": "MKAW",
+            "columns": 4,
+            "matches": 3,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "score": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "local_scientific_myoglobin_beta_globin",
+      "profile": "local",
+      "alphabet": "protein",
+      "first": "MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGDFGADAQGAMNKALELFRKDIAAKYKELGYQG",
+      "second": "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH",
+      "scoring": {
+        "match": 2,
+        "mismatch": -1,
+        "open": -5,
+        "extend": -1
+      },
+      "comparison": "score_only",
+      "expected": {
+        "algorithm": "Gotoh local alignment algorithm",
+        "score": 8,
+        "reported_optimal_alignment_count": null,
+        "profile_compatible_reference_alignment_count": null,
+        "unique_alignment_count": null,
+        "alignments_complete": false,
+        "alignments": []
+      }
+    }
+  ]
+}

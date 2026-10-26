@@ -1,0 +1,19 @@
+Algorithm     : Gotoh
+Mode          : global affine
+Scoring       : match=2 mismatch=-1 gap_open=-5 gap_extend=-1
+Sequences     : Target=7 Query=7
+Range         : Target 1..7, Query 1..7
+Score         : 2
+Columns       : 7
+Identity      : 3/7 (42.86%)
+Matches       : 3
+Substitutions : 4
+Insertions    : 0 residues, 0 runs
+Deletions     : 0 residues, 0 runs
+CIGAR         : 1=2X1=1X1=1X
+
+Target  1  GATTACA  7
+           |..|.|.
+Query   1  GCATGCT  7
+
+Legend: | match, . substitution, blank gap

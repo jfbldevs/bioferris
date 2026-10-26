@@ -1,0 +1,140 @@
+{
+  "cases": [
+    {
+      "alphabet": "dna",
+      "id": "dna_identical",
+      "reference_alignment": [
+        { "aligned": "ACGTACGTACGT", "id": "dna_a" },
+        { "aligned": "ACGTACGTACGT", "id": "dna_b" },
+        { "aligned": "ACGTACGTACGT", "id": "dna_c" }
+      ],
+      "sequences": [
+        { "id": "dna_a", "sequence": "ACGTACGTACGT" },
+        { "id": "dna_b", "sequence": "ACGTACGTACGT" },
+        { "id": "dna_c", "sequence": "ACGTACGTACGT" }
+      ]
+    },
+    {
+      "alphabet": "dna",
+      "id": "dna_two_motifs_equal_internal",
+      "reference_alignment": [
+        { "aligned": "ACGTACGTACGTAAAAAAAAAAAA------------ACGTACGTACGT", "id": "dna_a" },
+        { "aligned": "ACGTACGTACGT-----------CCCCCCCCCCCCCACGTACGTACGT", "id": "dna_b" },
+        { "aligned": "ACGTACGTACGT-GGGGGGGGGGG------------ACGTACGTACGT", "id": "dna_c" }
+      ],
+      "sequences": [
+        { "id": "dna_a", "sequence": "ACGTACGTACGTAAAAAAAAAAAAACGTACGTACGT" },
+        { "id": "dna_b", "sequence": "ACGTACGTACGTCCCCCCCCCCCCCACGTACGTACGT" },
+        { "id": "dna_c", "sequence": "ACGTACGTACGTGGGGGGGGGGGACGTACGTACGT" }
+      ]
+    },
+    {
+      "alphabet": "dna",
+      "id": "dna_two_motifs_unequal_internal",
+      "reference_alignment": [
+        { "aligned": "--------------------------------TTACGTACGTACGT------AAAAAAAAACGTACGTACGTAA", "id": "dna_a" },
+        { "aligned": "GGACGTACGTACGTCCCCCCCCCCCCCCCCCCCCACGTACGTACGTCC--------------------------", "id": "dna_b" },
+        { "aligned": "--------------------------------CCACGTACGTACGTGGGGGGGGGGGGGGACGTACGTACGTGG", "id": "dna_c" },
+        { "aligned": "--ACGTACGTACGT--------------TTTTTTACGTACGTACGT----------------------------", "id": "dna_d" }
+      ],
+      "sequences": [
+        { "id": "dna_a", "sequence": "TTACGTACGTACGTAAAAAAAAACGTACGTACGTAA" },
+        { "id": "dna_b", "sequence": "GGACGTACGTACGTCCCCCCCCCCCCCCCCCCCCACGTACGTACGTCC" },
+        { "id": "dna_c", "sequence": "CCACGTACGTACGTGGGGGGGGGGGGGGACGTACGTACGTGG" },
+        { "id": "dna_d", "sequence": "ACGTACGTACGTTTTTTTACGTACGTACGT" }
+      ]
+    },
+    {
+      "alphabet": "rna",
+      "id": "rna_identical",
+      "reference_alignment": [
+        { "aligned": "ACGUACGUACGU", "id": "rna_a" },
+        { "aligned": "ACGUACGUACGU", "id": "rna_b" },
+        { "aligned": "ACGUACGUACGU", "id": "rna_c" }
+      ],
+      "sequences": [
+        { "id": "rna_a", "sequence": "ACGUACGUACGU" },
+        { "id": "rna_b", "sequence": "ACGUACGUACGU" },
+        { "id": "rna_c", "sequence": "ACGUACGUACGU" }
+      ]
+    },
+    {
+      "alphabet": "rna",
+      "id": "rna_two_motifs_unequal_internal",
+      "reference_alignment": [
+        { "aligned": "ACGUACGUACGU---------------------AAAAAAAAACGUACGUACGU", "id": "rna_a" },
+        { "aligned": "ACGUACGUACGUCCCCCCCCCCCCCCCCCC-----------ACGUACGUACGU", "id": "rna_b" },
+        { "aligned": "ACGUACGUACGUG----------------GGGGGGGGGGGGACGUACGUACGU", "id": "rna_c" }
+      ],
+      "sequences": [
+        { "id": "rna_a", "sequence": "ACGUACGUACGUAAAAAAAAACGUACGUACGU" },
+        { "id": "rna_b", "sequence": "ACGUACGUACGUCCCCCCCCCCCCCCCCCCACGUACGUACGU" },
+        { "id": "rna_c", "sequence": "ACGUACGUACGUGGGGGGGGGGGGGACGUACGUACGU" }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "protein_identical",
+      "reference_alignment": [
+        { "aligned": "MKTAYIAKQRQISFVKSHFSRQ", "id": "protein_a" },
+        { "aligned": "MKTAYIAKQRQISFVKSHFSRQ", "id": "protein_b" },
+        { "aligned": "MKTAYIAKQRQISFVKSHFSRQ", "id": "protein_c" }
+      ],
+      "sequences": [
+        { "id": "protein_a", "sequence": "MKTAYIAKQRQISFVKSHFSRQ" },
+        { "id": "protein_b", "sequence": "MKTAYIAKQRQISFVKSHFSRQ" },
+        { "id": "protein_c", "sequence": "MKTAYIAKQRQISFVKSHFSRQ" }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "protein_two_domains_equal_internal",
+      "reference_alignment": [
+        { "aligned": "ACDEFGHIKLMNPQRSTVWYWWWWWWWWWWWWWWWWWWWW--------------------------------------ACDEFGHIKLMNPQRSTVWY", "id": "protein_a" },
+        { "aligned": "ACDEFGHIKLMNPQRSTVWY--------------------------------------DDDDDDDDDDDDDDDDDDDDACDEFGHIKLMNPQRSTVWY", "id": "protein_b" },
+        { "aligned": "ACDEFGHIKLMNPQRSTVWYC------------------CCCCCCCCCCCCCCCCCCC--------------------ACDEFGHIKLMNPQRSTVWY", "id": "protein_c" }
+      ],
+      "sequences": [
+        { "id": "protein_a", "sequence": "ACDEFGHIKLMNPQRSTVWYWWWWWWWWWWWWWWWWWWWWACDEFGHIKLMNPQRSTVWY" },
+        { "id": "protein_b", "sequence": "ACDEFGHIKLMNPQRSTVWYDDDDDDDDDDDDDDDDDDDDACDEFGHIKLMNPQRSTVWY" },
+        { "id": "protein_c", "sequence": "ACDEFGHIKLMNPQRSTVWYCCCCCCCCCCCCCCCCCCCCACDEFGHIKLMNPQRSTVWY" }
+      ]
+    },
+    {
+      "alphabet": "protein",
+      "id": "protein_two_domains_unequal_internal",
+      "reference_alignment": [
+        { "aligned": "GGACDEFGHIKLMNPQRSTVWY-------------------------------------WWWWWWWWWWACDEFGHIKLMNPQRSTVWYGG", "id": "protein_a" },
+        { "aligned": "DDACDEFGHIKLMNPQRSTVWYDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD-----------------ACDEFGHIKLMNPQRSTVWYDD", "id": "protein_b" },
+        { "aligned": "CCACDEFGHIKLMNPQRSTVWY-----------------------------CCCCCCCCCCCCCCCCCCACDEFGHIKLMNPQRSTVWYCC", "id": "protein_c" },
+        { "aligned": "--ACDEFGHIKLMNPQRSTVWY---------------------------------AAAAAAAAAAAAAAACDEFGHIKLMNPQRSTVWY--", "id": "protein_d" }
+      ],
+      "sequences": [
+        { "id": "protein_a", "sequence": "GGACDEFGHIKLMNPQRSTVWYWWWWWWWWWWACDEFGHIKLMNPQRSTVWYGG" },
+        { "id": "protein_b", "sequence": "DDACDEFGHIKLMNPQRSTVWYDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDACDEFGHIKLMNPQRSTVWYDD" },
+        { "id": "protein_c", "sequence": "CCACDEFGHIKLMNPQRSTVWYCCCCCCCCCCCCCCCCCCACDEFGHIKLMNPQRSTVWYCC" },
+        { "id": "protein_d", "sequence": "ACDEFGHIKLMNPQRSTVWYAAAAAAAAAAAAAAACDEFGHIKLMNPQRSTVWY" }
+      ]
+    }
+  ],
+  "command": "mafft --genafpair --oldgenafpair --ep 0 --maxiterate 1000 --thread 1 --inputorder --quiet INPUT",
+  "known_profile_differences": [
+    "The Rust target fixes the ancestral 2008 scientific profile; MAFFT 7.526 contains later pipeline engineering",
+    "The comparator explicitly selects the documented old generalized-affine route",
+    "The Rust recurrence and deterministic tie rules resolve details omitted by the publications",
+    "Exact equality is required only for unambiguous identical cases; nontrivial cases are compared with SP and TC"
+  ],
+  "profile": "MAFFT-7.526-E-INS-i-oldgenafpair-v1",
+  "provenance": {
+    "case_specification_sha256": "cb91b85398dfad734cb0f552c4107dd8067f94b8130f9b231b16cb183aa9afe4",
+    "generator_sha256": "7df575e8b9ed5d17fd823aced10b80a7935cc387a0ab44cf0479156a192e0ff9",
+    "name": "MAFFT",
+    "package_sha256": "b8298e379bcd244be0e12f325461d863b93571da78c4499c2a2e4c252679c9de",
+    "package_url": "https://mafft.cbrc.jp/alignment/software/mafft_7.526-1_amd64.deb",
+    "platform": "official Linux amd64 package invoked as an opaque process under WSL2",
+    "source_inspected": false,
+    "version": "v7.526 (2024/Apr/26)"
+  },
+  "schema_version": 1,
+  "suite": "MAFFT-7.526-E-INS-i-oldgenafpair-v1-black-box"
+}
